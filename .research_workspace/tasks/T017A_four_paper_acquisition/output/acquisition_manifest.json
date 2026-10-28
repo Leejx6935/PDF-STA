@@ -1,0 +1,131 @@
+{
+  "task": "T017A_four_paper_acquisition",
+  "date": "2026-10-27",
+  "timezone": "Asia/Shanghai",
+  "scope": "Full-text source location and identity check only; no reading conclusions, no controller design.",
+  "environment_notes": [
+    "WebFetch failed for every domain attempted (api.crossref.org, sciencedirect.com, cris.unibo.it, pure.bit.edu.cn, api.semanticscholar.org, api.openalex.org, example.com) with 'Unable to verify if domain ... is safe to fetch'. Only WebSearch and research.download_pdf could reach the network.",
+    "Zotero local API is up (Zotero 10.0.6). Its quick search matches title/creator/year, not DOI; DOI queries returned empty for structural reasons, so title-fragment queries were used as corroboration.",
+    "No records were added to or modified in Zotero."
+  ],
+  "zotero_search": {
+    "doi_queries": [
+      "10.1016/j.ejcon.2022.100659 -> 0",
+      "10.1016/j.apm.2024.03.026 -> 0",
+      "10.1016/j.apm.2026.116848 -> 0",
+      "10.1016/j.ymssp.2025.112928 -> 0"
+    ],
+    "title_queries": [
+      "disturbance observer -> 0",
+      "finite time -> 1 (Practical Finite-Time Observer-Based ... Deep-Sea Hydraulic Manipulator, FS9EHUTH; not L03)",
+      "dead zone -> 0",
+      "command filtered -> 2 (HLZCX7PE, IE6FBI4J; not L07)",
+      "fixed-time -> 0",
+      "backstepping -> 4 (none of L03/L07/L13/L09)",
+      "reinforcement learning -> 3 (none is L09)",
+      "optimized -> 0"
+    ],
+    "catalogue_check": ".research_workspace/sources/zotero_finite_time_catalogue_2026-10-27.json (36 top-level items, 20 matched) contains none of the four papers.",
+    "conclusion": "None of the four papers is present in the local Zotero library; no item key and no local attachment exist."
+  },
+  "download_attempt_budget": {
+    "max_attempts": 8,
+    "attempts_used": 2,
+    "attempts": [
+      {"id": "L03", "url": "https://cris.unibo.it/retrieve/e9a6c4a3-0ec1-4783-970b-55a9b51c89c6/%2803-12-2021%29%20FT-DOTC%20for%20EHAs%20%28RPN%29.pdf", "result": "HTTP 403 Forbidden (Cloudflare challenge)"},
+      {"id": "L03", "url": "https://cris.unibo.it/retrieve/e9a6c4a3-0ec1-4783-970b-55a9b51c89c6", "result": "HTTP 403 Forbidden (Cloudflare challenge)"}
+    ]
+  },
+  "records": [
+    {
+      "id": "L03",
+      "title": "Disturbance observer-based nonlinear feedback control for position tracking of electro-hydraulic systems in a finite time",
+      "authors": ["Hamid Razmjooei", "Gianluca Palli", "Morad Nazari"],
+      "venue": "European Journal of Control, vol. 67, article 100659, 11 pp., September 2022",
+      "doi": "10.1016/j.ejcon.2022.100659",
+      "issue_year": 2022,
+      "publisher_url": "https://www.sciencedirect.com/science/article/pii/S0947358022000528",
+      "zotero_queries": "DOI query 0 results; title/author fragments 0 relevant hits; not in catalogue snapshot",
+      "zotero_item_key": null,
+      "local_pdf_path": null,
+      "source_version": "Author's accepted manuscript (postprint) in University of Bologna IRIS repository, record 11585/904197, file '(03-12-2021) FT-DOTC for EHAs (RPN).pdf', 1.83 MB, stated CC BY-NC-ND with embargo expired 2024-08-20. Publisher version of record is subscription access.",
+      "repository_landing": "https://cris.unibo.it/handle/11585/904197",
+      "pdf_identity_status": "not_verified_no_download (repository metadata matches title/authors; PDF bytes not retrieved)",
+      "download_attempts": [
+        {"url": "https://cris.unibo.it/retrieve/e9a6c4a3-0ec1-4783-970b-55a9b51c89c6/%2803-12-2021%29%20FT-DOTC%20for%20EHAs%20%28RPN%29.pdf", "error": "HTTP 403 Forbidden"},
+        {"url": "https://cris.unibo.it/retrieve/e9a6c4a3-0ec1-4783-970b-55a9b51c89c6", "error": "HTTP 403 Forbidden"}
+      ],
+      "mineru_cache_status": "not_cached (find_document: 0 results)",
+      "fulltext_status": "open_access_postprint_located_but_download_blocked",
+      "reading_status": "not_read_in_this_task",
+      "user_action_required": "Open https://cris.unibo.it/handle/11585/904197 in a normal browser and pass the Cloudflare check; download the attached postprint '(03-12-2021) FT-DOTC for EHAs (RPN).pdf' (CC BY-NC-ND). If the repository file is unavailable, use institutional ScienceDirect access at https://www.sciencedirect.com/science/article/pii/S0947358022000528. Note this is the accepted manuscript, not the publisher PDF; cite the version of record."
+    },
+    {
+      "id": "L07",
+      "title": "Finite-time command filtered electro-hydraulic system position control with dead zone",
+      "authors": ["Shuai Jiang", "Haikuo Shen", "Chao Cheng"],
+      "venue": "Applied Mathematical Modelling, vol. 131, pp. 190-204, July 2024",
+      "doi": "10.1016/j.apm.2024.03.026",
+      "issue_year": 2024,
+      "publisher_url": "https://www.sciencedirect.com/science/article/pii/S0307904X24001434",
+      "zotero_queries": "DOI query 0 results; title/author fragments 0 relevant hits; not in catalogue snapshot",
+      "zotero_item_key": null,
+      "local_pdf_path": null,
+      "source_version": null,
+      "repository_landing": null,
+      "pdf_identity_status": "not_checked_no_pdf",
+      "download_attempts": [],
+      "mineru_cache_status": "not_cached (find_document: 0 results)",
+      "fulltext_status": "paywalled_no_open_copy_found",
+      "reading_status": "not_read_in_this_task",
+      "user_action_required": "Sign in to ScienceDirect with institutional credentials and download the PDF at https://www.sciencedirect.com/science/article/pii/S0307904X24001434 (DOI 10.1016/j.apm.2024.03.026). No repository, preprint, or OA copy was found. Fallback: NSTL record https://lz.nstl.gov.cn/paper_detail.html?doi=10.1016/j.apm.2024.03.026 or interlibrary loan; corresponding authors are at Beijing Jiaotong University (js0723@bjtu.edu.cn, Shenhk@bjtu.edu.cn, c.cheng@bjtu.edu.cn)."
+    },
+    {
+      "id": "L13",
+      "title": "Command filter and neural network-based fixed-time backstepping control of electro-hydraulic system with uncertainties",
+      "authors": ["Shanshuai Niu", "Junzheng Wang", "Zhengyue Li", "Zhihui Liu", "Jiangbo Zhao", "Zizheng Sun"],
+      "venue": "Applied Mathematical Modelling, vol. 157, article 116848, 2026",
+      "doi": "10.1016/j.apm.2026.116848",
+      "issue_year": 2026,
+      "publisher_url": "https://www.sciencedirect.com/science/article/pii/S0307904X26001095",
+      "zotero_queries": "DOI query 0 results; title/author fragments 0 relevant hits; not in catalogue snapshot",
+      "zotero_item_key": null,
+      "local_pdf_path": null,
+      "source_version": null,
+      "repository_landing": "https://pure.bit.edu.cn/en/publications/command-filter-and-neural-network-based-fixed-time-backstepping-c/ (metadata page only; no file link surfaced)",
+      "pdf_identity_status": "not_checked_no_pdf",
+      "download_attempts": [],
+      "mineru_cache_status": "not_cached (find_document: 0 results)",
+      "fulltext_status": "paywalled_no_open_copy_found",
+      "reading_status": "not_read_in_this_task",
+      "user_action_required": "Sign in to ScienceDirect with institutional credentials and download the PDF at https://www.sciencedirect.com/science/article/pii/S0307904X26001095 (DOI 10.1016/j.apm.2026.116848). No OA, repository, or preprint copy found; the BIT Pure page lists metadata only. Fallback: request from corresponding authors Jiangbo Zhao / Zizheng Sun (Shandong University / Beijing Institute of Technology) via the Pure page, or interlibrary loan."
+    },
+    {
+      "id": "L09",
+      "title": "A reinforcement learning-based optimized backstepping control approach for uncertain electro-hydraulic systems",
+      "authors": ["Chen Wang", "Jianhui Wang", "Jinping Ye", "Qing Guo", "Tieshan Li"],
+      "venue": "Mechanical Systems and Signal Processing, vol. 237, article 112928, 2025",
+      "doi": "10.1016/j.ymssp.2025.112928",
+      "issue_year": 2025,
+      "publisher_url": "https://www.sciencedirect.com/science/article/pii/S0888327025006296",
+      "zotero_queries": "DOI query 0 results; title/author fragments 0 relevant hits; not in catalogue snapshot",
+      "zotero_item_key": null,
+      "local_pdf_path": null,
+      "source_version": null,
+      "repository_landing": null,
+      "pdf_identity_status": "not_checked_no_pdf",
+      "download_attempts": [],
+      "mineru_cache_status": "not_cached (find_document: 0 results)",
+      "fulltext_status": "paywalled_no_open_copy_found",
+      "reading_status": "not_read_in_this_task",
+      "user_action_required": "Sign in to ScienceDirect with institutional credentials and download the PDF at https://www.sciencedirect.com/science/article/pii/S0888327025006296 (DOI 10.1016/j.ymssp.2025.112928). No arXiv, repository, or OA copy found. Fallback: contact corresponding authors (Qing Guo / Tieshan Li, UESTC and Guangzhou University) or interlibrary loan."
+    }
+  ],
+  "summary": {
+    "local_zotero_matches": 0,
+    "downloaded_pdfs": 0,
+    "open_access_located_but_blocked": 1,
+    "paywalled_no_oa": 3,
+    "reading_status": "all not_read_in_this_task"
+  }
+}

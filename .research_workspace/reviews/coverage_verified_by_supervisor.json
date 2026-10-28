@@ -1,0 +1,141 @@
+{
+  "original_pdf": "C:\\Users\\leejx\\Desktop\\基于PDF框架的自适应STA滑模控制\\Prescribed-Time_Control_via_Periodic_Delayed_Feedback-Based_Super-Twisting_Sliding_Mode_Algorithm.pdf",
+  "parsed_markdown": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\sources\\parsed\\Ding2026_local_parse.md",
+  "characters": 135285,
+  "page_markers": [
+    [
+      "1",
+      "16"
+    ],
+    [
+      "2",
+      "16"
+    ],
+    [
+      "3",
+      "16"
+    ],
+    [
+      "4",
+      "16"
+    ],
+    [
+      "5",
+      "16"
+    ],
+    [
+      "6",
+      "16"
+    ],
+    [
+      "7",
+      "16"
+    ],
+    [
+      "8",
+      "16"
+    ],
+    [
+      "9",
+      "16"
+    ],
+    [
+      "10",
+      "16"
+    ],
+    [
+      "11",
+      "16"
+    ],
+    [
+      "12",
+      "16"
+    ],
+    [
+      "13",
+      "16"
+    ],
+    [
+      "14",
+      "16"
+    ],
+    [
+      "15",
+      "16"
+    ],
+    [
+      "16",
+      "16"
+    ]
+  ],
+  "read_chunks": [
+    {
+      "file": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\sources\\parsed\\doc_4871ce7_tier_standard_page_12.json",
+      "exit_code": 0,
+      "content_ranges": [
+        {
+          "page_range": "8-13",
+          "start": "doc:4871ce7/tier:standard/page:8",
+          "end": "doc:4871ce7/tier:standard/page:13/block:39"
+        }
+      ],
+      "truncated": true,
+      "next_request": {
+        "page_range": null,
+        "after": null,
+        "locator": "doc:4871ce7/tier:standard/page:13/block:39"
+      },
+      "error": null
+    },
+    {
+      "file": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\sources\\parsed\\doc_4871ce7_tier_standard_page_13_block_39.json",
+      "exit_code": 0,
+      "content_ranges": [
+        {
+          "page_range": "13",
+          "start": "doc:4871ce7/tier:standard/page:13",
+          "end": "doc:4871ce7/tier:standard/page:13/block:39"
+        }
+      ],
+      "truncated": false,
+      "next_request": {
+        "page_range": null,
+        "after": null,
+        "locator": "doc:4871ce7/tier:standard/page:14"
+      },
+      "error": null
+    },
+    {
+      "file": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\sources\\parsed\\doc_4871ce7_tier_standard_page_15.json",
+      "exit_code": 0,
+      "content_ranges": [
+        {
+          "page_range": "14-16",
+          "start": "doc:4871ce7/tier:standard/page:14",
+          "end": "doc:4871ce7/tier:standard/page:16/block:13"
+        }
+      ],
+      "truncated": false,
+      "next_request": null,
+      "error": null
+    },
+    {
+      "file": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\sources\\parsed\\doc_4871ce7_tier_standard_page_4.json",
+      "exit_code": 0,
+      "content_ranges": [
+        {
+          "page_range": "1-7",
+          "start": "doc:4871ce7/tier:standard/page:1",
+          "end": "doc:4871ce7/tier:standard/page:7/block:41"
+        }
+      ],
+      "truncated": false,
+      "next_request": {
+        "page_range": null,
+        "after": null,
+        "locator": "doc:4871ce7/tier:standard/page:8"
+      },
+      "error": null
+    }
+  ]
+}

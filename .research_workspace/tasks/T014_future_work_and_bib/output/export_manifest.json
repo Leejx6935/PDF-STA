@@ -1,0 +1,39 @@
+{
+  "generated": "2026-10-27",
+  "task": "T014_future_work_and_bib",
+  "tool": "research.export_references",
+  "filename": "finite_time_library.bib",
+  "path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\tasks\\T014_future_work_and_bib\\output\\finite_time_library.bib",
+  "requested_item_keys": [
+    "FD2CBB3F", "5R6KWQGW", "ASUHEN6J", "473MM72M", "HLZCX7PE", "2AHU9T9F",
+    "BLFGZ6V4", "JGP9TGM4", "CF8H6QQY", "46DP86DN", "MX4W2ZZU", "AYKCDA4Q",
+    "JHU5WMJN", "FS9EHUTH", "JPJUFKHN", "LXD8I4BW", "Y5GKV8EY", "ZLY8AKG6"
+  ],
+  "requested_item_count": 18,
+  "actual_entry_count": 12,
+  "actual_citation_keys": [
+    "ding_strong_2024",
+    "zhou_prescribed_2024",
+    "que_prescribed-time_2024",
+    "wang_adaptive_2026",
+    "sanchez-torres_predefined-time_2015",
+    "yang_output_2021",
+    "hua_adaptive_2022",
+    "li_command-filtered_2026",
+    "wang_adaptive_2026-1",
+    "yang_adaptive_2025",
+    "peng_command_2025",
+    "zhang_adaptive_2024"
+  ],
+  "bytes": 27386,
+  "sha256": "3d310ba5ab1e27da57b07550e91fbadfc39cf4eb79c26fc03406b1c2219ea61f",
+  "item_keys_echoed_by_tool": [
+    "FD2CBB3F", "5R6KWQGW", "ASUHEN6J", "473MM72M", "HLZCX7PE", "2AHU9T9F",
+    "BLFGZ6V4", "JGP9TGM4", "CF8H6QQY", "46DP86DN", "MX4W2ZZU", "AYKCDA4Q",
+    "JHU5WMJN", "FS9EHUTH", "JPJUFKHN", "LXD8I4BW", "Y5GKV8EY", "ZLY8AKG6"
+  ],
+  "discrepancy": {
+    "missing_entries": 6,
+    "note": "工具回显了全部 18 个 item key，但只生成 12 条 BibTeX 条目；差额可能为附件/笔记类子条目或缺少可导出元数据的条目，逐 key 对应关系工具未返回，需另行核对。"
+  }
+}

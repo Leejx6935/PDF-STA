@@ -1,0 +1,383 @@
+@inproceedings{que_prescribed-time_2024,
+	title = {Prescribed-{Time} {Tracking} {Control} of {Electro}-{Hydraulic} {Servo} {Systems} with {Non}-{Vanishing} {Uncertainties}},
+	issn = {1948-9447},
+	url = {https://ieeexplore.ieee.org/document/10587765},
+	doi = {10.1109/CCDC62350.2024.10587765},
+	abstract = {Most of the existing nonlinear control methods for electro-hydraulic servo systems can only ensure the output tracking error to asymptotically converge to zero or an adjustable compact set around zero, which will result in not good enough transient tracking performance. In this paper, a prescribed-time tracking control strategy is proposed for electro-hydraulic servo systems subjected to non-vanishing uncertainties. The nonlinear mathematical model of electrohydraulic servo system with both matched and mismatched uncertainties is firstly established. Then, a prescribed-time controller is designed by introducing a novel finite-time function based on backstepping framework. The closed-loop system stability analysis reveals that the proposed controller guarantees the output tracking error to converge to zero in finite time. Furthermore, the convergence time can be explicitly pre-determined and is independent of initial condition. Comparative simulation results are obtained to verify the high-performance nature of the proposed control method.},
+	urldate = {2026-10-15},
+	booktitle = {2024 36th {Chinese} {Control} and {Decision} {Conference} ({CCDC})},
+	author = {Que, Ninan and Deng, Wenxiang and Yao, Jianyong and Liu, Hongguang},
+	month = may,
+	year = {2024},
+	note = {ISSN: 1948-9447},
+	keywords = {Observers, Uncertainty, Servomotors, uncertainties, Transient analysis, Tracking, backstepping, Electro-hydraulic system, prescribed-time control, Simulation, Stability analysis},
+	pages = {553--559},
+	file = {Full Text PDF:C\:\\Users\\leejx\\Zotero\\storage\\9BH2IT95\\Que 等 - 2024 - Prescribed-Time Tracking Control of Electro-Hydraulic Servo Systems with Non-Vanishing Uncertainties.pdf:application/pdf},
+}
+
+@inproceedings{wang_adaptive_2026,
+	title = {Adaptive {Prescribed}-{Time} {Control} of {Electro}-{Hydraulic} {Servo} with {Output} {Constraints}},
+	url = {https://ieeexplore.ieee.org/document/11669267},
+	doi = {10.1109/ISAES70982.2026.11669267},
+	abstract = {This paper proposes a tracking control strategy that integrates prescribed-time control, adaptive robust control, and output constraint for electro-hydraulic servo systems subject to unknown parameter uncertainties and external disturbances. First, an adaptive law is constructed to compensate for the unknown parameter uncertainties. Then, by incorporating a prescribed-time function, a scaled error is introduced to adjust the system control gains in real time, ensuring that the tracking error converges to a bounded value within the prescribed time. Furthermore, a constraint transformation function is introduced to restrict the system output within a preset range. Through rigorous theoretical analysis, the proposed scheme can guarantee transient-error convergence performance and steady-state tracking performance while satisfying the output state constraints. Finally, simulation comparisons verify the superiority and effectiveness of the designed controller.},
+	urldate = {2026-10-16},
+	booktitle = {2026 5th {International} {Symposium} on {Aerospace} {Engineering} and {Systems} ({ISAES})},
+	author = {Wang, Jianglong and Li, Pengfei and Yang, Xiaowei and Yao, Jianyong},
+	month = jul,
+	year = {2026},
+	keywords = {Uncertainty, Servomotors, Adaptive control, Tracking, Arrays, Backstepping method, Design methodology, Equations, Modeling, Output constraint, Prescribed-time control, Printing, Tagging, Timing, US Department of Transportation},
+	pages = {231--238},
+}
+
+@inproceedings{sanchez-torres_predefined-time_2015,
+	title = {Predefined-time stability of dynamical systems with sliding modes},
+	issn = {2378-5861},
+	url = {https://ieeexplore.ieee.org/document/7172255},
+	doi = {10.1109/ACC.2015.7172255},
+	abstract = {This paper introduces a class of fixed-time stable dynamical systems with settling time as a explicit parameter, namely the inverse the gain. Those systems are defined as predefined-timed stable dynamical systems. Continuous and discontinuous are cases are presented. A detailed Lyapunov characterization of this class of systems is also shown. Finally, the application to the design of a class of first order sliding mode controllers is exposed.},
+	urldate = {2026-10-17},
+	booktitle = {2015 {American} {Control} {Conference} ({ACC})},
+	author = {Sánchez-Torres, Juan Diego and Sanchez, Edgar N. and Loukianov, Alexander G.},
+	month = jul,
+	year = {2015},
+	note = {ISSN: 2378-5861},
+	keywords = {Lyapunov methods, Robustness, Trajectory, Sliding mode control, Stability analysis, Optimization},
+	pages = {5842--5846},
+	annote = {本文基于滑模控制的思想提出了预定义时间控制模型，选取的选型思路是\$\{{\textbackslash}dot\{x\}\} = {\textbackslash}alpha e{\textasciicircum}\{-x\}\$，可以实现预设时间收敛的性质（分强定义与弱定义），强定义收敛时间精确，弱定义收敛时间小于上界。
+\$\${\textbackslash}boldsymbol\{{\textbackslash}dot\{x\}\} = -{\textbackslash}frac\{1\}\{T\_c\}{\textbackslash}boldsymbol\{{\textbackslash}Phi\}\_p(x)\$\$
+上式为Predefined time control标准形式，其中
+\$\${\textbackslash}boldsymbol\{{\textbackslash}Phi\}\_p(x) = {\textbackslash}frac\{1\}\{p\}{\textbackslash}frac\{{\textbackslash}exp{\textbackslash}left({\textbackslash}{\textbar}x{\textbackslash}{\textbar}{\textasciicircum}p{\textbackslash}right)x\}\{{\textbackslash}{\textbar}x{\textbackslash}{\textbar}{\textasciicircum}p\}\$\$
+通过运用
+\$\${\textbackslash}boldsymbol\{{\textbackslash}dot\{x\}\} = {\textbackslash}dot\{{\textbar}x{\textbar}\} sgn(x)\$\$
+可以对其进行求导， \${\textbackslash}boldsymbol\{{\textbar}x{\textbar}\}\$ 起到类似李雅普诺夫函数的作用
+可以得到收敛时间t满足
+\$\${\textbackslash}boldsymbol\{t\} {\textgreater} t\_\{0\} + T\_c\$\$
+当然，以上推导是建立在系统扰动为0或者扰动对系统的影响可以忽略的时候，现在考虑扰动项对系统的影响
+针对以下系统
+\$\${\textbackslash}boldsymbol\{{\textbackslash}dot\{x\}\} = {\textbackslash}boldsymbol\{{\textbackslash}Delta\}(t, x) + {\textbackslash}boldsymbol\{u\}\$\$
+where \${\textbackslash}boldsymbol\{x\}, {\textbackslash}boldsymbol\{u\} {\textbackslash}in {\textbackslash}mathbb\{R\}{\textasciicircum}n\$, \${\textbackslash}boldsymbol\{{\textbackslash}Delta\}: {\textbackslash}mathbb\{R\}\_+ {\textbackslash}times {\textbackslash}mathbb\{R\}{\textasciicircum}n {\textbackslash}to {\textbackslash}mathbb\{R\}{\textasciicircum}n\$ and \$t\_0 = 0\$.
+当出现扰动的情况时，穾设定另外的控制输入项来抑制扰动。
+\$\${\textbackslash}boldsymbol\{u\} = -{\textbackslash}left({\textbackslash}frac\{1\}\{T\_c\} + kp{\textbackslash}right){\textbackslash}boldsymbol\{{\textbackslash}Phi\}\_p(x)\$\$
+where \$k\_p\$ 线性增益反馈项是为了处理扰动的，其中\$k\_p\$满足\$k {\textgreater}= {\textbackslash}delta ,0 {\textless}p{\textless}1\$ 。取李雅普诺夫函数为  \${\textbar}{\textbar}x{\textbar}{\textbar}\$ 并对其求导可证明预定义时间收敛。
+\$\${\textbackslash}boldsymbol\{u\} = -{\textbackslash}left({\textbackslash}frac\{1\}\{T\_c\} + k{\textbackslash}right){\textbackslash}boldsymbol\{{\textbackslash}Phi\}\_1(x)\$\$
+同理也可得出同样的结论。基于以上的分析，对于论文的拓展部分也可以自行实现了。
+},
+	file = {Full Text PDF:C\:\\Users\\leejx\\Zotero\\storage\\UR2SF69G\\Sánchez-Torres 等 - 2015 - Predefined-time stability of dynamical systems with sliding modes.pdf:application/pdf},
+}
+
+@article{yang_output_2021,
+	title = {Output feedback adaptive super-twisting sliding mode control of hydraulic systems with disturbance compensation},
+	volume = {109},
+	issn = {0019-0578},
+	url = {https://www.sciencedirect.com/science/article/pii/S0019057820303888},
+	doi = {10.1016/j.isatra.2020.09.014},
+	abstract = {This paper presents an output feedback adaptive super-twisting sliding mode controller (SSMC) for hydraulic systems with unmodeled disturbances via utilizing an extended state observer (ESO). Both unmeasured system states and unmodeled disturbances are estimated by ESO based on output position signal, which avoids using noise-polluted signals and eliminates most of the disturbance effects on control performance simultaneously. Moreover, a SSMC is developed to further suppress the residual error of disturbance compensation, in which feedback gains are adapted online to further reduce the high-gain feedback. In addition, this proposed controller is continuous and chattering-free, which is beneficial to practical applications. Theoretical analysis indicates that the proposed controller ensures an asymptotic stability when existing constant disturbances, and ultimately bounded tracking performance for the time-variant disturbance case. Comparative experimental results reveal the validity of the developed approach.},
+	urldate = {2026-10-19},
+	journal = {ISA Transactions},
+	author = {Yang, Xiaowei and Yao, Jianyong and Deng, Wenxiang},
+	month = mar,
+	year = {2021},
+	keywords = {Extended state observer (ESO), Output feedback, Adaptive control, Hydraulic system, Super-twisting sliding mode control (SSMC)},
+	pages = {175--185},
+	file = {ScienceDirect Full Text PDF:C\:\\Users\\leejx\\Zotero\\storage\\WSKY4XYC\\Yang 等 - 2021 - Output feedback adaptive super-twisting sliding mode control of hydraulic systems with disturbance c.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\leejx\\Zotero\\storage\\LWTJ72VZ\\S0019057820303888.html:text/html},
+}
+
+@article{hua_adaptive_2022,
+	title = {Adaptive {Prescribed}-{Time} {Control} for a {Class} of {Uncertain} {Nonlinear} {Systems}},
+	volume = {67},
+	issn = {1558-2523},
+	url = {https://ieeexplore.ieee.org/document/9627555/},
+	doi = {10.1109/TAC.2021.3130883},
+	abstract = {This article focuses on the problem of prescribed-time control for a class of uncertain nonlinear systems. First, a prescribed-time stability theorem is proposed by following the adaptive technology for the first time. Based on this theorem, a new state feedback control strategy is put forward by using the backstepping method for high-order nonlinear systems with unknown parameters to ensure the prescribed-time convergence. Moreover, the prescribed-time controller is obtained in the form of continuous time-varying feedback, which can render all system states converge to zero within the prescribed time. It should be noted that the prescribed time is independent of system initial conditions, which means that the prescribed time can be set arbitrarily within the physical limitations. Finally, two simulation examples are provided to illustrate the effectiveness of our proposed algorithm.},
+	number = {11},
+	urldate = {2026-10-21},
+	journal = {IEEE Transactions on Automatic Control},
+	author = {Hua, Changchun and Ning, Pengju and Li, Kuo},
+	month = nov,
+	year = {2022},
+	keywords = {Convergence, Trajectory, Backstepping, Adaptive control, Nonlinear systems, backstepping method, prescribed-time stability, Time-varying systems, uncertain nonlinear system, Upper bound},
+	pages = {6159--6166},
+	file = {Full Text PDF:C\:\\Users\\leejx\\Zotero\\storage\\XVN94HRI\\Hua 等 - 2022 - Adaptive Prescribed-Time Control for a Class of Uncertain Nonlinear Systems.pdf:application/pdf},
+}
+
+@article{li_command-filtered_2026,
+	title = {Command-{Filtered} {Adaptive} {Prescribed}-{Time} {Tracking} {Control} with {Application} to {Output}-{Constrained} {Hydraulic} {Servo} {Systems}},
+	volume = {15},
+	copyright = {https://creativecommons.org/licenses/by/3.0/},
+	issn = {2076-0825},
+	url = {https://www.mdpi.com/2076-0825/15/5/238},
+	doi = {10.3390/act15050238},
+	abstract = {In this paper, a command filter-based adaptive prescribed-time control method is proposed for hydraulic servo systems subject to time-varying parameters, external disturbances and output constraints. Firstly, a state-based nonlinear transformation function is introduced to convert the output-constrained problem into a boundedness problem. Then, an auxiliary system is constructed to compensate for command filtering errors. Subsequently, to handle the uncertainties from time-varying parameters and external disturbances, a smooth nonlinear term featuring an updated gain and incorporating a prescribed-time function is designed. Based on the transformed system, a novel control framework integrating command filtering, adaptive control, and the prescribed-time function is developed. Consequently, the complexity explosion is avoided, and the system output is guaranteed to converge to a small bounded interval near zero while strictly satisfying the output constraints. Moreover, this prescribed convergence time can be independently set by the designer. Furthermore, both the transient convergence performance within the prescribed time and the bounded convergence performance afterward are guaranteed by Lyapunov stability analysis. Finally, the effectiveness of the proposed method is verified by simulation results.},
+	language = {en},
+	number = {5},
+	urldate = {2026-10-21},
+	journal = {Actuators},
+	publisher = {Multidisciplinary Digital Publishing Institute},
+	author = {Li, Pengfei and Yao, Jianyong and Yang, Xiaowei},
+	month = may,
+	year = {2026},
+	keywords = {hydraulic servo systems, prescribed-time control, command filtered technique, output constraints, time-varying parameters and external disturbances},
+	pages = {238},
+	file = {Full Text PDF:C\:\\Users\\leejx\\Zotero\\storage\\QWMMV48W\\Li 等 - 2026 - Command-Filtered Adaptive Prescribed-Time Tracking Control with Application to Output-Constrained Hy.pdf:application/pdf},
+}
+
+@article{wang_adaptive_2026-1,
+	title = {Adaptive {Prescribed}-{Time} {Tracking} {Control} for {Output}-{Constrained} {Hydraulic} {Servo} {Systems} with {Time}-{Varying} {Parameters}},
+	volume = {18},
+	copyright = {https://creativecommons.org/licenses/by/3.0/},
+	issn = {2073-8994},
+	url = {https://www.mdpi.com/2073-8994/18/8/1397},
+	doi = {10.3390/sym18081397},
+	abstract = {This paper proposes an adaptive prescribed-time tracking control strategy based on the dynamic surface technique for hydraulic servo systems subject to time-varying parameters, external disturbances, and output constraints. First, a state-constrained transformation function is introduced to convert the strict output constraint condition into an error boundedness problem. Meanwhile, the dynamic surface control (DSC) technique is employed to effectively avoid the “explosion of complexity” inherent in traditional backstepping design. Second, to tackle complex uncertainties, prescribed-time-driven adaptive update and disturbance estimation laws are separately formulated for precise parameter learning and active disturbance feedforward compensation. Furthermore, a smooth nonlinear robust term is specifically integrated to suppress the residual errors induced by parameter adaptation. Based on the transformed system, a novel control framework integrating error constraints, adaptive parameter estimation, and prescribed-time performance is developed. Rigorous Lyapunov stability analysis proves that the proposed controller not only strictly prevents the system output from violating the constraint boundaries throughout the entire operation, but also ensures that the tracking error converges rapidly and smoothly to a small bounded region near the origin within a time that can be independently predetermined by the designer. Finally, the effectiveness and superiority of the proposed control strategy are fully validated through simulations.},
+	language = {en},
+	number = {8},
+	urldate = {2026-10-21},
+	journal = {Symmetry},
+	publisher = {Multidisciplinary Digital Publishing Institute},
+	author = {Wang, Mengjie and Du, Kou and Cai, Ximing and Li, Shuai and Qin, Qian and Zhang, Yayun and Gan, Jinjie and Wang, Lianhua and Zhang, Peiguo and Li, Pengfei and Yao, Jianyong and Yang, Xiaowei},
+	month = aug,
+	year = {2026},
+	keywords = {hydraulic servo systems, prescribed-time control, output constraints, dynamic surface control, time-varying parameters},
+	pages = {1397},
+	file = {Full Text PDF:C\:\\Users\\leejx\\Zotero\\storage\\5GR3NV2T\\Wang 等 - 2026 - Adaptive Prescribed-Time Tracking Control for Output-Constrained Hydraulic Servo Systems with Time-V.pdf:application/pdf},
+}
+
+@article{yang_adaptive_2025,
+	title = {Adaptive {Motion} {Control} for {Electro}-hydraulic {Servo} {Systems} {With} {Appointed}-{Time} {Performance}},
+	volume = {30},
+	issn = {1941-014X},
+	url = {https://ieeexplore.ieee.org/abstract/document/10844928},
+	doi = {10.1109/TMECH.2024.3525013},
+	abstract = {This article focuses on the asymptotic adaptive appointed-time performance control for electro-hydraulic servo systems subject to unknown inconstant linearizable parameters, nonlinear parameters, and disturbances. To overcome this issue, uniting the adaptive control with an appointed-time performance function, an adaptive appointed-time performance controller is developed for electro-hydraulic servo systems, in which unknown inconstant linearizable parameters, nonlinear parameters, and disturbances can be addressed simultaneously. This relieves the assumption that unknown parameters should be constant and linearizable in most of the existing adaptive control results. Moreover, an introduced appointed-time performance function can guarantee that the tracking error is restricted to a prescribed boundary and converges to a preset region within an appointed time without any initial performance restriction. Theoretical analysis reveals that both the asymptotic steady performance and the appointed-time performance of the tracking error could be achieved with this presented method. Comparative experimental results also reveal the merits of this method.},
+	number = {6},
+	urldate = {2026-10-21},
+	journal = {IEEE/ASME Transactions on Mechatronics},
+	author = {Yang, Xiaowei and Ge, Yaowen and Zhu, Weilin and Deng, Wenxiang and Zhao, Xiaoli and Yao, Jianyong},
+	month = dec,
+	year = {2025},
+	keywords = {Uncertainty, Hydraulic systems, Motion control, Servomotors, Output feedback, Adaptive control, Transient analysis, Tracking, 1/f noise, appointed-time performance, electro-hydraulic servo system (EHSS), inconstant parameters and nonlinear parameters, Mechatronics, motion control, Vectors},
+	pages = {7009--7018},
+	annote = {（15）算式滤波器
+\$\${\textbackslash}dot\{{\textbackslash}varepsilon\}\_i = -{\textbackslash}omega\_i{\textbackslash}varepsilon\_i - {\textbackslash}frac\{{\textbackslash}varepsilon\_iL\_i{\textasciicircum}2\}\{L\_i{\textbar}{\textbackslash}varepsilon\_i{\textbar}+{\textbackslash}sigma\} - {\textbackslash}dot\{{\textbackslash}alpha\}\_i.\$\$
+其Lyapunov函数满足
+\$\$
+
+{\textbackslash}begin\{aligned\} {\textbackslash}frac\{d\}\{dt\}{\textbackslash}frac\{{\textbackslash}varepsilon\_i{\textasciicircum}2\}\{2\} \&{\textbackslash}le -{\textbackslash}omega\_i{\textbackslash}varepsilon\_i{\textasciicircum}2 -{\textbackslash}frac\{{\textbackslash}varepsilon\_i{\textasciicircum}2L\_i{\textasciicircum}2\} \{L\_i{\textbar}{\textbackslash}varepsilon\_i{\textbar}+{\textbackslash}sigma\} +L\_i{\textbar}{\textbackslash}varepsilon\_i{\textbar}{\textbackslash}{\textbackslash}{\textbackslash} \&{\textbackslash}le-{\textbackslash}omega\_i{\textbackslash}varepsilon\_i{\textasciicircum}2+{\textbackslash}sigma(t). {\textbackslash}end\{aligned\}\$\$
+滤波器稳定性相当于已经被证明了。
+本文的精髓所在，通过时变参数的均值（上界或者下界均可）加上误差来代替 {\textbackslash}theta，然后可以对时变参数及其估计项进行处理。这种方法在未知参数无论是常数还是时变（快速变化）的都是适用的。
+
+},
+	file = {Full Text PDF:C\:\\Users\\leejx\\Zotero\\storage\\ZCQJG379\\Yang 等 - 2025 - Adaptive Motion Control for Electro-hydraulic Servo Systems With Appointed-Time Performance.pdf:application/pdf},
+}
+
+@article{peng_command_2025,
+	title = {Command filter-based adaptive predefined-time control for nonlinear multi-agent systems under unknown control directions and actuator attacks},
+	volume = {362},
+	issn = {0016-0032},
+	url = {https://www.sciencedirect.com/science/article/pii/S0016003225003485},
+	doi = {10.1016/j.jfranklin.2025.107855},
+	abstract = {This article focuses on the adaptive predefined-time consensus tracking control problem for nonlinear multi-agent systems (MASs) which influenced by unknown control direction and actuator attacks. To cope with the challenges of computational complexity and control singularity, a predefined-time command filter-based control scheme is introduced. The issue of actuator attacks and unknown control gain is effectively handled using the Nussbaum function technique. Additionally, a state observer is designed to estimate unavailable states, while fuzzy logic systems (FLSs) are employed to handle unknown dynamics within the system. The results indicate that by devising a predefined-time adaptive backstepping control strategy based on a command filter, all closed-loop signals are guaranteed to remain bounded, and the tracking errors are ensured to converge to the small neighborhood around zero. Consequently, this approach effectively addresses system uncertainties and external disturbances. At last, the effectiveness of the proposed method is further validated through two sets of simulation examples.},
+	number = {12},
+	urldate = {2026-10-21},
+	journal = {Journal of the Franklin Institute},
+	author = {Peng, Jiguang and Liu, Zhi and Chen, C. L. Philip and Zhang, Yun},
+	month = aug,
+	year = {2025},
+	keywords = {Actuator attacks, Command filter, Nonlinear multi-agent systems (MASs), Predefined-time, State observer},
+	pages = {107855},
+	file = {ScienceDirect Full Text PDF:C\:\\Users\\leejx\\Zotero\\storage\\8WRRX3X2\\Peng 等 - 2025 - Command filter-based adaptive predefined-time control for nonlinear multi-agent systems under unknow.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\leejx\\Zotero\\storage\\KDZEUNK5\\S0016003225003485.html:text/html},
+}
+
+@article{zhang_adaptive_2024,
+	title = {Adaptive practical prescribed-time control for uncertain nonlinear systems with time-varying parameters},
+	volume = {189},
+	issn = {0960-0779},
+	url = {https://www.sciencedirect.com/science/article/pii/S0960077924012293},
+	doi = {10.1016/j.chaos.2024.115677},
+	abstract = {In this paper, adaptive practical prescribed-time (PPT) control is proposed for a class of uncertain nonlinear systems with time-varying parameters and unmodeled dynamics. By constructing a novel time-varying scaling function and utilizing nonlinear mapping, the PPT control is successfully resolved. The dynamical uncertainties resulting from unmodeled dynamics are estimated by employing an auxiliary available signal, and the unknown continuous terms are handled by the aid of radial basis function neural networks (RBFNNs). A novel adaptive control method is developed by introducing the compensating signals and dynamic surface control as well as practical prescribed-time control. All the signals involved are proved to be semi-globally uniformly ultimately bounded, and the tracking error could enter the pre-specified convergence region within a pre-specified time. The robotic manipulator system is used to demonstrate the effectiveness of the proposed control approach.},
+	urldate = {2026-10-21},
+	journal = {Chaos, Solitons \& Fractals},
+	author = {Zhang, Tianping and Zhang, Wei},
+	month = dec,
+	year = {2024},
+	keywords = {Adaptive control, Compensating signals, Dynamic surface control, Practical prescribed time control, Scaling function, Unmodeled dynamics},
+	pages = {115677},
+	file = {ScienceDirect Full Text PDF:C\:\\Users\\leejx\\Zotero\\storage\\A3S4IXYN\\Zhang和Zhang - 2024 - Adaptive practical prescribed-time control for uncertain nonlinear systems with time-varying paramet.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\leejx\\Zotero\\storage\\BD58JMCW\\S0960077924012293.html:text/html},
+}
+
+@article{ding_prescribed-time_2026,
+	title = {Prescribed-{Time} {Control} via {Periodic} {Delayed} {Feedback}-{Based} {Super}-{Twisting} {Sliding} {Mode} {Algorithm}},
+	volume = {71},
+	copyright = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html},
+	issn = {0018-9286, 1558-2523, 2334-3303},
+	url = {https://ieeexplore.ieee.org/document/11195188/},
+	doi = {10.1109/TAC.2025.3618707},
+	abstract = {This article investigates the problem of prescribed-time control via continuous sliding mode control laws. First, within the framework of the periodic delayed feedback approach, two novel super-twisting algorithms are proposed, whose settling times are bounded by a constant independent of the initial conditions and can be arbitrarily prescribed. Next, for a class of high-order uncertain nonlinear systems, a novel disturbance observer and a prescribed-time continuous sliding mode control law are designed based on the ﬁrst super-twisting algorithm. Furthermore, for a class of perturbed double integrator systems, a novel state observer and a prescribed-time continuous sliding mode control law by output feedback are designed based on the second super-twisting algorithm. Unlike the widely used time-varying high-gain feedback approach in the literature, the control laws designed in this article ensure that the system output converges to zero with the settling time being exactly equal to the prescribed time, even in the presence of both matched and mismatched disturbances, while mitigating sensitivity to measurement noise and avoiding the singularity issues caused by inﬁnite gain. Finally, the effectiveness of the proposed approaches is demonstrated through simulations.},
+	language = {en},
+	number = {3},
+	urldate = {2026-10-11},
+	journal = {IEEE Transactions on Automatic Control},
+	author = {Ding, Yi and Zhou, Bin and Shi, Yang},
+	month = mar,
+	year = {2026},
+	pages = {1813--1828},
+	annote = {
+
+
+引言“This article investigates the problem of prescribed-time control via continuous sliding mode control laws. First, within the framework of the periodic delayed feedback approach, two novel super-twisting algorithms are proposed, whose settling times are bounded by a constant independent of the initial conditions and can be arbitrarily prescribed. Next, for a class of high-order uncertain nonlinear systems, a novel disturbance observer and a prescribed-time continuous sliding mode control law are designed based on the first super-twisting algorithm. Furthermore, for a class of perturbed double integrator systems, a novel state observer and a prescribed-time continuous sliding mode control law by output feedback are designed based on the second super-twisting algorithm. Unlike the widely used time-varying high-gain feedback approach in the literature, the control laws designed in this article ensure that the system output converges to zero with the settling time being exactly equal to the prescribed time, even in the presence of both matched and mismatched disturbances, while mitigating sensitivity to measurement noise and avoiding the singularity issues caused by infinite gain. Finally, the effectiveness of the proposed approaches is demonstrated through simulations.” (Ding 等, 2026, p. 1813)
+
+
+本文解决的问题传统STA的调节时间不能任意小，通过线性项改善的STA不可能将调节时间改变到任意值，且调节时间与初值有关。通过提出基于PDF时滞框架的STA算法是调节时间与初值无关，基于上面的STA构造的干扰观测器可以实现观测误差在任意时间趋近到0.
+如何实现上述的优势
+
+
+
+
+
+
+},
+	file = {PDF:C\:\\Users\\leejx\\Zotero\\storage\\MKEKXJK7\\Ding 等 - 2026 - Prescribed-Time Control via Periodic Delayed Feedback-Based Super-Twisting Sliding Mode Algorithm.pdf:application/pdf},
+}
+
+@article{moreno_strict_2012,
+	title = {Strict {Lyapunov} {Functions} for the {Super}-{Twisting} {Algorithm}},
+	volume = {57},
+	issn = {1558-2523},
+	url = {https://ieeexplore.ieee.org/abstract/document/6144710},
+	doi = {10.1109/TAC.2012.2186179},
+	abstract = {A method to construct a family of strict Lyapunov functions, i.e., with negative definite derivative, for the super-twisting algorithm, without or with perturbations, is provided. This second order sliding modes algorithm is widely used to design controllers, observers and exact differentiators. The proposed Lyapunov functions ascertain finite time convergence, provide an estimate of the convergence time, and ensure the robustness of the finite-time or ultimate boundedness for a class of perturbations wider than the classical ones for this algorithm. Since the Lyapunov functions and their derivatives are quadratic forms, the operation with them is as simple as for linear time invariant systems.},
+	number = {4},
+	urldate = {2026-10-11},
+	journal = {IEEE Transactions on Automatic Control},
+	author = {Moreno, Jaime A. and Osorio, Marisol},
+	month = apr,
+	year = {2012},
+	keywords = {Convergence, Discontinuous systems, Lyapunov functions, Lyapunov methods, Observers, robust observers, Robustness, second order sliding modes (SOSM), Symmetric matrices, Trajectory},
+	pages = {1035--1040},
+	file = {Full Text PDF:C\:\\Users\\leejx\\Zotero\\storage\\XDLZQ7EJ\\Moreno和Osorio - 2012 - Strict Lyapunov Functions for the Super-Twisting Algorithm.pdf:application/pdf},
+}
+
+@misc{ye_prescribed-time_2022,
+	title = {Prescribed-{Time} {Control} and {Its} {Latest} {Developments}},
+	url = {http://arxiv.org/abs/2210.12712},
+	doi = {10.48550/arXiv.2210.12712},
+	abstract = {Prescribed-time (PT) control, originated from {\textbackslash}textit\{Song et al.\}, has gained increasing attention among control community. The salient feature of PT control lies in its ability to achieve system stability within a finite settling time user-assignable in advance irrespective of initial conditions. It is such a unique feature that has enticed many follow-up studies on this technically important area, motivating numerous research advancements. In this article, we provide a comprehensive survey on the recent developments in PT control. Through a concise introduction to the concept of PT control, and a unique taxonomy covering: 1) from robust PT control to adaptive PT control; 2) from PT control for single-input-single-output (SISO) systems to multi-input-multi-output (MIMO) systems; and 3) from PT control for single systems to multi-agent systems, we present an accessible review of this interesting topic. We highlight key techniques, fundamental assumptions adopted in various developments as well as some new design ideas. We also discuss several possibles future research directions towards PT control.},
+	urldate = {2026-10-11},
+	publisher = {arXiv},
+	author = {Ye, Hefu and Song, Yongduan and Lewis, Frank L.},
+	month = oct,
+	year = {2022},
+	note = {arXiv:2210.12712 [eess.SY]},
+	keywords = {Electrical Engineering and Systems Science - Systems and Control},
+	file = {deepseek-dual:C\:\\Users\\leejx\\Zotero\\storage\\BQXZC8N5\\Ye 等 - 2022 - Prescribed-Time Control and Its Latest Developments.no_watermark.zh-CN.dual.pdf:application/pdf;deepseek-dual:C\:\\Users\\leejx\\Zotero\\storage\\YYDHZLBC\\Ye 等 - 2022 - Prescribed-Time Control and Its Latest Developments.no_watermark.zh-CN.dual.pdf:application/pdf;deepseek-mono:C\:\\Users\\leejx\\Zotero\\storage\\WBI4YNM2\\Ye 等 - 2022 - Prescribed-Time Control and Its Latest Developments.no_watermark.zh-CN.mono.pdf:application/pdf;deepseek-mono:C\:\\Users\\leejx\\Zotero\\storage\\24U69KTW\\Ye 等 - 2022 - Prescribed-Time Control and Its Latest Developments.no_watermark.zh-CN.mono.pdf:application/pdf;Full Text PDF:C\:\\Users\\leejx\\Zotero\\storage\\NP39U73W\\Ye 等 - 2022 - Prescribed-Time Control and Its Latest Developments.pdf:application/pdf;Snapshot:C\:\\Users\\leejx\\Zotero\\storage\\4M7TX34C\\2210.html:text/html},
+}
+
+@article{gonzalez_variable_2012,
+	title = {Variable {Gain} {Super}-{Twisting} {Sliding} {Mode} {Control}},
+	volume = {57},
+	issn = {1558-2523},
+	url = {https://ieeexplore.ieee.org/document/6104366/},
+	doi = {10.1109/TAC.2011.2179878},
+	abstract = {In this note, a novel, Lyapunov-based, variable-gain super-twisting algorithm (STA) is proposed. It ensures for linear time invariant systems the global, finite-time convergence to the desired sliding surface, when the matched perturbations/uncertainties are Lipschitz-continuous functions of time, that are bounded, together with their derivatives, by known functions. The proposed algorithm has similar properties to the variable-gain first-order sliding mode control, but it provides alleviation to the chattering phenomenon. The results are verified experimentally.},
+	number = {8},
+	urldate = {2026-10-13},
+	journal = {IEEE Transactions on Automatic Control},
+	author = {Gonzalez, Tenoch and Moreno, Jaime A. and Fridman, Leonid},
+	month = aug,
+	year = {2012},
+	keywords = {Convergence, Lyapunov functions, Lyapunov methods, Robustness, Chattering effect, Differential equations, discontinuous systems, Gain, robust control, second-order sliding modes, Sliding mode control, Uncertainty},
+	pages = {2100--2105},
+	annote = {时变STA滑膜控制
+引言
+“Abstract—In this note, a novel, Lyapunov-based, variable-gain super-twisting algorithm (STA) is proposed. It ensures for linear time invariant systems the global, finite-time convergence to the desired sliding surface, when the matched perturbations/uncertainties are Lipschitz-continuous functions of time, that are bounded, together with their derivatives, by known functions. The proposed algorithm has similar properties to the variable-gain first-order sliding mode control, but it provides alleviation to the chattering phenomenon. The results are verified experimentally.” (Gonzalez 等, 2012, p. 2100)
+本文的贡献
+提出了一种改进的STA算法，可以进一步降低扰动对系统的干扰，，系统控制形式
+The VGSTA proposed here is given by
+\$\${\textbackslash}dot\{{\textbackslash}eta\} = (A\_\{11\} + A\_\{12\}K){\textbackslash}eta + A\_\{12\}s,\$\$
+\$\${\textbackslash}dot\{s\} = v + {\textbackslash}tilde\{f\}({\textbackslash}eta, s + K{\textbackslash}eta, t).\$\$
+\$\$v = -k\_1(t,x){\textbackslash}phi\_1(s) - {\textbackslash}int\_\{0\}{\textasciicircum}\{t\} k\_2(t,x){\textbackslash}phi\_2(s)dt\$\$
+where
+\$\${\textbackslash}begin\{aligned\}
+{\textbackslash}phi\_1(s) \&= {\textbar}s{\textbar}{\textasciicircum}\{1/2\}{\textbackslash}mathrm\{sign\}(s) + k\_3 s,{\textbackslash}quad k\_3 {\textgreater} 0 {\textbackslash}{\textbackslash}
+{\textbackslash}phi\_2(s) \&= {\textbackslash}phi\_1'(s){\textbackslash}phi\_1(s) {\textbackslash}{\textbackslash}
+\&= {\textbackslash}frac\{1\}\{2\}{\textbackslash}mathrm\{sign\}(s) + {\textbackslash}frac\{3\}\{2\}k\_3 {\textbar}s{\textbar}{\textasciicircum}\{1/2\}{\textbackslash}mathrm\{sign\}(s) + k\_3{\textasciicircum}2 s.
+{\textbackslash}end\{aligned\}\$\$
+criterion \${\textbackslash}dot\{V\}({\textbackslash}eta) {\textbackslash}leq -{\textbackslash}sigma\_1 V{\textasciicircum}\{1/2\}({\textbackslash}eta) - {\textbackslash}sigma\_2 V({\textbackslash}eta).\$ The corresponding settling time can be estimated as
+\$\$T(x\_0) = {\textbackslash}frac\{2\}\{{\textbackslash}sigma\_2\}{\textbackslash}ln{\textbackslash}left( {\textbackslash}frac\{{\textbackslash}sigma\_2\}\{{\textbackslash}sigma\_1\} V{\textasciicircum}\{1/2\}({\textbackslash}eta(0)) + 1 {\textbackslash}right). \$\$
+实现了对收敛时间的估计，可以发现，收敛时间相比传统STA可以达到收敛时间任意小，但是还是与初值有关。在新的研究中已经解决此类问题。
+在本文中需要重点掌握其稳定性证明方法，通过构造PD矩阵（文中为P）定义李雅普诺夫函数，对其求导得到\${\textbackslash} -Q = A{\textasciicircum}T P + PA\$ ,于是证明采用二次型的性质可以利用特征值证明渐进稳定。
+},
+	file = {Full Text PDF:C\:\\Users\\leejx\\Zotero\\storage\\ASXD8F6H\\Gonzalez 等 - 2012 - Variable Gain Super-Twisting Sliding Mode Control.pdf:application/pdf},
+}
+
+@article{chen_practical_2025,
+	title = {Practical {Finite}-{Time} {Observer}-{Based} {Adaptive} {Backstepping} {Super}-{Twisting} {Sliding} {Mode} {Control} for {Deep}-{Sea} {Hydraulic} {Manipulator}},
+	volume = {72},
+	issn = {1557-9948},
+	url = {https://ieeexplore.ieee.org/document/10904031},
+	doi = {10.1109/TIE.2025.3541284},
+	abstract = {Parameter uncertainties and unknown disturbances always exist in the trajectory tracking control of a deep-sea hydraulic manipulators (DHMs), significantly reducing tracking accuracy. To address these issues, a practical finite-time observer-based adaptive backstepping super-twisting sliding mode control method (PFTO-ABSTC) is proposed for precise DHM tracking control. First, a projection-type adaptive law is constructed to handle the parameter uncertainties. In addition, Levant’s Differentiator is employed to obtain velocity of the DHM and construct the adaptive law regression vector, minimizing system noise from differentiation and filtering operations. Second, a practical finite-time observer (PFTO) strategy is proposed to estimates lump disturbances and compensates them in the controller, avoiding high-gain phenomenon of the controller effectively. Then, the PFTO-ABSTC controller is proposed by integrating the backstepping technique, which chattering-free property can be achieved. In addition, the uncertainties and disturbances of the DHM dynamics are well addressed in the closed-loop system, and asymptotic tracking performance can be guaranteed by Lyapunov theory. Finally, comparative experimental results validate the effectiveness of the proposed control strategy. Experimental results show that the proposed method can achieve smaller control errors and better control performance than the ESO-ABSTC, ABSTC, and PID control methods, and the maximum control errors are improved by at least 41.30\%, 50.76\%, and 66.67\%, respectively.},
+	number = {9},
+	urldate = {2026-10-13},
+	journal = {IEEE Transactions on Industrial Electronics},
+	author = {Chen, Gang and Wu, Wei and Yang, Chenguang and Hu, Huosheng and Zhang, Jingjing and Shi, Jianwei and Wu, Chuanyu and Ma, Yu},
+	month = sep,
+	year = {2025},
+	keywords = {Observers, Symmetric matrices, Sliding mode control, Uncertainty, Backstepping technique, deep-sea hydraulic manipulator (DHM), Electronic mail, finite-time observer, Manipulator dynamics, Mechanical engineering, Motion control, nonlinear systems, Servomotors, sliding mode control},
+	pages = {9569--9579},
+	file = {Full Text PDF:C\:\\Users\\leejx\\Zotero\\storage\\84EGL6QC\\Chen 等 - 2025 - Practical Finite-Time Observer-Based Adaptive Backstepping Super-Twisting Sliding Mode Control for D.pdf:application/pdf},
+}
+
+@article{wang_modified_2026,
+	title = {A {Modified} {Super}-{Twisting} {Sliding} {Mode} {Control} for {Aircraft} {Braking} {System} {With} {Adaptive} {Gain} {Schedule} and {Disturbance} {Compensation}},
+	volume = {73},
+	issn = {1557-9948},
+	url = {https://ieeexplore.ieee.org/document/11230881},
+	doi = {10.1109/TIE.2025.3613654},
+	abstract = {To overcome the adverse effects of time-varying parametric uncertainties and strong disturbances in aircraft antiskid braking systems (ABS), achieving efficient antiskid braking control and shortening the braking distance. This article proposes a modified super-twisting sliding mode control (MSSMC)-based aircraft ABS controller with gain adaptive schedule and disturbance compensation. In this article, MSSMC is obtained by substituting the discontinuous term in the conventional super-twisting sliding mode control (SSMC) with a continuous fractional power term, which can alleviate the chattering and improve the tracking performance. The developed controller is derived by effectively integrating MSSMC, extended state observer (ESO) and gain adaptive techniques, preserving the advantages of these approaches while effectively overcoming their practical performance limitations. The time-varying disturbances and unmodeled dynamics in aircraft ABS are estimated by ESO and compensated in a feedforward way, which significantly decreases the residual uncertainties handled by the MSSMC, thus alleviating the burden on the MSSMC and avoiding the high-gain feedback. In addition, a novel gain adaptive protocol for MSSMC is proposed, which can minimize the control gain and the chattering amplitude without the prerequisite of uncertain upper boundary required for conventional SSMC. Theoretical analysis based on the Lyapunov approach shows that the designed ABS controller ensures that the sliding variable converges to the desired accuracy near the origin in a finite time. Comparative experimental results demonstrate the effectiveness of the proposed approach.},
+	number = {3},
+	urldate = {2026-10-13},
+	journal = {IEEE Transactions on Industrial Electronics},
+	author = {Wang, Zhuangzhuang and Liu, Xiaochao and Sun, Xuefeng and Qi, Pengyuan and Wu, Shuai},
+	month = mar,
+	year = {2026},
+	keywords = {Uncertainty, Friction, Aerodynamics, Aerospace control, Aircraft, Aircraft antiskid braking system, Atmospheric modeling, Brakes, extended state observer, gain adaptive, Lead, modified super-twisting sliding mode control, slip ratio, Torque, Wheels},
+	pages = {4308--4318},
+	file = {Full Text PDF:C\:\\Users\\leejx\\Zotero\\storage\\YGZ52Z2K\\Wang 等 - 2026 - A Modified Super-Twisting Sliding Mode Control for Aircraft Braking System With Adaptive Gain Schedu.pdf:application/pdf},
+}
+
+@article{ding_strong_2024,
+	title = {Strong {Prescribed}-{Time} {Stabilization} of {Uncertain} {Nonlinear} {Systems} by {Periodic} {Delayed} {Feedback}},
+	volume = {69},
+	issn = {1558-2523},
+	url = {https://ieeexplore.ieee.org/document/10375772},
+	doi = {10.1109/TAC.2023.3347703},
+	abstract = {In this article, a novel Lyapunov-based approach for strong prescribed-time stabilization by periodic delayed feedback is established. Since the comparison lemma cannot be directly applied to time-delay systems, their proofs rely on trajectory analysis. Based on this approach, a novel control law for strong prescribed-time stabilization of uncertain scalar nonlinear systems is obtained, with the following appealing properties: singularity problems inherent to time-varying high gain approaches are avoided; strong prescribed-time stabilization is achieved with control terms exhibiting a linear growth rate in the combined current and delayed state variable; the achieved fixed-time stability is preserved under classes of additive perturbations; and the setting time of the closed-loop system equals the prescribed value for some admissible uncertainties. Subsequently, using the backstepping procedure, a strongly prescribed-time stabilizing control law for strict feedback uncertain nonlinear systems is designed. Numerical simulations are shown to verify the effectiveness of the proposed approaches.},
+	number = {6},
+	urldate = {2026-10-15},
+	journal = {IEEE Transactions on Automatic Control},
+	author = {Ding, Yi and Zhou, Bin and Zhang, Kang-Kang and Michiels, Wim},
+	month = jun,
+	year = {2024},
+	keywords = {Lyapunov methods, Uncertainty, Asymptotic stability, Delay effects, High-order nonlinear systems, Nonlinear systems, Numerical stability, periodic delayed feedback (PDF), prescribed-time stabilization, Stability criteria, strong prescribed-time stabilization},
+	pages = {4072--4079},
+	file = {Full Text PDF:C\:\\Users\\leejx\\Zotero\\storage\\ZZGIMXB3\\Ding 等 - 2024 - Strong Prescribed-Time Stabilization of Uncertain Nonlinear Systems by Periodic Delayed Feedback.pdf:application/pdf},
+}
+
+@article{zhou_prescribed_2024,
+	title = {Prescribed time control based on the periodic delayed sliding mode surface without singularities},
+	volume = {67},
+	issn = {1674-733X},
+	url = {https://hit.globalimpact.cn/en/publications/prescribed-time-control-based-on-the-periodic-delayed-sliding-mod/},
+	doi = {10.1007/s11432-023-4052-4},
+	language = {English},
+	number = {7},
+	urldate = {2026-10-15},
+	journal = {Science China Information Sciences},
+	publisher = {Science China Press},
+	author = {Zhou, Bin and Ding, Yi and Zhang, Kang Kang and Duan, Guang Ren},
+	month = jul,
+	year = {2024},
+	pages = {172204},
+	file = {Snapshot:C\:\\Users\\leejx\\Zotero\\storage\\F2PXEA5I\\prescribed-time-control-based-on-the-periodic-delayed-sliding-mod.html:text/html},
+}

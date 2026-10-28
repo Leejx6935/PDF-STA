@@ -1,0 +1,326 @@
+{
+  "task": "T013_STA_conditions",
+  "date": "2026-10-27",
+  "status": "pending_review",
+  "note": "所有结论待审核。仅使用本地标准质量 MinerU 解析；未使用 flash 解析结果，未远程上传，未重启或修改配置。三篇均为全文覆盖，无截断补读。",
+  "method": {
+    "find_document": "三篇均无缓存命中，返回 total=0",
+    "parse": "parse_pdf, tier=standard, 本地",
+    "wang_timeout": "首次 parse_pdf 等待 60 s 超时（status=parsing）；两次 parse_status 查询后为 done，但 Markdown 未写入；再次 parse_pdf 命中缓存（cache_hit=true）并写出文件。未超过两次状态查询。",
+    "read": "Read 工具读取 Markdown 全文；三篇页标记连续、无缺失"
+  },
+  "papers": [
+    {
+      "id": "A",
+      "zotero_key": "JPJUFKHN",
+      "doi": "10.1109/TAC.2011.2179878",
+      "title": "Variable Gain Super-Twisting Sliding Mode Control",
+      "authors": ["Tenoch Gonzalez", "Jaime A. Moreno", "Leonid Fridman"],
+      "venue": "IEEE Transactions on Automatic Control, vol. 57, no. 8, pp. 2100-2105, Aug. 2012",
+      "pdf_path": "C:\\Users\\leejx\\Zotero\\storage\\ASXD8F6H\\Gonzalez 等 - 2012 - Variable Gain Super-Twisting Sliding Mode Control.pdf",
+      "markdown_path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\sources\\parsed\\Gonzalez2012_STA.md",
+      "parse": {
+        "tier": "standard",
+        "short_id": "dfcb011",
+        "page_range": "1-6",
+        "cache_hit": false
+      },
+      "doc_locator": "doc:dfcb011",
+      "pages_covered": {
+        "pdf": "1-6 of 6",
+        "journal": "2100-2105",
+        "complete": true,
+        "evidence": "页脚页码 2100…2105 连续；末页参考文献止于 [21]"
+      },
+      "future_work": {
+        "explicit": false,
+        "section": null,
+        "label": "未列",
+        "evidence": "Conclusion 仅总结贡献与实验，无未来工作语句",
+        "locator": "doc:dfcb011/tier:standard/page:6 (p.2105, Conclusion)"
+      },
+      "convergence": {
+        "to_zero": ["s", "z"],
+        "to_neighborhood": [],
+        "time_formula": "T = (2/gamma_2) * ln((gamma_2/gamma_1) * V^{1/2}(s0,z0) + 1), eq.(15)",
+        "time_depends_on": ["V(s0,z0)", "gamma_1", "gamma_2", "P(beta,epsilon)", "k3", "k1(t,x),k2(t,x) via rho1,rho2"],
+        "note": "eta 无到达时间；s=0 流形上按 A11+A12K 指数衰减"
+      },
+      "conditions": {
+        "plant": "LTI xdot = A x + B (u + f), rank B = m, (A,B) controllable",
+        "input": "single input, control coefficient normalized to 1; b(t) >= b_m handled by constant b_m (not identified)",
+        "disturbance": "f and its gradient bounded a.e. by known continuous functions (A3); decomposition f = g1 + g2 with g1(eta,0,t)=0; |g1| <= rho1(t,x)|phi1(s)|; |dg2/dt| <= rho2(t,x)|phi2(s)|; rho1,rho2 known",
+        "excluded_class": "merely measurable bounded perturbations (7) are not covered",
+        "initial_condition": "arbitrary (global claim)",
+        "gain_nature": "feedforward evaluation of known bounds rho1(t,x), rho2(t,x); no parameter estimation or learning"
+      },
+      "evidence": [
+        {
+          "claim": "assumptions A1-A3 and regular form",
+          "locator": "doc:dfcb011/tier:standard/page:2 (eq.1-2)"
+        },
+        {
+          "claim": "VGSTA structure and phi1/phi2",
+          "locator": "doc:dfcb011/tier:standard/page:3 (eq.9)"
+        },
+        {
+          "claim": "supported perturbation class (11)",
+          "locator": "doc:dfcb011/tier:standard/page:3 (eq.10-11)"
+        },
+        {
+          "claim": "Theorem 1 gains (14) and reaching time (15)",
+          "locator": "doc:dfcb011/tier:standard/page:3 (Theorem 1)"
+        },
+        {
+          "claim": "Lyapunov proof, gamma1/gamma2 in (19)",
+          "locator": "doc:dfcb011/tier:standard/page:4 (eq.16-19)"
+        },
+        {
+          "claim": "experimental gains k3=8, delta=0.001, beta=7, epsilon=0.11",
+          "locator": "doc:dfcb011/tier:standard/page:5"
+        },
+        {
+          "claim": "no Future Work; Conclusion only",
+          "locator": "doc:dfcb011/tier:standard/page:6"
+        }
+      ],
+      "unverified_formulas": [
+        {
+          "formula": "eq.(14) k1(t,x)",
+          "issue": "解析文本在 [2*epsilon*rho1 + rho2]^2 后出现未定义符号 a，疑为 alpha 或排版误植；无法从文中确认",
+          "locator": "doc:dfcb011/tier:standard/page:3"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "zotero_key": "Y5GKV8EY",
+      "doi": "10.1109/TAC.2012.2186179",
+      "title": "Strict Lyapunov Functions for the Super-Twisting Algorithm",
+      "authors": ["Jaime A. Moreno", "Marisol Osorio"],
+      "venue": "IEEE Transactions on Automatic Control, vol. 57, no. 4, pp. 1035-1040, Apr. 2012",
+      "pdf_path": "C:\\Users\\leejx\\Zotero\\storage\\XDLZQ7EJ\\Moreno和Osorio - 2012 - Strict Lyapunov Functions for the Super-Twisting Algorithm.pdf",
+      "markdown_path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\sources\\parsed\\Moreno2012_STA.md",
+      "parse": {
+        "tier": "standard",
+        "short_id": "2fd37f2",
+        "page_range": "1-6",
+        "cache_hit": false
+      },
+      "doc_locator": "doc:2fd37f2",
+      "pages_covered": {
+        "pdf": "1-6 of 6",
+        "journal": "1035-1040",
+        "complete": true,
+        "evidence": "页脚页码 1035…1040 连续；参考文献 [1]-[18] 完整，末页转入下一篇论文"
+      },
+      "future_work": {
+        "explicit": false,
+        "section": null,
+        "label": "未列",
+        "evidence": "Conclusion 仅提到可利用 Lyapunov 函数族自由度优化到达时间估计、按给定时间设计增益，属展望性语句，未列为未来工作",
+        "locator": "doc:2fd37f2/tier:standard/page:3 (p.1037, Conclusion)"
+      },
+      "convergence": {
+        "to_zero": ["x1", "x2 (Thm 1, Thm 2, and Thm 3 with delta1=0)"],
+        "to_neighborhood": ["x (Thm 3 with delta1>0, ultimate bound b, eq.14)"],
+        "time_formula": "T = 2 V^{1/2}(x0)/sigma, eq.(6); Ttilde = 2 V^{1/2}(x0)/sigmahat, eq.(15)",
+        "time_depends_on": ["V(x0)", "lambda_min(P)", "lambda_max(P)", "lambda_min(Q) or lambda_min(Q_R)", "delta2 (eq.15)", "gains k1,k2"],
+        "note": "delta1 != 0 时只有最终有界，不到零；示例 t=5s 出现 phi(t) 后误差不再为零"
+      },
+      "conditions": {
+        "disturbance": "Thm 2: rho1=0, |rho2| <= L constant; Thm 3: |rho1| <= delta1 + delta2*sqrt(|x1|+x2^2), |rho2| <= L",
+        "gain_design": "Algorithm 1 requires known L; k1 = varkappa*sqrt(2*gamma/((1-beta)*alpha))*sqrt(L), k2 = (beta+1)/(1-beta)*L (eq.11)",
+        "regularity": "rho1 measurable bounded, no differentiability required; Filippov solutions; V continuous but not locally Lipschitz (Zubov theorem, Bihari inequality)",
+        "initial_condition": "arbitrary (global claim)",
+        "gain_nature": "constant gains computed from a known constant bound L; no adaptation, no learning"
+      },
+      "evidence": [
+        {
+          "claim": "STA model (1) and classical perturbation class (7)",
+          "locator": "doc:2fd37f2/tier:standard/page:1-2"
+        },
+        {
+          "claim": "Theorem 1 equivalence and time (6)",
+          "locator": "doc:2fd37f2/tier:standard/page:2"
+        },
+        {
+          "claim": "Theorem 2, Algorithm 1, gains (11), P/Q_R (12)",
+          "locator": "doc:2fd37f2/tier:standard/page:2-3"
+        },
+        {
+          "claim": "Theorem 3, perturbation class (13), ultimate bound (14), time (15)",
+          "locator": "doc:2fd37f2/tier:standard/page:3"
+        },
+        {
+          "claim": "Van der Pol example: phi(t) at 5 s -> ultimately bounded",
+          "locator": "doc:2fd37f2/tier:standard/page:3"
+        },
+        {
+          "claim": "no Future Work; Conclusion only",
+          "locator": "doc:2fd37f2/tier:standard/page:3"
+        }
+      ],
+      "unverified_formulas": [
+        {
+          "formula": "eq.(14) ultimate bound b",
+          "issue": "kappa 仅要求 0<kappa<1，未给选取规则；b 的数值依赖 kappa，无法唯一复算",
+          "locator": "doc:2fd37f2/tier:standard/page:3"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "zotero_key": "JHU5WMJN",
+      "doi": "10.1109/TIE.2025.3613654",
+      "title": "A Modified Super-Twisting Sliding Mode Control for Aircraft Braking System With Adaptive Gain Schedule and Disturbance Compensation",
+      "authors": ["Zhuangzhuang Wang", "Xiaochao Liu", "Xuefeng Sun", "Pengyuan Qi", "Shuai Wu"],
+      "venue": "IEEE Transactions on Industrial Electronics, vol. 73, no. 3, pp. 4308-4318, Mar. 2026",
+      "pdf_path": "C:\\Users\\leejx\\Zotero\\storage\\YGZ52Z2K\\Wang 等 - 2026 - A Modified Super-Twisting Sliding Mode Control for Aircraft Braking System With Adaptive Gain Schedu.pdf",
+      "markdown_path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\sources\\parsed\\Wang2026_braking_STA.md",
+      "parse": {
+        "tier": "standard",
+        "short_id": "c4db5fe",
+        "page_range": "1-11",
+        "cache_hit": true,
+        "note": "首次解析超时，缓存完成后再次调用写出文件"
+      },
+      "doc_locator": "doc:c4db5fe",
+      "pages_covered": {
+        "pdf": "1-11 of 11",
+        "journal": "4308-4318",
+        "complete": true,
+        "evidence": "页脚页码 4308…4318 连续；正文、参考文献、作者简介齐全"
+      },
+      "future_work": {
+        "explicit": true,
+        "section": "V. CONCLUSION",
+        "label": "已明确列出",
+        "quote": "The limitation ... is that the increase rate of the control gain cannot be adaptively varied according to the change of the disturbance boundary since alpha in (33) and (34) is a constant ... Future work will focus on introducing online parameter adaptation to enhance the performance of the controller in dealing with parameter uncertainties of different types of aircraft braking systems. In addition, the proposed control method will be tested on a small unmanned aerial vehicle in the future.",
+        "locator": "doc:c4db5fe/tier:standard/page:10 (p.4317, Conclusion)"
+      },
+      "convergence": {
+        "to_zero": [],
+        "to_neighborhood": ["sigma (i.e. x1), finite time into |x1| < epsilon", "ESO error bounded by sqrt(varsigma/varpi_e), not zero"],
+        "time_formula": "T(x) <= 2 V^{1/2}(x)/varpi^{1/2}, eq.(51)",
+        "time_depends_on": ["V(x0)", "varpi (eq.49)", "zeta1, zeta2", "lambda_max(R)", "X1", "epsilon", "alpha", "Delta"],
+        "note": "摘要即写明 desired accuracy near the origin；定理2 为 vicinity of the origin；无任何量被证明到零"
+      },
+      "conditions": {
+        "disturbance": "Assumption 1: |f| <= eta_d, |fdot| <= varsigma_m; ESO assumes H(t) < varsigma_m; Remark 4 gives |d(fhat)/dt| < Delta; Theorem 2 states d(t) < Delta (absolute value omitted)",
+        "input_gain": "control channel coefficient r*kb/(J*Vp) uses constant kb; kb variation appears only in experimental disturbance list",
+        "external_modules": "optimal slip ratio lambda_o from runway identification [3]; tire-road friction Ff from SMO [5]; neither is part of this paper",
+        "sliding_surface": "sigma = e_lambda + integral_0^t e_lambda dtau, eq.(26)",
+        "adaptation_nature": "eq.(33)-(34): k1dot = alpha/(|psi|+epsilon), k2dot = alpha/(2|x1|^theta1) when |x1|>epsilon; decay -k1, -k2 otherwise. Gains are adapted; no physical parameter is identified",
+        "initial_condition": "experiment k10=40, k20=30; no global-initial-condition claim"
+      },
+      "evidence": [
+        {
+          "claim": "abstract: converges to the desired accuracy near the origin in finite time",
+          "locator": "doc:c4db5fe/tier:standard/page:1"
+        },
+        {
+          "claim": "plant model, brake torque/Pb relation (10), lambda dynamics (12)-(14)",
+          "locator": "doc:c4db5fe/tier:standard/page:2-4"
+        },
+        {
+          "claim": "Assumption 1 (15)",
+          "locator": "doc:c4db5fe/tier:standard/page:4"
+        },
+        {
+          "claim": "linear ESO (17) and bound (25); Theorem 1 wording",
+          "locator": "doc:c4db5fe/tier:standard/page:4-5"
+        },
+        {
+          "claim": "MSSMC (29)-(31), gain laws (33)-(35), Theorem 2 proof start",
+          "locator": "doc:c4db5fe/tier:standard/page:6"
+        },
+        {
+          "claim": "Case 2 admits Vdot may be positive, overall stability not guaranteed",
+          "locator": "doc:c4db5fe/tier:standard/page:7"
+        },
+        {
+          "claim": "experimental parameters alpha=0.5, epsilon=0.013, theta1=0.6, theta2=0.4",
+          "locator": "doc:c4db5fe/tier:standard/page:8"
+        },
+        {
+          "claim": "Table I performance indices Me/Re",
+          "locator": "doc:c4db5fe/tier:standard/page:5"
+        },
+        {
+          "claim": "explicit Future Work",
+          "locator": "doc:c4db5fe/tier:standard/page:10"
+        }
+      ],
+      "unverified_formulas": [
+        {
+          "formula": "eq.(44) vs (42)",
+          "issue": "zeta1, zeta2 的定义与 (44) 中的配对互换：定义 zeta1 = k1*theta1/beta^2 - 2*alpha - gamma*k1*Delta（对应 |x1|^theta1 系数），zeta2 = k1*theta1*2/sqrt(beta) - 2*Delta（对应 |psi| 系数），但 (44) 写成 -zeta1|psi| - zeta2|x1|^theta1",
+          "locator": "doc:c4db5fe/tier:standard/page:7"
+        },
+        {
+          "formula": "eq.(41)-(42)",
+          "issue": "代数不能逐行复现：出现两个 gamma*alpha*|x1|^theta1 项，且 gamma*k1*Delta*|x1|^theta1 的来源未说明",
+          "locator": "doc:c4db5fe/tier:standard/page:7"
+        },
+        {
+          "formula": "eq.(43), (45)",
+          "issue": "量纲不一致：2*theta1/(epsilon*beta*sqrt(beta)) < k2 与 k1 > max(2*alpha/(theta1/beta^2 - gamma*Delta), Delta*sqrt(beta)/theta1) 中 beta 未在证明里声明（Beckenbach 常数），且与 Moreno 文中的 beta 含义不同",
+          "locator": "doc:c4db5fe/tier:standard/page:7"
+        },
+        {
+          "formula": "Theorem 2 hypothesis",
+          "issue": "写作 d(t) < Delta，缺绝对值；与前述 |d(t)| 有界不一致",
+          "locator": "doc:c4db5fe/tier:standard/page:6"
+        },
+        {
+          "formula": "Theorem 1 wording",
+          "issue": "称 observer asymptotically stable，但 (25) 给出的是与 varsigma_m 成正比的最终界；H(t) != 0 时误差不到零",
+          "locator": "doc:c4db5fe/tier:standard/page:5"
+        },
+        {
+          "formula": "numbering",
+          "issue": "两个 Remark 4；解析中 (38)(42)(50) 标签显示为 3/1 等错位，属排版/OCR 层面，不影响结论定位",
+          "locator": "doc:c4db5fe/tier:standard/page:6-7"
+        }
+      ]
+    }
+  ],
+  "cross_checks": [
+    {
+      "question": "Wang 2026 是否只保证滑模变量有限时间进入指定精度？",
+      "answer": true,
+      "basis": "摘要 desired accuracy；定理2 vicinity of the origin；式(51) 后 |x1|<epsilon"
+    },
+    {
+      "question": "Wang 2026 是否包含物理参数辨识？",
+      "answer": false,
+      "basis": "式(33)(34) 只调 k1,k2；ESO 估集总 f；lambda_o 与 Ff 均引自外部文献；无 Mp,kb,mu,J 的辨识模型或持续激励条件"
+    },
+    {
+      "question": "Gonzalez 的变增益是否等于学习真实参数或未知界？",
+      "answer": false,
+      "basis": "k1(t,x),k2(t,x) 是式(14) 对已知 rho1(t,x),rho2(t,x) 的代入；界未知时定理不适用"
+    },
+    {
+      "question": "Moreno 的 L 是否可为未知？",
+      "answer": false,
+      "basis": "Algorithm 1 式(11) 显含 sqrt(L) 与 L"
+    },
+    {
+      "question": "三篇是否覆盖输入增益不确定性？",
+      "answer": false,
+      "basis": "A 归一化为已知 bm；B 无输入增益项；C 控制通道用常值 kb"
+    },
+    {
+      "question": "三篇是否分析执行器饱和与离散实现？",
+      "answer": false,
+      "basis": "三篇均为连续时间理论，无饱和/抗饱和与采样分析"
+    }
+  ],
+  "limitations": [
+    "三篇均为全文正常解析，未出现截断或需 read_document 补读的情况",
+    "Wang 首次解析超时属工具等待超时，不是解析失败；缓存结果已写出",
+    "公式层面的疑点基于解析文本，未逐字对照出版商 PDF 排版；涉及式(14)(41)-(45) 的结论应在写作前复核原版"
+  ]
+}

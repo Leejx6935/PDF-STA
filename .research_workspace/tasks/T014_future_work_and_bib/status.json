@@ -1,0 +1,24 @@
+{
+  "task_id": "T014_future_work_and_bib",
+  "status": "pending_review",
+  "run_directory": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\runs\\T014_future_work_and_bib_20261027_144430",
+  "engine": "C:\\Users\\leejx\\.vscode\\extensions\\anthropic.claude-code-2.1.301-win32-x64\\resources\\native-binary\\claude.exe",
+  "prompt_sha256": "41c7d1b2920a00582e660af06928a87def5fa38ad345f2b85518c04bccfc6bcd",
+  "started_at_host_time": "20261027_144430",
+  "date_context": "2026-10-27 Asia/Shanghai",
+  "approved": false,
+  "exit_code": 0,
+  "subtype": "success",
+  "is_error": false,
+  "total_cost_usd": 0.17632,
+  "num_turns": 9,
+  "permission_denials": [],
+  "reported_model_identifiers": [
+    "DeepSeek-V4-Flash[1m]"
+  ],
+  "supervisor_review": {
+    "date": "2026-10-27",
+    "decision": "future_work_facts_accepted_bibtex_superseded_by_T015",
+    "review_file": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\reviews\\T010_T015_审核记录.md"
+  }
+}

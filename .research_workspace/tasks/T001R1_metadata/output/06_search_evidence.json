@@ -1,0 +1,300 @@
+{
+  "source": "Crossref",
+  "query": "Practical Prescribed-Time Control for Active Suspension Systems via Periodic Delayed Sliding Mode Control",
+  "items": [
+    {
+      "DOI": "10.1002/rnc.70302",
+      "title": [
+        "Practical Prescribed‐Time Control for Active Suspension Systems via Periodic Delayed Sliding Mode Control"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-6934-279X",
+          "authenticated-orcid": false,
+          "given": "Tianyu",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Control Science and Engineering Harbin Institute of Technology  Harbin China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1272-2652",
+          "authenticated-orcid": false,
+          "given": "Bin",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Center for Control Theory and Guidance Technology Harbin Institute of Technology  Harbin China"
+            },
+            {
+              "name": "National Key Laboratory of Complex System Control and Intelligent Agent Cooperation  Harbin China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Hongliang",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Control Science and Engineering Harbin Institute of Technology  Harbin China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yi",
+          "family": "Ding",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Center for Control Theory and Guidance Technology Harbin Institute of Technology  Harbin China"
+            },
+            {
+              "name": "National Key Laboratory of Complex System Control and Intelligent Agent Cooperation  Harbin China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "International Journal of Robust and Nonlinear Control"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            15
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1002/rnc.70302",
+      "link": [
+        {
+          "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/rnc.70302",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/rnc.70302",
+          "content-type": "application/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/rnc.70302",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "abstract": "<jats:title>ABSTRACT</jats:title>\n                  <jats:p>This paper proposes a novel control method for an active suspension system aimed at achieving precise and rapid regulation of vehicle body height and attitude, while significantly enhancing ride comfort and overall vehicle stability. A state‐space model of a half‐car active suspension system is first formulated. To better reflect practical scenarios, the model incorporates system uncertainties. Building on this foundation, an improved periodic delayed feedback control method based on sliding mode control is developed to ensure that the system states converge within a prescribed time, regardless of initial conditions. To further improve robustness, the sliding mode switching function is refined to effectively mitigate chattering. Compared with PID and adaptive backstepping control, the proposed method exhibits significant advantages in control accuracy and convergence rate. The effectiveness of the proposed method is validated through comprehensive numerical simulations.</jats:p>"
+    },
+    {
+      "DOI": "10.1109/tac.2025.3618707",
+      "title": [
+        "Prescribed-Time Control via Periodic Delayed Feedback-Based Super-Twisting Sliding Mode Algorithm"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0004-2461-264X",
+          "authenticated-orcid": false,
+          "given": "Yi",
+          "family": "Ding",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Center for Control Theory and Guidance Technology, Harbin Institute of Technology, Harbin, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1272-2652",
+          "authenticated-orcid": false,
+          "given": "Bin",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Center for Control Theory and Guidance Technology, Harbin Institute of Technology, Harbin, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1337-5322",
+          "authenticated-orcid": false,
+          "given": "Yang",
+          "family": "Shi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Mechanical Engineering, University of Victoria, Victoria, BC, Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Automatic Control"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            3
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1109/tac.2025.3618707",
+      "link": [
+        {
+          "URL": "http://xplorestaging.ieee.org/ielx8/9/11417357/11195188.pdf?arnumber=11195188",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "DOI": "10.1016/j.isatra.2026.08.030",
+      "title": [
+        "Prescribed-time sliding mode control for uncertain nonlinear systems based on periodic delayed feedback and disturbance observer"
+      ],
+      "author": [
+        {
+          "given": "Zaihong",
+          "family": "Zheng",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dan",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Huanqing",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ping",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ming",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "ISA Transactions"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            9
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1016/j.isatra.2026.08.030",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0019057826004453?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0019057826004453?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "abstract": null
+    }
+  ]
+}

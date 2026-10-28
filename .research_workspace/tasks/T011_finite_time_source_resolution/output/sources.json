@@ -1,0 +1,126 @@
+{
+  "task": "T011_finite_time_source_resolution",
+  "generated_at": "2026-10-27",
+  "status": {
+    "zotero": {
+      "api_running": true,
+      "api_status": 200,
+      "zotero_version": "10.0.6",
+      "api_version": "3",
+      "base_url": "http://127.0.0.1:23119"
+    },
+    "mineru": {
+      "mineru_version": "4.0.2",
+      "python_version": "3.12.14"
+    }
+  },
+  "task_output": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\tasks\\T011_finite_time_source_resolution\\output",
+  "source_directory": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\sources",
+  "resolved_count": 8,
+  "sources": [
+    {
+      "item_key": "FS9EHUTH",
+      "resolved": true,
+      "pdf_attachments": [
+        {
+          "attachment_key": "84EGL6QC",
+          "title": "Full Text PDF",
+          "file_url": "file:///C:/Users/leejx/Zotero/storage/84EGL6QC/Chen%20%E7%AD%89%20-%202025%20-%20Practical%20Finite-Time%20Observer-Based%20Adaptive%20Backstepping%20Super-Twisting%20Sliding%20Mode%20Control%20for%20D.pdf",
+          "local_path": "C:\\Users\\leejx\\Zotero\\storage\\84EGL6QC\\Chen 等 - 2025 - Practical Finite-Time Observer-Based Adaptive Backstepping Super-Twisting Sliding Mode Control for D.pdf",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "item_key": "BLFGZ6V4",
+      "resolved": true,
+      "pdf_attachments": [
+        {
+          "attachment_key": "WSKY4XYC",
+          "title": "ScienceDirect Full Text PDF",
+          "file_url": "file:///C:/Users/leejx/Zotero/storage/WSKY4XYC/Yang%20%E7%AD%89%20-%202021%20-%20Output%20feedback%20adaptive%20super-twisting%20sliding%20mode%20control%20of%20hydraulic%20systems%20with%20disturbance%20c.pdf",
+          "local_path": "C:\\Users\\leejx\\Zotero\\storage\\WSKY4XYC\\Yang 等 - 2021 - Output feedback adaptive super-twisting sliding mode control of hydraulic systems with disturbance c.pdf",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "item_key": "JPJUFKHN",
+      "resolved": true,
+      "pdf_attachments": [
+        {
+          "attachment_key": "ASXD8F6H",
+          "title": "Full Text PDF",
+          "file_url": "file:///C:/Users/leejx/Zotero/storage/ASXD8F6H/Gonzalez%20%E7%AD%89%20-%202012%20-%20Variable%20Gain%20Super-Twisting%20Sliding%20Mode%20Control.pdf",
+          "local_path": "C:\\Users\\leejx\\Zotero\\storage\\ASXD8F6H\\Gonzalez 等 - 2012 - Variable Gain Super-Twisting Sliding Mode Control.pdf",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "item_key": "Y5GKV8EY",
+      "resolved": true,
+      "pdf_attachments": [
+        {
+          "attachment_key": "XDLZQ7EJ",
+          "title": "Full Text PDF",
+          "file_url": "file:///C:/Users/leejx/Zotero/storage/XDLZQ7EJ/Moreno%E5%92%8COsorio%20-%202012%20-%20Strict%20Lyapunov%20Functions%20for%20the%20Super-Twisting%20Algorithm.pdf",
+          "local_path": "C:\\Users\\leejx\\Zotero\\storage\\XDLZQ7EJ\\Moreno和Osorio - 2012 - Strict Lyapunov Functions for the Super-Twisting Algorithm.pdf",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "item_key": "JHU5WMJN",
+      "resolved": true,
+      "pdf_attachments": [
+        {
+          "attachment_key": "YGZ52Z2K",
+          "title": "Full Text PDF",
+          "file_url": "file:///C:/Users/leejx/Zotero/storage/YGZ52Z2K/Wang%20%E7%AD%89%20-%202026%20-%20A%20Modified%20Super-Twisting%20Sliding%20Mode%20Control%20for%20Aircraft%20Braking%20System%20With%20Adaptive%20Gain%20Schedu.pdf",
+          "local_path": "C:\\Users\\leejx\\Zotero\\storage\\YGZ52Z2K\\Wang 等 - 2026 - A Modified Super-Twisting Sliding Mode Control for Aircraft Braking System With Adaptive Gain Schedu.pdf",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "item_key": "46DP86DN",
+      "resolved": true,
+      "pdf_attachments": [
+        {
+          "attachment_key": "9BH2IT95",
+          "title": "Full Text PDF",
+          "file_url": "file:///C:/Users/leejx/Zotero/storage/9BH2IT95/Que%20%E7%AD%89%20-%202024%20-%20Prescribed-Time%20Tracking%20Control%20of%20Electro-Hydraulic%20Servo%20Systems%20with%20Non-Vanishing%20Uncertainties.pdf",
+          "local_path": "C:\\Users\\leejx\\Zotero\\storage\\9BH2IT95\\Que 等 - 2024 - Prescribed-Time Tracking Control of Electro-Hydraulic Servo Systems with Non-Vanishing Uncertainties.pdf",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "item_key": "ASUHEN6J",
+      "resolved": true,
+      "pdf_attachments": [
+        {
+          "attachment_key": "ZCQJG379",
+          "title": "Full Text PDF",
+          "file_url": "file:///C:/Users/leejx/Zotero/storage/ZCQJG379/Yang%20%E7%AD%89%20-%202025%20-%20Adaptive%20Motion%20Control%20for%20Electro-hydraulic%20Servo%20Systems%20With%20Appointed-Time%20Performance.pdf",
+          "local_path": "C:\\Users\\leejx\\Zotero\\storage\\ZCQJG379\\Yang 等 - 2025 - Adaptive Motion Control for Electro-hydraulic Servo Systems With Appointed-Time Performance.pdf",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "item_key": "HLZCX7PE",
+      "resolved": true,
+      "pdf_attachments": [
+        {
+          "attachment_key": "QWMMV48W",
+          "title": "Full Text PDF",
+          "file_url": "file:///C:/Users/leejx/Zotero/storage/QWMMV48W/Li%20%E7%AD%89%20-%202026%20-%20Command-Filtered%20Adaptive%20Prescribed-Time%20Tracking%20Control%20with%20Application%20to%20Output-Constrained%20Hy.pdf",
+          "local_path": "C:\\Users\\leejx\\Zotero\\storage\\QWMMV48W\\Li 等 - 2026 - Command-Filtered Adaptive Prescribed-Time Tracking Control with Application to Output-Constrained Hy.pdf",
+          "exists": true
+        }
+      ]
+    }
+  ]
+}

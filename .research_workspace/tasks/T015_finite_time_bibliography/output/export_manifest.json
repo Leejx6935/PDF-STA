@@ -1,0 +1,56 @@
+{
+  "task": "T015_finite_time_bibliography",
+  "action": "export_references",
+  "date": "2026-10-27",
+  "requested_item_keys": [
+    "FD2CBB3F", "5R6KWQGW", "ASUHEN6J", "473MM72M", "HLZCX7PE",
+    "2AHU9T9F", "BLFGZ6V4", "JGP9TGM4", "CF8H6QQY", "46DP86DN",
+    "MX4W2ZZU", "AYKCDA4Q", "JHU5WMJN", "FS9EHUTH", "JPJUFKHN",
+    "LXD8I4BW", "Y5GKV8EY", "ZLY8AKG6"
+  ],
+  "requested_count": 18,
+  "returned_count": 18,
+  "status": "success",
+  "status_check": {
+    "zotero_api_running": true,
+    "zotero_api_status": 200,
+    "zotero_version": "10.0.6",
+    "api_version": "3",
+    "connector_running": true,
+    "mineru_version": "4.0.2"
+  },
+  "output": {
+    "path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\tasks\\T015_finite_time_bibliography\\output\\finite_time_library.bib",
+    "bytes": 45073,
+    "sha256": "a44967bea3af6fe8f72d9ac250051579a8074192076c4f6f5cc1ef3c4dd1df69",
+    "format": "BibTeX",
+    "saved_directly_by_tool": true
+  },
+  "returned_item_keys_in_order": [
+    "FD2CBB3F", "5R6KWQGW", "ASUHEN6J", "473MM72M", "HLZCX7PE",
+    "2AHU9T9F", "BLFGZ6V4", "JGP9TGM4", "CF8H6QQY", "46DP86DN",
+    "MX4W2ZZU", "AYKCDA4Q", "JHU5WMJN", "FS9EHUTH", "JPJUFKHN",
+    "LXD8I4BW", "Y5GKV8EY", "ZLY8AKG6"
+  ],
+  "citation_keys_in_order": [
+    "que_prescribed-time_2024",
+    "wang_adaptive_2026",
+    "sanchez-torres_predefined-time_2015",
+    "yang_output_2021",
+    "hua_adaptive_2022",
+    "li_command-filtered_2026",
+    "wang_adaptive_2026-1",
+    "yang_adaptive_2025",
+    "peng_command_2025",
+    "zhang_adaptive_2024",
+    "ding_prescribed-time_2026",
+    "moreno_strict_2012",
+    "ye_prescribed-time_2022",
+    "gonzalez_variable_2012",
+    "chen_practical_2025",
+    "wang_modified_2026",
+    "ding_strong_2024",
+    "zhou_prescribed_2024"
+  ],
+  "notes": "All 18 requested Zotero parent item keys were returned. The tool batched requests in groups of 10 internally; merged entry count equals requested count. No assumption of missing attachments or missing metadata is recorded — the earlier 12/18 result was the helper's per-request cap, as stated."
+}

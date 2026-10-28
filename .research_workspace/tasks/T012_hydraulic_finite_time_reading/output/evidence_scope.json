@@ -1,0 +1,182 @@
+{
+  "task": "T012_hydraulic_finite_time_reading",
+  "date": "2026-10-27",
+  "input_basis": "MinerU full-text parses already on disk; no re-parsing, no network search, no subagents.",
+  "sources": [
+    {
+      "id": "chen2025",
+      "zotero_key": "FS9EHUTH",
+      "doi": "10.1109/TIE.2025.3541284",
+      "title": "Practical Finite-Time Observer-Based Adaptive Backstepping Super-Twisting Sliding Mode Control for Deep-Sea Hydraulic Manipulator",
+      "journal": "IEEE Transactions on Industrial Electronics 72(9): 9569-9579, Sept. 2025",
+      "parsed_md": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\Chen2025_PFTO_ABSTC_DeepSea_Hydraulic_Manipulator_Parsed.md",
+      "mineru_doc": "doc:5b4728a",
+      "mineru_sha256": "5b4728a1af7a74a402f59ab0a5ebeb183194612620a03234c1fcb4f9208ad096",
+      "tier": "advanced",
+      "pages_total": 11,
+      "read_scope": "full markdown, lines 1-693 (all 11 pages incl. Appendices A-C and references); no truncation encountered in direct Read"
+    },
+    {
+      "id": "yang2021",
+      "zotero_key": "BLFGZ6V4",
+      "doi": "10.1016/j.isatra.2020.09.014",
+      "title": "Output feedback adaptive super-twisting sliding mode control of hydraulic systems with disturbance compensation",
+      "journal": "ISA Transactions 109 (2021) 175-185",
+      "parsed_md": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\Yang2021_Output_Feedback_Adaptive_STA_Hydraulic_Parsed.md",
+      "mineru_doc": "doc:2f58eff",
+      "mineru_sha256": "2f58eff121af68fc8e2af121bcc319cd7b5461d0fc10db12be6ac99279f01b6a",
+      "tier": "standard",
+      "pages_total": 11,
+      "read_scope": "full markdown, lines 1-857 (all 11 pages incl. references); no truncation encountered in direct Read"
+    }
+  ],
+  "locators_checked": [
+    {
+      "locator": "doc:5b4728a/tier:advanced/page:4",
+      "context": 2,
+      "status": "found",
+      "returned_page_range": "2-4",
+      "truncated": true,
+      "next_request": "doc:5b4728a/tier:advanced/page:4/block:32",
+      "verified_content": "Eq.(13)-(18), Theorem 1 statement, Remark 2 (Ts=max{t_LD,t_PFTO}); journal page footer 9572; PDF p.4"
+    },
+    {
+      "locator": "doc:5b4728a/tier:advanced/page:8",
+      "context": 2,
+      "status": "found",
+      "returned_page_range": "6-8",
+      "truncated": true,
+      "next_request": "doc:5b4728a/tier:advanced/page:8/block:30",
+      "verified_content": "Section V Conclusion incl. the Future Work sentence; start of Appendix A (A.1)-(A.3); journal page footer 9576; PDF p.8"
+    },
+    {
+      "locator": "doc:2f58eff/tier:standard/page:9",
+      "context": 2,
+      "status": "found_but_target_not_on_this_page",
+      "returned_page_range": "7-11",
+      "truncated": false,
+      "verified_content": "PDF p.9 = journal p.183 contains Figs.5-7 and Table 3, NOT the Conclusion. The Conclusion and the Future Work sentence are on PDF p.10 = journal p.184. No fabricated page number used."
+    }
+  ],
+  "page_anchors": {
+    "chen2025": [
+      {"item": "Assumptions 1-2, Remark 1, Lemma 1", "pdf_page": 3, "journal_page": 9571},
+      {"item": "Eq.(13)-(18), Theorem 1, Remark 2", "pdf_page": 4, "journal_page": 9572},
+      {"item": "Theorem 2 statement, Eq.(28)-(29)", "pdf_page": 5, "journal_page": 9573},
+      {"item": "Eq.(30)-(31), Theorem 3 statement, sampling period 5 ms", "pdf_page": 6, "journal_page": 9574},
+      {"item": "Conclusion + Future Work", "pdf_page": 8, "journal_page": 9576},
+      {"item": "Appendix A start (A.1)-(A.3)", "pdf_page": 8, "journal_page": 9576},
+      {"item": "Appendix B/C (A.4)-(A.18)", "pdf_page": 9, "journal_page": 9577}
+    ],
+    "yang2021": [
+      {"item": "Eq.(9)-(16), Theorem 1, Remark 1", "pdf_page": "unverified (Section 3.2)", "journal_page": "unverified"},
+      {"item": "Eq.(20)-(21), Eq.(25), Remarks 2-4", "pdf_page": "unverified (Section 3.3)", "journal_page": "unverified"},
+      {"item": "Theorem 3/4, Eq.(47)-(54)", "pdf_page": "unverified (Section 3.4)", "journal_page": "unverified"},
+      {"item": "Table 2, Fig.4", "pdf_page": 8, "journal_page": 182},
+      {"item": "Table 3, Figs.5-7", "pdf_page": 9, "journal_page": 183},
+      {"item": "Conclusion + Future Work", "pdf_page": 10, "journal_page": 184}
+    ]
+  },
+  "claims_supported": [
+    {
+      "id": "C-FW",
+      "source": "chen2025",
+      "claim": "Authors' only Future Work = more-DOF experiments and actual physical constraints.",
+      "anchor": "Section V, PDF p.8 / p.9576",
+      "quote_short": "conduct experiments with more degrees of freedom and ... further consider the actual physical constraints"
+    },
+    {
+      "id": "Y-FW",
+      "source": "yang2021",
+      "claim": "Authors' Future Work = hydraulic system parameter adaptation under output feedback SSMC; adaptive law in this paper tunes STA gains only.",
+      "anchor": "Section 5, PDF p.10 / p.184",
+      "quote_short": "an output feedback SSMC controller with hydraulic system parameter adaptation will be worth being developed"
+    },
+    {
+      "id": "C-ASY",
+      "source": "chen2025",
+      "claim": "Tracking result is asymptotic only; A.18 is Vdot3 <= -lambda_min(Lambda)V3 + Delta with Delta>0.",
+      "anchor": "Theorem 3 p.9574; (A.18) p.9577"
+    },
+    {
+      "id": "Y-ASY",
+      "source": "yang2021",
+      "claim": "Asymptotic tracking only under H(t)==0; time-varying disturbance gives V <= V(0)exp(-gamma t)+varsigma1/gamma.",
+      "anchor": "Theorem 3 and Theorem 4, Section 3.4"
+    },
+    {
+      "id": "C-EQ16",
+      "source": "chen2025",
+      "claim": "For constant eta != 0, (x-tilde, eta-tilde) cannot both stay zero; at equilibrium eta-hat = (omega1/omega2)x-tilde and u-hat = eta exactly, so the state error keeps a nonzero offset while the lumped-disturbance estimate is exact.",
+      "anchor": "Eq.(16), p.9572; derived by substitution, not stated in paper"
+    }
+  ],
+  "unverified_or_flagged": [
+    {
+      "source": "chen2025",
+      "item": "Eq.(A.2): replacing omega2*eta_i by omega2*D1 requires eta-tilde >= 0 or an absolute-value step; the sign handling is not shown.",
+      "type": "proof_gap"
+    },
+    {
+      "source": "chen2025",
+      "item": "Theorem 1 hypothesis (d/dt)|eta-dot_i| <= D2: literal reading is ambiguous; presumably |eta-dot_i| <= D2.",
+      "type": "notation"
+    },
+    {
+      "source": "chen2025",
+      "item": "D1,D2 derivation: only the f-dot_i term follows from Assumption 1; the -Proj(Gamma N)phi_i term needs closed-loop boundedness (circular with Theorem 3), the Theta-tilde*phi-dot_i term needs bounded phi-dot_i which fails at u=0 (impulsive u-dot) and near P1->Ps.",
+      "type": "assumption_not_automatic"
+    },
+    {
+      "source": "chen2025",
+      "item": "Eq.(A.15) yields exact finite-time to s=0, but with d_i != 0 and S_i > 0, s=0 is not invariant; standard STA gives only |s| -> O(D).",
+      "type": "overclaim_candidate"
+    },
+    {
+      "source": "chen2025",
+      "item": "Eq.(13)/(14): which part of channel 2 is chi_2 vs Theta*phi_2 is not specified; phi_2 appears to contain u through phi5, so the 'disturbance' eta_2 depends on the control input.",
+      "type": "ambiguity"
+    },
+    {
+      "source": "chen2025",
+      "item": "Gamma defined as 3x3 in Eq.(11) but experiment C1 lists 6 diagonal entries.",
+      "type": "editorial_inconsistency"
+    },
+    {
+      "source": "yang2021",
+      "item": "Eq.(16) printed equality keeps only the delta_2 term of varsigma and drops the l3|u|max/(4w0^2) term.",
+      "type": "algebra_omission"
+    },
+    {
+      "source": "yang2021",
+      "item": "u_n-dot = -beta2 sign(s)/2 in Eq.(20) vs -beta2 sign(s) in Eq.(22); changes the factor 2 in Q.",
+      "type": "editorial_inconsistency"
+    },
+    {
+      "source": "yang2021",
+      "item": "Theorem 3 Barbalat step requires (51) globally, but adaptive law (21) can drop beta1 below threshold (25) when |s|<v, making Q indefinite (case S2).",
+      "type": "proof_gap"
+    },
+    {
+      "source": "yang2021",
+      "item": "Assumption 1 bounds |d-dot| but d in Eq.(6) contains -f-dot/m, so boundedness of |f-double-dot| is implicitly required.",
+      "type": "hidden_assumption"
+    },
+    {
+      "source": "yang2021",
+      "item": "No assumption stated on x1d being C^3 with bounded derivatives, although x3eq-dot is used in (20).",
+      "type": "hidden_assumption"
+    }
+  ],
+  "prohibited_inferences_enforced": [
+    "PE is not treated as a finite-time identification guarantee.",
+    "Observer convergence is not treated as a necessary condition for exact tracking.",
+    "V-dot <= -a V^p + b with b>0 is not read as exact convergence to zero.",
+    "Finite-time reaching of the sliding surface is not equated with finite-time position regulation."
+  ],
+  "scope_limits": [
+    "No network search, no re-parsing, no new algorithm proposed.",
+    "All improvement candidates are marked 待审核 (pending review) and are not asserted as novel.",
+    "Yang2021 section-level page numbers before PDF p.7 were not verified and are marked unverified rather than guessed."
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "task": "T001R2_bibliography",
+  "task_date": "2026-10-27",
+  "status": "pending_review",
+  "export": {
+    "operation": "zotero export-bibtex",
+    "exit_code": 0,
+    "stderr": "",
+    "source": "Zotero local API (v10.0.6, api_version 3, schema_version 44)",
+    "output_file": "references_seed.bib",
+    "entry_count": 8,
+    "requested_key_count": 8,
+    "missing_entry_count": 0,
+    "citation_keys_modified": false,
+    "records_added": 0,
+    "records_removed": 0,
+    "fidelity_note": "All bibliographic fields (entry type, citation key, title, author, journal/booktitle, volume, number, pages, year, month, DOI, URL, ISSN, abstract, keywords, language, publisher, copyright, note) are as returned by Zotero. Two presentational normalizations were applied to non-bibliographic metadata: (1) 'file' attachment paths are written in Zotero's canonical escaped form (drive colon as '\\:', path separators as '\\\\'); (2) the LaTeX inside three 'annote' note fields was re-encoded into readable LaTeX instead of Zotero's double-escaped transport form. No citation key, DOI, title, or record was altered, added, or dropped."
+  },
+  "requested_zotero_keys": [
+    "JGP9TGM4",
+    "2AHU9T9F",
+    "FD2CBB3F",
+    "ASUHEN6J",
+    "5R6KWQGW",
+    "HLZCX7PE",
+    "473MM72M",
+    "ZLY8AKG6"
+  ],
+  "entries": [
+    {
+      "index": 1,
+      "citation_key": "ding_prescribed-time_2026",
+      "doi": "10.1109/TAC.2025.3618707",
+      "title": "Prescribed-Time Control via Periodic Delayed Feedback-Based Super-Twisting Sliding Mode Algorithm",
+      "year": "2026",
+      "type": "article",
+      "journal": "IEEE Transactions on Automatic Control"
+    },
+    {
+      "index": 2,
+      "citation_key": "sanchez-torres_predefined-time_2015",
+      "doi": "10.1109/ACC.2015.7172255",
+      "title": "Predefined-time stability of dynamical systems with sliding modes",
+      "year": "2015",
+      "type": "inproceedings",
+      "journal": "2015 American Control Conference (ACC)"
+    },
+    {
+      "index": 3,
+      "citation_key": "hua_adaptive_2022",
+      "doi": "10.1109/TAC.2021.3130883",
+      "title": "Adaptive Prescribed-Time Control for a Class of Uncertain Nonlinear Systems",
+      "year": "2022",
+      "type": "article",
+      "journal": "IEEE Transactions on Automatic Control"
+    },
+    {
+      "index": 4,
+      "citation_key": "li_command-filtered_2026",
+      "doi": "10.3390/act15050238",
+      "title": "Command-Filtered Adaptive Prescribed-Time Tracking Control with Application to Output-Constrained Hydraulic Servo Systems",
+      "year": "2026",
+      "type": "article",
+      "journal": "Actuators"
+    },
+    {
+      "index": 5,
+      "citation_key": "wang_adaptive_2026",
+      "doi": "10.3390/sym18081397",
+      "title": "Adaptive Prescribed-Time Tracking Control for Output-Constrained Hydraulic Servo Systems with Time-Varying Parameters",
+      "year": "2026",
+      "type": "article",
+      "journal": "Symmetry"
+    },
+    {
+      "index": 6,
+      "citation_key": "yang_adaptive_2025",
+      "doi": "10.1109/TMECH.2024.3525013",
+      "title": "Adaptive Motion Control for Electro-hydraulic Servo Systems With Appointed-Time Performance",
+      "year": "2025",
+      "type": "article",
+      "journal": "IEEE/ASME Transactions on Mechatronics"
+    },
+    {
+      "index": 7,
+      "citation_key": "peng_command_2025",
+      "doi": "10.1016/j.jfranklin.2025.107855",
+      "title": "Command filter-based adaptive predefined-time control for nonlinear multi-agent systems under unknown control directions and actuator attacks",
+      "year": "2025",
+      "type": "article",
+      "journal": "Journal of the Franklin Institute"
+    },
+    {
+      "index": 8,
+      "citation_key": "zhang_adaptive_2024",
+      "doi": "10.1016/j.chaos.2024.115677",
+      "title": "Adaptive practical prescribed-time control for uncertain nonlinear systems with time-varying parameters",
+      "year": "2024",
+      "type": "article",
+      "journal": "Chaos, Solitons & Fractals"
+    }
+  ]
+}

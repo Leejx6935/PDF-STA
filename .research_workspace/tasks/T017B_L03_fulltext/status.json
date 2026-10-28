@@ -1,0 +1,19 @@
+{
+  "task_id": "T017B_L03_fulltext",
+  "status": "pending_review",
+  "run_directory": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\runs\\T017B_L03_fulltext_20261027_190542",
+  "engine": "C:\\Users\\leejx\\.vscode\\extensions\\anthropic.claude-code-2.1.301-win32-x64\\resources\\native-binary\\claude.exe",
+  "prompt_sha256": "1cfe9b842712e9228c3d3e6100bd7a34b48829d86547d099dbfb162e4a19e3b8",
+  "started_at_host_time": "20261027_190542",
+  "date_context": "2026-10-27 Asia/Shanghai",
+  "approved": false,
+  "exit_code": 0,
+  "subtype": "success",
+  "is_error": false,
+  "total_cost_usd": 2.6889440000000002,
+  "num_turns": 17,
+  "permission_denials": [],
+  "reported_model_identifiers": [
+    "DeepSeek-V4-Flash[1m]"
+  ]
+}

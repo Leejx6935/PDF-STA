@@ -1,0 +1,437 @@
+{
+  "paper_id": "L03",
+  "title": "Disturbance observer-based nonlinear feedback control for position tracking of electro-hydraulic systems in a finite time",
+  "authors": [
+    "Hamid Razmjooei",
+    "Gianluca Palli",
+    "Morad Nazari"
+  ],
+  "journal": "European Journal of Control",
+  "volume": 67,
+  "article_number": "100659",
+  "year": 2022,
+  "doi": "10.1016/j.ejcon.2022.100659",
+  "publisher": "Elsevier",
+  "received": "2021-09-15",
+  "revised": "2022-03-11",
+  "accepted": "2022-05-08",
+  "pdf": {
+    "path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\inputs\\four_papers\\L03_Zotero.pdf",
+    "sha256": "87208032df294dddc897ed22f12f0d375667d2618cdea2a6c41a70d239e71520",
+    "file_size_display": "2.3 MB (Read tool display; exact byte size not measured)",
+    "version": "Elsevier published version, journal pagination 1-11",
+    "total_pages": 11,
+    "page_count_confirmation": "Requesting pages 9-12 returned only pages 9, 10 and 11; requesting 1-4 and 5-8 returned full windows. Total 11 pages."
+  },
+  "identity_check": {
+    "title_match": true,
+    "authors_match": true,
+    "doi_match": true,
+    "journal_match": true,
+    "page_1_visual_check": "Title, authors, abstract, DOI 10.1016/j.ejcon.2022.100659, European Journal of Control 67 (2022) 100659 confirmed on PDF page 1.",
+    "verdict": "identity_confirmed"
+  },
+  "mineru": {
+    "available": false,
+    "server_status": "server_not_running",
+    "find_document_attempted": true,
+    "find_document_error": "api_error/server_not_running: 本地 mineru 服务未运行。请先运行 'mineru server start'。",
+    "parse_pdf_attempted": true,
+    "parse_pdf_filename": "L03_fulltext.md",
+    "parse_pdf_error": "api_error/server_not_running; a saved_to path was returned but the parse did not run",
+    "cache_used": false,
+    "remote_used": false,
+    "server_start_attempted": false,
+    "server_start_blocked_reason": "No shell/Bash tool is available in this session; the skill requires 'mineru server start' but it cannot be executed through the available tools. No configuration, service, or quality setting was changed.",
+    "recovery_action": "Reported the real error for reviewer handling; proceeded with local PDF page rendering only."
+  },
+  "reading_method": {
+    "primary": "Local PDF page images rendered page-by-page with the built-in Read tool",
+    "web_fetch_used": false,
+    "online_version_used": false,
+    "mineru_ocr_used": false,
+    "note": "Equation transcription is based on page images, not OCR text. Subscript/sign ambiguities are marked B or C in key_equations."
+  },
+  "coverage": {
+    "pages_total": 11,
+    "pages_read": "1-11",
+    "page_windows_requested": [
+      "1-4",
+      "5-8",
+      "9-12",
+      "4",
+      "5"
+    ],
+    "unread_pages": [],
+    "sections_read": [
+      "1. Introduction (pp.1-2)",
+      "2. Preliminaries and system descriptions (pp.2-3, Eq.1-4, Definitions 1-2, Remark 1)",
+      "3. Finite-time tracking control design (pp.3-7, Eq.5-36)",
+      "3.1 Implementation issues (p.7, Eq.34-36, Table 1)",
+      "4. Numerical simulations (pp.7-10, Figs.2-7, Tables 1-2)",
+      "5. Conclusions (p.10)",
+      "References (pp.10-11)"
+    ],
+    "full_text_read_claim": true,
+    "full_text_read_qualification": "All 11 pages were visually read; equations with small subscripts remain flagged where transcription is not unique."
+  },
+  "key_equations": [
+    {
+      "eq": "(1)",
+      "page": 2,
+      "content": "Fifth-order EHA: ddot y = -(b/m) dot y - F_f/m + (A_p/m) P_L; dot P_L = -(2 rho A_p/V0) dot y + (2 rho psi(Ve)/V0) sqrt(Ps-|P_L|); ddot Ve = -we^2 Ve - 2 ee we dot Ve + we^2 (ke u + ve0)",
+      "grade": "A",
+      "note": "First line is ddot y (acceleration), confirmed by Eq.(2)."
+    },
+    {
+      "eq": "(2)",
+      "page": 3,
+      "content": "Error-coordinate state space with x=[y, dot y, P_L, Ve, dot Ve] and Delta=[0, Delta2, Delta3, 0, Delta5]^T",
+      "grade": "A"
+    },
+    {
+      "eq": "(3)",
+      "page": 3,
+      "content": "FT-ISS definition |z| <= alpha(|z(0)|, delta) + beta(|delta|)",
+      "grade": "B",
+      "note": "Definition text is typeset ambiguously; exact inequality needs page-image recheck."
+    },
+    {
+      "eq": "(4)",
+      "page": 3,
+      "content": "mu(t) = (1+e^{-t})/(2 e^{-t}) = (e^t+1)/2",
+      "grade": "A"
+    },
+    {
+      "eq": "(5)",
+      "page": 4,
+      "content": "dot E1 = (mu_dot/mu) E1 + E2; dot E2 = (mu_dot/mu - b/m) E2 + (A_p/m) mu x3 - mu[ddot yd + (b/m) dot yd] + mu Delta2",
+      "grade": "A"
+    },
+    {
+      "eq": "(6)",
+      "page": 4,
+      "content": "dot E1 = (mu_dot/mu) E1 + E2",
+      "grade": "A"
+    },
+    {
+      "eq": "(7)",
+      "page": 4,
+      "content": "dot E1 = (mu_dot/mu - alpha1) E1 + barE2; barE2 dynamics with alpha2 damping",
+      "grade": "B",
+      "note": "Whether alpha2 appears explicitly in the barE2 coefficient is not fully legible; inferred from Eq.(36)."
+    },
+    {
+      "eq": "(8)",
+      "page": 4,
+      "content": "x3d = Phi2(E1, barE2); virtual pressure command",
+      "grade": "B",
+      "note": "Prefactor (A_p/m)^{-1} as printed may omit 1/mu; independent derivation requires m/(A_p mu)."
+    },
+    {
+      "eq": "(9)",
+      "page": 4,
+      "content": "Transformed first four equations after substituting x3d",
+      "grade": "B",
+      "note": "Sign/order of Phi1 terms needs line-by-line check."
+    },
+    {
+      "eq": "(10)",
+      "page": 4,
+      "content": "x4d = Phi3(E1, barE2, xtilde3); virtual valve-displacement command",
+      "grade": "B"
+    },
+    {
+      "eq": "(11)",
+      "page": 4,
+      "content": "Transformed dynamics after substituting x4d",
+      "grade": "B"
+    },
+    {
+      "eq": "(12)",
+      "page": 4,
+      "content": "x5d = Phi4; virtual valve-velocity command",
+      "grade": "B"
+    },
+    {
+      "eq": "(13)",
+      "page": 4,
+      "content": "Final transformed fifth-order dynamics",
+      "grade": "B"
+    },
+    {
+      "eq": "(14)",
+      "page": 5,
+      "content": "Nominal control u = (ke we^2)^{-1}[-dot x4hat + we^2 x4hat + 2 ee we x5hat + dot Phi4 + Phi4 - alpha5 xtilde5 - k5 sgn(xtilde5)]",
+      "grade": "B",
+      "note": "Exact arrangement of Phi4/dot Phi4 terms needs recheck."
+    },
+    {
+      "eq": "(15)",
+      "page": 5,
+      "content": "Closed-loop matrix used in Lemma 1 proof",
+      "grade": "B"
+    },
+    {
+      "eq": "(16)",
+      "page": 5,
+      "content": "Delta_hat_i = - integral_0^t alpha_i sgn(eps_i + beta eps_i^{q/p}) dtau - beta eps_i^{q/p}",
+      "grade": "A"
+    },
+    {
+      "eq": "(17)",
+      "page": 5,
+      "content": "Observer: dot x2hat = -(b/m) x2hat + (A_p/m) x3 + Delta2hat; dot x3hat = -(2 rho A_p/V0) x2hat + (2 rho psi(Ve)/V0) sqrt(Ps-|x3|) + Delta3hat; dot x5hat = -we^2 x4 - 2 ee we x5hat + ke we^2 u + Delta5hat",
+      "grade": "A",
+      "note": "x3 is also listed as measured, so the x3hat channel is structurally redundant."
+    },
+    {
+      "eq": "(18)",
+      "page": 5,
+      "content": "V_i = s_i^2/2 with s_i = eps_i + beta eps_i^{q/p}",
+      "grade": "A"
+    },
+    {
+      "eq": "(19)",
+      "page": 5,
+      "content": "dot s_i expansion",
+      "grade": "A",
+      "note": "As printed, RHS is multiplied by an extra s_i; dimensionally inconsistent. Intended form is dot s_i = (1 + beta (q/p) eps^{q/p-1}) dot eps."
+    },
+    {
+      "eq": "(20)",
+      "page": 5,
+      "content": "dot s_i = -alpha_i sgn(s_i) - Delta_tilde_i",
+      "grade": "A",
+      "note": "As printed, RHS is multiplied by s_i. Intended form is without the prefactor."
+    },
+    {
+      "eq": "(21)",
+      "page": 5,
+      "content": "dot V_i <= -alpha_i |s_i| + |Delta_tilde_i| |s_i| = -(alpha_i - sigma_i)|s_i|",
+      "grade": "A"
+    },
+    {
+      "eq": "(22)",
+      "page": 5,
+      "content": "DOB-based control law with (Delta_hat_i + Theta_i) sgn(xtilde_i)",
+      "grade": "B"
+    },
+    {
+      "eq": "(23)-(24)",
+      "page": 6,
+      "content": "DOB versions of x3d and x4d",
+      "grade": "B"
+    },
+    {
+      "eq": "(25)-(33)",
+      "page": 6,
+      "content": "Step-by-step V2 to V5 inequalities with two sign cases",
+      "grade": "B",
+      "note": "Subscripts 3/5 in the final case analysis are hard to distinguish; sign of Delta_i assumed nonnegative in one branch."
+    },
+    {
+      "eq": "(34)",
+      "page": 7,
+      "content": "Capped mu(t): exponential until delta_t, then mu_max",
+      "grade": "A"
+    },
+    {
+      "eq": "(35)",
+      "page": 7,
+      "content": "|eps_i| = |Delta_hat_i - Delta_i| <= |s_i(t)| <= alpha_i^{-1}(sigma_i)",
+      "grade": "A"
+    },
+    {
+      "eq": "(36)",
+      "page": 7,
+      "content": "alpha1 > 1, alpha2 > 1 - b/m, alpha_i > 0 (i=3,4,5)",
+      "grade": "B",
+      "note": "Sign/denominator of the alpha2 condition needs recheck; b is absent from Table 1."
+    },
+    {
+      "eq": "Table 1",
+      "page": 7,
+      "content": "m=440 kg, A_p=0.01 m^2, V0=0.004 m^3, rho=1e9, omega_e=49 s^-1, epsilon_e=0.92, P_s=1e7 Pa",
+      "grade": "A",
+      "note": "No b (viscous friction) and no k_e listed."
+    }
+  ],
+  "theorems": [
+    {
+      "id": "Lemma 1",
+      "page": 5,
+      "assumptions": [
+        "|Delta2| < k2, |Delta3| < k3, |Delta5| < k5",
+        "control (14) with sufficiently large k_i",
+        "alpha1 > 1, alpha2 > 1 - b/m, alpha_i > 0 for i=3,4,5"
+      ],
+      "conclusion": "All closed-loop states bounded; y and dot y track y_d and dot y_d in finite time.",
+      "error_variables": [
+        "eps1",
+        "eps2",
+        "xtilde3",
+        "xtilde4",
+        "xtilde5"
+      ],
+      "time_property": "claimed finite time; proof gives negative quadratic Lyapunov derivative",
+      "audit": "The displayed V2/V5 inequalities are exponential (dot V <= -c V), not finite-time (dot V <= -c V^rho, rho<1). The finite-time label is not supported for the tracking error."
+    },
+    {
+      "id": "Theorem 1",
+      "page": 5,
+      "assumptions": [
+        "observer (16)-(17)",
+        "|Delta_i| < sigma_i (Lipschitz-like)",
+        "alpha_i(.) class-K, alpha_i > sigma_i"
+      ],
+      "conclusion": "Observer errors eps_i (i=2,3,5) are globally FTUB; |s_i| <= alpha_i^{-1}(sigma_i) after finite time t_i.",
+      "error_variables": [
+        "eps2 = x2hat - x2",
+        "eps3 = x3hat - x3",
+        "eps5 = x5hat - x5",
+        "s_i"
+      ],
+      "time_property": "FTUB; t_i depends on s_i(0), alpha_i(.), sigma_i",
+      "audit": "Proof is not closed: the actual error dynamics contain -(b/m)eps2, -(2 rho A_p/V0)eps2 and -2 ee we eps5, absent from (19)-(21). (19)-(20) also contain typographical extra s_i factors. The finite-time observer claim is plausible but not established by the printed proof."
+    },
+    {
+      "id": "Theorem 2",
+      "page": "5-7",
+      "assumptions": [
+        "|Delta_i| < sigma_i",
+        "Theta2 >> alpha2^{-1}(sigma2), Theta3 >> alpha3^{-1}(sigma3), Theta5 >> alpha5^{-1}(sigma5), where >> is stated to mean much greater than",
+        "alpha1 > 1, alpha2 > 1 - b/m"
+      ],
+      "conclusion": "Closed loop (2),(16),(17),(22) is bounded; y and dot y track y_d and dot y_d in finite time.",
+      "error_variables": [
+        "E1",
+        "barE2",
+        "xtilde3",
+        "xtilde4",
+        "xtilde5",
+        "Delta_tilde_i"
+      ],
+      "time_property": "claimed finite time; V5 inequality is exponential after observer convergence",
+      "audit": "The V5 step can be closed under Delta_i >= 0 and Theta_i > |Delta_tilde_i|; for Delta_i < 0 the margin must be Theta_i > 2|Delta_i| + |Delta_tilde_i|, which is not stated. The pre-convergence interval t < T_i is not separately proven. Input boundedness is not a theorem conclusion."
+    }
+  ],
+  "priority_question_answers": {
+    "time_transformation_tied_to_specified_T": false,
+    "time_transformation_clock": "absolute time t since t=0; mu(t)=(e^t+1)/2; no terminal time T anywhere in the paper",
+    "prescribed_time": false,
+    "fixed_time": false,
+    "exact_finite_time_position_tracking": false,
+    "practical_finite_time_ultimate_boundedness": true,
+    "tracking_error_actual_property": "exponential asymptotic convergence of transformed errors; |eps1| <= sqrt(2 V5(0)) exp(-c5 t)/mu(t); no finite-time (fractional-power) inequality",
+    "observer_finite_time_claim": "stated as FTUB with explicit t_i, but proof has unclosed linear/coupling terms",
+    "noise_in_theorem": false,
+    "noise_only_in_simulation": true,
+    "input_saturation_in_proof": false,
+    "input_boundedness_proven": false,
+    "closed_loop_state_boundedness_proven": "conditional, under unknown sigma_i-dependent Theta_i conditions"
+  },
+  "numerical_claims_checked": [
+    {
+      "claim": "J_e = 454.3921 vs OFCDR 643.2316, almost 30% less",
+      "check": "1 - 454.3921/643.2316 = 0.2936 (29.36%)",
+      "status": "arithmetic_correct"
+    },
+    {
+      "claim": "mu_dot/mu in (1/2,1)",
+      "check": "mu_dot/mu = e^t/(e^t+1); t=0 -> 0.5; t=10 -> 0.99995",
+      "status": "correct"
+    },
+    {
+      "claim": "observer convergence <0.168 s, 0.1 s, 0.0005 s",
+      "check": "no alpha_i or sigma_i values given, cannot reproduce",
+      "status": "author_simulation_only"
+    },
+    {
+      "claim": "position tracking convergence 0.2 s vs 1 +/- 0.1 s",
+      "check": "author simulation only; no definition of convergence threshold",
+      "status": "author_simulation_only"
+    },
+    {
+      "claim": "valve input peak about 20 V, steady about +/-15 V",
+      "check": "read from Fig.5; no saturation, no numerical table",
+      "status": "visual_only"
+    }
+  ],
+  "sensing_conditions": {
+    "paper_measured": [
+      "position y",
+      "two chamber pressures (P_A, P_B) giving P_L",
+      "valve displacement V_e"
+    ],
+    "paper_estimated": [
+      "velocity dot y",
+      "valve velocity dot V_e",
+      "Delta2, Delta3, Delta5"
+    ],
+    "project_contract": "position and two chamber pressures measurable; velocity estimated",
+    "difference": "Paper additionally requires valve displacement V_e as a measured state; if V_e is unavailable, an extra observer is needed and is not provided. Paper model is fifth order (second-order valve), not a three-state system.",
+    "contract_changed_by_this_report": false
+  },
+  "state_ledger": {
+    "plant_integral_states": 5,
+    "plant_states": [
+      "y",
+      "dot y",
+      "P_L",
+      "V_e",
+      "dot V_e"
+    ],
+    "observer_state_estimates": 3,
+    "observer_state_estimate_note": "x2hat, x3hat, x5hat; x3hat is redundant if P_L is measured",
+    "disturbance_integrator_states": 3,
+    "disturbance_states": [
+      "z2 = integral of alpha2 sgn(s2)",
+      "z3",
+      "z5"
+    ],
+    "controller_dynamic_states": 0,
+    "filters": 0,
+    "parameter_adaptation": 0,
+    "neural_networks": 0,
+    "clock": "mu(t) is an explicit function of t; if generated by an ODE it would add 1 clock state, but it is not a method state",
+    "total_ode_states_if_x3hat_kept": 11,
+    "total_ode_states_if_x3hat_dropped": 10
+  },
+  "complexity": {
+    "measured_runtime": null,
+    "measured_memory": null,
+    "per_sample_structure": "3 observer channels (sign, fractional power, one integrator each) + 4 virtual-control evaluations with analytic or numerical derivatives + 1 algebraic control law",
+    "note": "No millisecond or speed-up numbers are asserted; paper reports no runtime."
+  },
+  "open_items": [
+    "O1: Eq.(8) prefactor may lack 1/mu; independent derivation requires m/(A_p mu).",
+    "O2: Theorem 1 t_i form and whether alpha_i is constant or class-K are not resolved.",
+    "O3: Eq.(31) subscripts 3 vs 5 in the final V5 case analysis.",
+    "O4: dot Delta_hat_i contains eps^{q/p-1}, singular at eps=0.",
+    "O5: Residual bound requires Delta_i >= 0 or a factor-2 larger Theta_i.",
+    "O6: Required reference derivative order (at least y_d^(4)) is not stated.",
+    "O7: Theta_i >> alpha_i^{-1}(sigma_i) depends on unknown sigma_i; >> is not a strict inequality.",
+    "O8: Pre-observer-convergence interval t < T_i boundedness is not separately proven.",
+    "O9: Input boundedness and saturation are outside the theorem.",
+    "O10: Capped mu has a derivative jump at delta_t; u may jump through dot Phi terms.",
+    "O11: x3 is measured yet x3hat is estimated.",
+    "O12: Definitions 1-2 are typeset ambiguously.",
+    "O13: Table 1 omits b and k_e.",
+    "O14: J_e is described as infinity-norm based but defined as an integral."
+  ],
+  "provenance_notes": [
+    "PDF identity was checked on page 1 before analysis.",
+    "MinerU find_document and parse_pdf both returned server_not_running; no cached parse existed.",
+    "No shell was available to run 'mineru server start'; no service/config/quality change was attempted.",
+    "All pages were read as local PDF page images; no WebFetch and no online publisher version were used.",
+    "Equation grades A/B/C reflect legibility of the page image, not OCR confidence.",
+    "Numerical results in the paper are reported as author results, not reproduced by this task.",
+    "No controller design, simulation run, or innovation claim was produced in this task."
+  ],
+  "report_files": [
+    "paper_card.md",
+    "proof_reconstruction.md",
+    "coverage_and_provenance.json"
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "task": "T001R1_metadata",
+  "date": "2026-10-27",
+  "scope_note": "本清单只记录审核者已核对的信息；本轮不新增阅读、不新增理论候选。",
+  "records": [
+    {
+      "id": "Ding2026",
+      "role": "primary_acquired_source",
+      "metadata": {
+        "doi": "10.1109/TAC.2025.3618707",
+        "title": "Prescribed-Time Control via Periodic Delayed Feedback-Based Super-Twisting Sliding Mode Algorithm",
+        "authors": ["Yi Ding", "Bin Zhou", "Yang Shi"],
+        "journal": "IEEE Transactions on Automatic Control",
+        "crossref_published": "2026-03",
+        "verified_by": "supervisor"
+      },
+      "zotero": {
+        "item_key": "ZLY8AKG6",
+        "attachment_key": "MKEKXJK7"
+      },
+      "local_files": {
+        "pdf": "C:\\Users\\leejx\\Desktop\\基于PDF框架的自适应STA滑模控制\\Prescribed-Time_Control_via_Periodic_Delayed_Feedback-Based_Super-Twisting_Sliding_Mode_Algorithm.pdf",
+        "parsed_markdown": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\sources\\parsed\\Ding2026_local_parse.md"
+      },
+      "parse": {
+        "engine": "MinerU",
+        "doc_id": "4871ce7",
+        "tier": "standard",
+        "page_marker_count": 16,
+        "page_range": "1-16"
+      },
+      "coverage": {
+        "segments_read": ["1-7", "8-13", "13末块", "14-16"],
+        "evidence_file": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\reviews\\coverage_verified_by_supervisor.json",
+        "status": "verified_by_supervisor"
+      },
+      "reading_cards": {
+        "location": "上一任务 T001_literature_pilot/output",
+        "count": 2,
+        "theory_candidate_status": "未审核通过",
+        "note": "本轮未复核、未修改这两份阅读卡。"
+      }
+    },
+    {
+      "id": "Zhang2026_rnc70302",
+      "role": "new_metadata_only",
+      "metadata": {
+        "doi": "10.1002/rnc.70302",
+        "title": "Practical Prescribed-Time Control for Active Suspension Systems via Periodic Delayed Sliding Mode Control",
+        "authors": ["Tianyu Zhang", "Bin Zhou", "Hongliang Zhou", "Yi Ding"],
+        "journal": "International Journal of Robust and Nonlinear Control",
+        "crossref_published": "2025-11-15",
+        "source": "Crossref search"
+      },
+      "access": {
+        "status": "尚未形成已获取全文的可核查记录，等待合法全文获取",
+        "publisher_url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/rnc.70302",
+        "login_test_performed": false,
+        "download_attempted": false
+      },
+      "processing": {
+        "read": false,
+        "parsed": false,
+        "page_coverage": null,
+        "theory_candidate": false,
+        "note": "新增 P5 本轮只做元数据搜索。"
+      }
+    }
+  ],
+  "bibtex_export": {
+    "operation": "zotero export-bibtex",
+    "requested_item_keys": ["JGP9TGM4", "2AHU9T9F", "FD2CBB3F", "ASUHEN6J", "5R6KWQGW", "HLZCX7PE", "473MM72M", "ZLY8AKG6"],
+    "requested_key_count": 8,
+    "exported_entry_count": 0,
+    "exported_citation_keys": [],
+    "status": "failed",
+    "attempts": 2,
+    "error": "UnicodeEncodeError: 'gbk' codec can't encode character '\\ufb01' in position 958: illegal multibyte sequence",
+    "error_stage": "write_text_output() printing to GBK-encoded stdout, after the BibTeX string was built; no text returned to caller",
+    "output_file": "05_references_seed.bib",
+    "note": "未编造、未补充任何条目；文件仅含失败记录与待办。"
+  },
+  "search_evidence": {
+    "engine": "Crossref",
+    "query": "Practical Prescribed-Time Control for Active Suspension Systems via Periodic Delayed Sliding Mode Control",
+    "limit": 3,
+    "returned": 3,
+    "output_file": "06_search_evidence.json"
+  }
+}

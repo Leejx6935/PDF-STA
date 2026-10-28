@@ -1,0 +1,43 @@
+# Local credentials and editor state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.token
+.vscode/
+.idea/
+
+# Downloaded papers and extracted full text remain local
+*.pdf
+*_Parsed.md
+.research_workspace/inputs/
+.research_workspace/sources/
+.research_workspace/cache/
+blobs/
+literature_review/*
+!literature_review/research_sources.md
+!literature_review/reading_coverage.json
+!literature_review/github_replication.json
+!literature_review/预定义时间控制_7篇文献评析_2026-10-21.md
+最终输出/*AI可读正文.md
+
+# Execution logs, browser evidence, and per-run machine configuration
+.research_workspace/runs/
+.research_workspace/tasks/T018_edge_download_probe/
+**/cache/
+*.log
+
+# Python and MATLAB generated files
+__pycache__/
+*.py[cod]
+*.asv
+*.bak
+*.slxc
+slprj/
+codegen/
+
+# Operating system files
+Thumbs.db
+Desktop.ini
+.DS_Store

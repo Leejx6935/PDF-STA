@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-27",
+  "library_items": 36,
+  "matched_records": 20,
+  "deduplicated": 18,
+  "resolved_local_pdf": 16,
+  "focus_full_text_items": [
+    "BLFGZ6V4",
+    "FS9EHUTH",
+    "JHU5WMJN",
+    "JPJUFKHN",
+    "Y5GKV8EY"
+  ],
+  "prior_full_text_comparison": [
+    "473MM72M",
+    "ASUHEN6J",
+    "HLZCX7PE",
+    "ZLY8AKG6"
+  ],
+  "citation_key_map": {
+    "10.1109/ccdc62350.2024.10587765": {
+      "zotero_exported_key": "que_prescribed-time_2024",
+      "project_citation_key": "que_prescribed-time_2024"
+    },
+    "10.1109/isaes70982.2026.11669267": {
+      "zotero_exported_key": "wang_adaptive_2026",
+      "project_citation_key": "wang_adaptive_2026_cf8h6qqy"
+    },
+    "10.1109/acc.2015.7172255": {
+      "zotero_exported_key": "sanchez-torres_predefined-time_2015",
+      "project_citation_key": "sanchez-torres_predefined-time_2015"
+    },
+    "10.1016/j.isatra.2020.09.014": {
+      "zotero_exported_key": "yang_output_2021",
+      "project_citation_key": "yang_output_2021"
+    },
+    "10.1109/tac.2021.3130883": {
+      "zotero_exported_key": "hua_adaptive_2022",
+      "project_citation_key": "hua_adaptive_2022"
+    },
+    "10.3390/act15050238": {
+      "zotero_exported_key": "li_command-filtered_2026",
+      "project_citation_key": "li_command-filtered_2026"
+    },
+    "10.3390/sym18081397": {
+      "zotero_exported_key": "wang_adaptive_2026-1",
+      "project_citation_key": "wang_adaptive_2026"
+    },
+    "10.1109/tmech.2024.3525013": {
+      "zotero_exported_key": "yang_adaptive_2025",
+      "project_citation_key": "yang_adaptive_2025"
+    },
+    "10.1016/j.jfranklin.2025.107855": {
+      "zotero_exported_key": "peng_command_2025",
+      "project_citation_key": "peng_command_2025"
+    },
+    "10.1016/j.chaos.2024.115677": {
+      "zotero_exported_key": "zhang_adaptive_2024",
+      "project_citation_key": "zhang_adaptive_2024"
+    },
+    "10.1109/tac.2025.3618707": {
+      "zotero_exported_key": "ding_prescribed-time_2026",
+      "project_citation_key": "ding_prescribed-time_2026"
+    },
+    "10.1109/tac.2012.2186179": {
+      "zotero_exported_key": "moreno_strict_2012",
+      "project_citation_key": "moreno_strict_2012"
+    },
+    "10.48550/arxiv.2210.12712": {
+      "zotero_exported_key": "ye_prescribed-time_2022",
+      "project_citation_key": "ye_prescribed-time_2022"
+    },
+    "10.1109/tac.2011.2179878": {
+      "zotero_exported_key": "gonzalez_variable_2012",
+      "project_citation_key": "gonzalez_variable_2012"
+    },
+    "10.1109/tie.2025.3541284": {
+      "zotero_exported_key": "chen_practical_2025",
+      "project_citation_key": "chen_practical_2025"
+    },
+    "10.1109/tie.2025.3613654": {
+      "zotero_exported_key": "wang_modified_2026",
+      "project_citation_key": "wang_modified_2026"
+    },
+    "10.1109/tac.2023.3347703": {
+      "zotero_exported_key": "ding_strong_2024",
+      "project_citation_key": "ding_strong_2024"
+    },
+    "10.1007/s11432-023-4052-4": {
+      "zotero_exported_key": "zhou_prescribed_2024",
+      "project_citation_key": "zhou_prescribed_2024"
+    }
+  },
+  "files": [
+    {
+      "name": "01_两个月研究与审核总计划.md",
+      "bytes": 21623,
+      "sha256": "6e4baec9655e23c43243b2ac7ef13dd2ed2a284e5a150341f95d89c90460e384"
+    },
+    {
+      "name": "02_执行AI任务书与审核模板.md",
+      "bytes": 10036,
+      "sha256": "e1447f5a593dc72189661ed3fd43f0259e93130d8f5d5969a42bad3abbc3f7e6"
+    },
+    {
+      "name": "03_核心文献与检索任务.md",
+      "bytes": 10322,
+      "sha256": "1139952760c1c2a37dc3c9041a3c3ad7d640e3d595b108292d43713b16895dce"
+    },
+    {
+      "name": "04_文件协作与Zotero管理说明.md",
+      "bytes": 6526,
+      "sha256": "9698364915abcd4f4ac4c7b4d7e70f3bfc3b1c5c8f7321f2d6c50a599e710442"
+    },
+    {
+      "name": "05_文献处理试运行与审核结果.md",
+      "bytes": 3506,
+      "sha256": "d5d734fc38e395e431386e8cc37e691ef6c372a0e334b2696c4af91e41f65b61"
+    },
+    {
+      "name": "06_Zotero有限时间相关文献清单.csv",
+      "bytes": 9159,
+      "sha256": "41f4b55f73250e32925eeb65fbac99724573b19caa4e1d386d702024f16b84d0"
+    },
+    {
+      "name": "07_Zotero有限时间论文_FutureWork与改进建议.md",
+      "bytes": 16305,
+      "sha256": "3615d62b4d8f48337fe84e7d954e21bb42417a39838f5843e92e9a883b2532d4"
+    },
+    {
+      "name": "08_有限时间控制候选问题_初步理论分析.md",
+      "bytes": 9367,
+      "sha256": "f7c88fea48a126c520b718ac06b6b7070ca24ab50e72235f0795470874a31f4e"
+    },
+    {
+      "name": "Ding2026_AI可读正文.md",
+      "bytes": 137500,
+      "sha256": "57fad28f63703b28cee5204a6daf9d236ccb3dd3190360c72cbe752cede68571"
+    },
+    {
+      "name": "finite_time_library.bib",
+      "bytes": 45080,
+      "sha256": "cacf44cc04fa2cbb97ff5ad1608e54c1cb8e48c63c2e71affc73eeca4404320d"
+    },
+    {
+      "name": "references_seed.bib",
+      "bytes": 20704,
+      "sha256": "79887741157ac49910f57438668496ab6f87fac4b4db20e60e8f49aa40580170"
+    },
+    {
+      "name": "文献来源清单.json",
+      "bytes": 5857,
+      "sha256": "6954933fb070a7a377cef0654e837eb95d5c9dbef2f335383fc2c7ccab019f44"
+    }
+  ]
+}

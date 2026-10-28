@@ -1,0 +1,21 @@
+{
+  "task_id": "T017A_four_paper_acquisition",
+  "status": "reviewed_waiting_fulltext",
+  "run_directory": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\runs\\T017A_four_paper_acquisition_20261027_164043",
+  "engine": "C:\\Users\\leejx\\.vscode\\extensions\\anthropic.claude-code-2.1.301-win32-x64\\resources\\native-binary\\claude.exe",
+  "prompt_sha256": "2124ac127143008ef35003637d9dc79fa5cca567f5fc31b5fd5fddd30087a124",
+  "started_at_host_time": "20261027_164043",
+  "date_context": "2026-10-27 Asia/Shanghai",
+  "approved": true,
+  "exit_code": 0,
+  "subtype": "success",
+  "is_error": false,
+  "total_cost_usd": 2.00376,
+  "num_turns": 70,
+  "permission_denials": [],
+  "reported_model_identifiers": [
+    "DeepSeek-V4-Flash[1m]"
+  ],
+  "review_scope": "Source inventory only; no PDFs acquired or read; scope corrections recorded in review.",
+  "review_file": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\reviews\\T017A_全文获取审核_2026-10-27.md"
+}

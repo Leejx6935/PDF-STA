@@ -1,0 +1,23 @@
+{
+  "task_id": "T001R1_metadata",
+  "status": "pending_review",
+  "run_directory": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\runs\\T001R1_metadata_20261027_103743",
+  "engine": "C:\\Users\\leejx\\.vscode\\extensions\\anthropic.claude-code-2.1.301-win32-x64\\resources\\native-binary\\claude.exe",
+  "prompt_sha256": "25643adc1b8473e4411bba3e6f75aa20757daeb5c26a75a81d3e830507d9fdf6",
+  "started_at_host_time": "20261027_103743",
+  "date_context": "2026-10-27 Asia/Shanghai",
+  "approved": false,
+  "exit_code": 0,
+  "subtype": "success",
+  "is_error": false,
+  "total_cost_usd": 0.29025900000000004,
+  "num_turns": 9,
+  "permission_denials": [],
+  "reported_model_identifiers": [
+    "DeepSeek-V4-Flash[1m]"
+  ],
+  "supervisor_review": {
+    "date": "2026-10-27",
+    "decision": "metadata_verified_bibtex_superseded"
+  }
+}

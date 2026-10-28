@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-27",
+  "files": [
+    {
+      "name": "01_两个月研究与审核总计划.md",
+      "path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\最终输出\\01_两个月研究与审核总计划.md",
+      "bytes": 21623,
+      "sha256": "6e4baec9655e23c43243b2ac7ef13dd2ed2a284e5a150341f95d89c90460e384"
+    },
+    {
+      "name": "02_执行AI任务书与审核模板.md",
+      "path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\最终输出\\02_执行AI任务书与审核模板.md",
+      "bytes": 10036,
+      "sha256": "e1447f5a593dc72189661ed3fd43f0259e93130d8f5d5969a42bad3abbc3f7e6"
+    },
+    {
+      "name": "03_核心文献与检索任务.md",
+      "path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\最终输出\\03_核心文献与检索任务.md",
+      "bytes": 10322,
+      "sha256": "1139952760c1c2a37dc3c9041a3c3ad7d640e3d595b108292d43713b16895dce"
+    },
+    {
+      "name": "04_文件协作与Zotero管理说明.md",
+      "path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\最终输出\\04_文件协作与Zotero管理说明.md",
+      "bytes": 5774,
+      "sha256": "a8e74bfaa6181505867fad61dcbd9af09448b3fe090291769df02b7f0b64f505"
+    },
+    {
+      "name": "05_文献处理试运行与审核结果.md",
+      "path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\最终输出\\05_文献处理试运行与审核结果.md",
+      "bytes": 3506,
+      "sha256": "d5d734fc38e395e431386e8cc37e691ef6c372a0e334b2696c4af91e41f65b61"
+    },
+    {
+      "name": "Ding2026_AI可读正文.md",
+      "path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\最终输出\\Ding2026_AI可读正文.md",
+      "bytes": 137500,
+      "sha256": "57fad28f63703b28cee5204a6daf9d236ccb3dd3190360c72cbe752cede68571"
+    },
+    {
+      "name": "references_seed.bib",
+      "path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\最终输出\\references_seed.bib",
+      "bytes": 20704,
+      "sha256": "79887741157ac49910f57438668496ab6f87fac4b4db20e60e8f49aa40580170"
+    },
+    {
+      "name": "文献来源清单.json",
+      "path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\最终输出\\文献来源清单.json",
+      "bytes": 5031,
+      "sha256": "5d0ecf54c0511db8c6056c2df493e3083f3fcfd348e98282115e53344d7064bf"
+    }
+  ]
+}
