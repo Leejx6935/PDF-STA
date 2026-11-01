@@ -41,3 +41,45 @@ codegen/
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Local agent session state and generated literature-search responses
+.omo/
+.bensz-api/**/output/
+.bensz-api/**/output_top_tier/
+
+# Paper extraction artifacts (keep authored analysis and verification notes)
+/PDF_STA_Paper_Simulation/docs/page[0-9]*.png
+/PDF_STA_Paper_Simulation/docs/paper_*.md
+
+# Reproducible simulation outputs (keep scripts stored in results/)
+/PDF_STA_Paper_Simulation/results/*.json
+/PDF_STA_Paper_Simulation/results/*.png
+/PDF_STA_Paper_Simulation/results/*.mat
+/PDF_STA_Paper_Simulation/results/*.fig
+/PDF_STA_Paper_Simulation/results/*.csv
+/PDF_STA_Paper_Simulation/results/*.svg
+
+# MATLAB / Simulink local state and generated build folders
+*.autosave
+*.m~
+*.mdl.r20*
+*.slx.r20*
+*.slxc
+*.mexw64
+*.mexa64
+*.mexmaci64
+*_ert_rtw/
+*_grt_rtw/
+sccprj/
+.research_workspace/**/.json_check.txt
+
+# Python environments, test caches, and temporary files
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.tmp
+*.swp
+~$*

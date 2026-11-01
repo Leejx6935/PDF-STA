@@ -1,9 +1,0 @@
-Scratch note (no shell available in this task, so JSON was audited by reading, not by a parser):
-
-coverage_and_provenance.json
-- braces/brackets balanced, no trailing commas: yes (read back in full after writing)
-- Windows paths escaped as \\: yes
-- required keys present: doi, pdf_path, version, mineru.doc_id, total_pages, pages_read, unread_pages, key_formula_locations, verification levels
-- numbers used in proof_reconstruction.md: phi_bar_3 = 6.52e8, phi_bar_3^2 = 4.25e17, H counterexample = -9.5999
-
-If a parser is available, run a strict JSON check before publication.
