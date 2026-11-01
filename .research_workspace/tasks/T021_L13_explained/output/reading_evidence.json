@@ -1,0 +1,117 @@
+{
+  "schema": "reading_evidence_v1",
+  "task": "T021_L13_explained",
+  "date": "2026-11-01",
+  "source": {
+    "source_id": "L13",
+    "doi": "10.1016/j.apm.2026.116848",
+    "doi_url": "https://doi.org/10.1016/j.apm.2026.116848",
+    "title": "Command filter and neural network-based fixed-time backstepping control of electro-hydraulic system with uncertainties",
+    "authors": ["Niu Shanshuai", "Wang Junzheng", "Li Zhengyue", "Liu Zhihui", "Zhao Jiangbo", "Sun Zizheng"],
+    "journal": "Applied Mathematical Modelling",
+    "volume": 157,
+    "year": 2026,
+    "article_number": "116848",
+    "page_range": "1-20",
+    "publisher_version": "Elsevier 出版版（ScienceDirect），Received 6 July 2025；Revised 10 February 2026；Accepted 16 February 2026；Online 18 February 2026",
+    "access_date": "2026-11-01"
+  },
+  "mineru": {
+    "mineru_id": "doc:8f7be38",
+    "tier": "standard",
+    "sha256": "8f7be38f27e7b39497a864a4db919d9f48e0abd5bf8143f0b21ca0da6f4d7f30",
+    "total_pages": 20,
+    "pages_read": "1-20（全部；p.19-p.20 为参考文献与致谢，仅作书目核对）",
+    "page_markers_verified": "解析 md 中 <!-- page N of 20 --> 自 1 至 20 连续无缺，末页以参考文献 [51] 结束，无截断标记",
+    "parse_method_reused": "仅复用缓存，未调用 parse_pdf，未切换解析器/质量/远程",
+    "identity_check": "read_document 首页返回 DOI 10.1016/j.apm.2026.116848、期刊卷期 157 (2026) 116848、题名与作者列表，与任务给定一致"
+  },
+  "cache_read_evidence": [
+    {"step": 1, "tool": "research.read_document", "locator": "doc:8f7be38/tier:standard", "returned": "page 1 起始，含 DOI、题名、期刊页眉；truncated=true，next_request 指向 page:1/block:17", "purpose": "身份核验"},
+    {"step": 2, "tool": "Read", "path": "sources/parsed/L13_fulltext.md", "result": "20 页全文，含公式 LaTeX、表 1/2/3/4、图 1-10 的 chart block 占位，页码标记 1-20 连续", "purpose": "正文与证明逐页阅读"},
+    {"step": 3, "tool": "Read", "path": "sources/parsed/L13_page6.png", "result": "原图可见式 (8)、Assumption 1-3、Lemma 1 式 (9)(10)(11)", "purpose": "原图核对"},
+    {"step": 4, "tool": "Read", "path": "sources/parsed/L13_page7.png", "result": "原图可见 Fig.2 框图、式 (13)(14)(15)(16)、Remark 3/4", "purpose": "原图核对"},
+    {"step": 5, "tool": "Read", "path": "sources/parsed/L13_page8.png", "result": "原图可见式 (17) 及 r_0i/r_inf,i 递推、Remark 6、式 (18)-(23)", "purpose": "原图核对"},
+    {"step": 6, "tool": "Read", "path": "sources/parsed/L13_page11.png", "result": "原图可见式 (37)-(44)、r1/r2/r3 定义、式 (41)(42) 与 theta、末行 a1=r4 映射", "purpose": "原图核对（本轮最关键页）"},
+    {"step": 7, "tool": "Read", "path": "sources/parsed/L13_page12.png", "result": "原图可见 Table 1、Table 2、5.1 节初值与扰动设定、增益行 k2=0.1、NN 参数", "purpose": "原图核对"}
+  ],
+  "original_image_checked": {
+    "checked_pages": [6, 7, 8, 11, 12],
+    "checked_by": "本轮执行者本人（非沿用旧审核记录）",
+    "not_checked_pages": [1, 2, 3, 4, 5, 9, 10, 13, 14, 15, 16, 17, 18, 19, 20],
+    "not_checked_consequence": "p.9 的式 (24)(25)(31) NN 输入维数、p.10 的式 (33)(34)(35) 与 Case 1-3 放缩、p.13-p.18 的 Fig.3-Fig.10 与 Table 3/4，均只据解析文本，未看原图；相关结论标注为 [文本]",
+    "explicit_disclaimer": "旧审核记录中'原图已核'不构成本轮执行者的查看动作；本轮仅对上述 5 页作出独立的原图判断"
+  },
+  "key_locations": [
+    {"page": 5, "eq": "(1)(6)", "content": "Newton 方程与坐标变换后速度通道为 +A_1*bar_x3，为 p2 符号冲突的对照基准", "verified_on_image": false},
+    {"page": 6, "eq": "(8)", "content": "印刷 p2 = -A_1/m，与式 (1)/(6) 冲突；属原文内部不一致，非 OCR", "verified_on_image": true},
+    {"page": 6, "eq": "(9)(10)(11)", "content": "Lemma 1 形式 -a1V^b1-a2V^b2-a3V+c；残差集；T_max 两段积分", "verified_on_image": true},
+    {"page": 7, "eq": "(13)", "content": "z1 = x1 - alpha_0，alpha_0 = x_d，即真实位置误差", "verified_on_image": true},
+    {"page": 7, "eq": "(15)(16)", "content": "alpha_1 与分段函数 psi；原图确为三次多项式段与 c1+c2>0 的声明", "verified_on_image": true},
+    {"page": 7, "figure": "Fig. 2", "content": "框图求和点为 x1 减 x_d；滤波器输出标注 x_d_hat_dot = v2；图内式号与正文式号不一致（图用 (17)(19)(27)(35)(37)，正文为 (17)(25)(33)(35)）", "verified_on_image": true},
+    {"page": 8, "eq": "(17)", "content": "任意阶固定时间微分器；r_0i = 1-(n-i)d0，d0=-1，i=1..n+1；n=2 时 r_03=0，l2 出现零指数", "verified_on_image": true},
+    {"page": 8, "eq": "(21)(22)(23)", "content": "非匹配项 d2-alpha1_dot 的代数重构，误差仅剩 epsilon_2", "verified_on_image": true},
+    {"page": 9, "eq": "(24)(25)", "content": "V2_dot 改写与 alpha_2；式 (24) 与直接代入等价", "verified_on_image": false},
+    {"page": 9, "eq": "(31)", "content": "NN 输入写作 [x1,x2,bar_x3]，与式 (33) 处 5 维输入不一致", "verified_on_image": false},
+    {"page": 10, "eq": "(33)(34)(35)", "content": "实际控制律、V3_dot、权重自适应；式 (34) 后 assuming ||w_tilde||<=W 无投影", "verified_on_image": false},
+    {"page": 10, "eq": "Case 1-3", "content": "三段放缩与 Young 常数 r1(1-Gamma)Gamma^{Gamma/(1-Gamma)}；c1+c2>0 用于丢弃负项", "verified_on_image": false},
+    {"page": 11, "eq": "(40)", "content": "r1/r2/r3 与 pi1；确认 r3 为 2^Lambda（不是解析文本的 2^3），pi1 三项", "verified_on_image": true},
+    {"page": 11, "eq": "(41)(42)", "content": "theta = 1 - theta^Gamma 的隐式定义；pi2/pi3 分支", "verified_on_image": true},
+    {"page": 11, "eq": "(44)", "content": "四项结构与 r4/r5/r6/pi4；末行 a1=r4, a2=r5, a3=r6", "verified_on_image": true},
+    {"page": 11, "eq": "(44) 后末行", "content": "系数与 Lemma 1 位置错位，正确为 a1=r5, a2=r6, a3=r4", "verified_on_image": true},
+    {"page": 12, "table": "Table 1", "content": "V10=V20=5e-6 m3、A2=1.65e-3 m2、行程 0.5 m；与 x1(0)=0.32 m 不相容，V2<0", "verified_on_image": true},
+    {"page": 12, "text": "增益行", "content": "k1=1000, k2=0.1, k3=12000；k_gamma=(0.2,0.015,12)；k_lambda=(1000,0.1,1000)；该行下标重复", "verified_on_image": true}
+  ],
+  "independent_recomputation": {
+    "performed": [
+      "式 (44) 四支拆分与 c_Gamma / c_Lambda 的系数还原",
+      "Gamma 支次可加性合并（精确）",
+      "Lambda 支凸性合并，得到 2^(1-Lambda) 因子及 x=y 的等号反例",
+      "式 (11) 两段积分逐行重推（u=V^(b2-1) 与 u=V^(1-b1) 两次换元）",
+      "c>0 时的 T_R <= T_max/eta 推导与 eta>=theta 的证明",
+      "r1/r2/r3/r5/r6 与 T_max 的标量数值（含 r2=-0.8238）",
+      "c1+c2>0 的可行域 xi^2>(1-gamma)/(3-gamma)",
+      "theta 的隐式方程 theta+theta^Gamma=1 及其唯一性"
+    ],
+    "new_findings_not_in_old_report_or_review": [
+      "Lambda 支合并缺 2^(1-Lambda)，且该常数在 x=y 处取等，为最优常数",
+      "r6 修正为 2^(1-Lambda)min{r3,c_Lambda}，在本文参数下恰等于 2*k_lambda2=0.2",
+      "c>0 时若残差取式 (10) 水平，则 eta>=theta，T_max 的严格版本是 T_max/theta 量级",
+      "式 (41)-(42) 的 theta 是 theta+theta^Gamma=1 的唯一根（Gamma=2/3 时约 0.4302），与式 (10) 的自由裕度 theta 不是同一角色",
+      "式 (7)(25)(33) 彼此自洽，p2 问题仅在式 (8) 的取值与式 (1)/(6) 冲突"
+    ]
+  },
+  "corrections_adopted_from_prior_reviews": [
+    {"source": "reviews/T017B_L13_补核审核_2026-10-28.md", "item": "O2：式 (16) 解析文本的 z^2 为 OCR 伪影，原文为三次", "my_action": "已用 p.7 原图独立确认，采纳"},
+    {"source": "reviews/T017B_L13_补核审核_2026-10-28.md", "item": "O4：式 (40) 的 2^3 为 OCR 伪影，原文为 2^Lambda", "my_action": "已用 p.11 原图独立确认，采纳"},
+    {"source": "reviews/T017B_L13_补核审核_2026-10-28.md", "item": "O5：式 (44) 后 a1=r4 映射为实质性错误", "my_action": "已用 p.11 原图独立确认，采纳"},
+    {"source": "reviews/T017B_L13_补核审核_2026-10-28.md", "item": "O1/O7：p2 符号与 V20 数值不相容均为原文问题而非 OCR", "my_action": "已用 p.6、p.12 原图独立确认，采纳"},
+    {"source": "reviews/T021_复核更正与独立推导_2026-11-01.md", "item": "E1：L13 的 z1 是真实位置误差 x1-x_d，旧对照表混入 L07 结构", "my_action": "已用 p.7 原图（式 (13) 与 Fig.2）独立确认，采纳；未沿用其表述"},
+    {"source": "reviews/T021_复核更正与独立推导_2026-11-01.md", "item": "E3：a1=r5, a2=r6, a3=r4；c>0 时以 F(R)=d/(1-eta) 给 T_R", "my_action": "独立重算后采纳，并补充 eta>=theta 的衔接"},
+    {"source": "reviews/T021_复核更正与独立推导_2026-11-01.md", "item": "E2：L07 的 -3/4 泄漏系数不能按旧审核认定错误（较弱配平不否定较强界）", "my_action": "作为方法论警示采纳：本轮对 2^(1-Lambda) 的判定不依赖'我得到较弱界'，而依赖 x=y 处的等号反例"}
+  ],
+  "remaining_unverified": [
+    {"id": "U1", "item": "Lemma 1 在 c>0 时是否已由 [42] 证明", "reason": "未读 [42]，不扩展检索", "impact": "式 (11) 在 c>0 时作为上界的原始依据未确认；本轮给替代充分界"},
+    {"id": "U2", "item": "W（权重误差界）的先验可证性", "reason": "式 (35) 无投影，论文未给机制", "impact": "残差半径与'给定容差下与初值无关'未建立；T_max 公式本身不受影响"},
+    {"id": "U3", "item": "式 (17) 幂次递推的正确形式", "reason": "印刷式在 n=2 给 r_03=0；需 [49] 或作者代码", "impact": "命令滤波器不能按印刷式实现；我的 r_0,n+1=1 重构未经核实"},
+    {"id": "U4", "item": "滤波器收敛时间与 T_max 的合成", "reason": "论文只给级误差界，未给时间，也未相加", "impact": "'从 t=0 起总时间有界'未建立"},
+    {"id": "U5", "item": "V 的量纲统一化重推", "reason": "本轮只报告缺口，重推会改变全部常数，超出复核范围", "impact": "|z1| 的残差界只有形式意义"},
+    {"id": "U6", "item": "p3 的正下界与 B=0 切换面", "reason": "论文未假设、未讨论", "impact": "u 的适定性不属定理结论"},
+    {"id": "U7", "item": "0<x3,x4<Ps 的正向不变性与第四阶 x4 动态", "reason": "降阶不可逆，未进入 Lyapunov 分析", "impact": "'三阶自治系统'的表述只在控制设计意义上成立"},
+    {"id": "U8", "item": "NN 输入 3 维 vs 5 维、MPa vs Pa", "reason": "p.9 未看原图；本轮只据解析文本", "impact": "复现时的输入定义有歧义"},
+    {"id": "U9", "item": "仿真结果（Fig.3-Fig.10、Table 3/4）", "reason": "无代码、无 k_u/k/F_L/xi/rho/theta 数值，Tables 1 的 V20 已不相容", "impact": "一律作作者自报，不作本项目复现结果"}
+  ],
+  "boundary_notes": [
+    "本文是实用固定时间 + 残差集，不是精确有限时间，也不是预设时间；T 不是设计输入",
+    "作者仿真结果不当作本项目复现结果",
+    "L13 需要直接测量速度 x2；本项目为位置与两腔压力可测、速度估计，差异须说明而非修改项目合同",
+    "四状态仿真不等于已核验三阶模型；bar_x3 = x3 - alpha*x4 不可逆",
+    "带正常数余项的不等式不能推出精确归零，但这不否认其他鲁棒结构的能力"
+  ],
+  "deliverables": [
+    "explained_reading_zh.md",
+    "proof_check.md",
+    "reading_evidence.json"
+  ],
+  "mechanical_validation": "未执行；由审核者运行"
+}

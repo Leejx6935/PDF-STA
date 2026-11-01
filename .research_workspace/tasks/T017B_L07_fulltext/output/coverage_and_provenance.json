@@ -1,0 +1,109 @@
+{
+  "paper_id": "T017B_L07",
+  "identity": {
+    "title": "Finite-time command filtered electro-hydraulic system position control with dead zone",
+    "authors": ["Shuai Jiang", "Haikuo Shen", "Chao Cheng"],
+    "journal": "Applied Mathematical Modelling",
+    "volume_pages": "131 (2024) 190-204",
+    "doi": "10.1016/j.apm.2024.03.026",
+    "identity_check": "题名、作者、DOI、卷页与首页一致；DOI 以页脚 https://doi.org/10.1016/j.apm.2024.03.026 出现，作者邮箱域 bjtu.edu.cn 与单位一致",
+    "identity_verified": true
+  },
+  "source": {
+    "pdf_path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\inputs\\four_papers\\L07_Zotero.pdf",
+    "sha256_declared": "36d2694f937bea0dd32fc559ac73b0bea34d72d88872f686d97fd4848f05b758",
+    "sha256_observed": "36d2694f937bea0dd32fc559ac73b0bea34d72d88872f686d97fd4848f05b758",
+    "sha256_match": true,
+    "version_note": "出版版（Elsevier 排版，含页码 190-204、Declaration of competing interest、Appendix A Comments and responses、参考文献 28 条）",
+    "read_tool_note": "本机 Read 工具打开该 PDF 返回 password-protected，无法调阅页面位图；本报告全部结论基于 MinerU 文本层"
+  },
+  "mineru": {
+    "doc_id": "36d2694",
+    "tier": "standard",
+    "parsed_markdown": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\sources\\parsed\\L07_fulltext.md",
+    "total_pages": 15,
+    "page_range_parsed": "1-15",
+    "next_request": null,
+    "coverage_complete": true
+  },
+  "reading": {
+    "pages_read": "1-15（全部）",
+    "pages_unread": [],
+    "sections_read": ["Abstract", "1 Introduction", "2 Problem formulation (2.1 model, 2.2 projection)", "3 Controller design (full)", "4 Simulation (4.1, 4.2)", "5 Conclusion", "Appendix A Q1-Q9 (Q4 重复编号两次)", "References [1]-[28] 仅在需要核对引用时查看"],
+    "full_text_claim": "全文已读（15/15 页）；无未读正文部分"
+  },
+  "priority_questions": {
+    "filter_compensation_into_true_error": {
+      "answer": "xi_i 的动力学含可算项 (x_{i+1}^c - alpha_i)，与 zdot_i 中同项精确相消；被 V3 界定的是 v_i=z_i-xi_i（z_i=x_i-x_i^c）。真实位置误差 e1=x1-x_d = z1+(x1^c-alpha0)-k0*z0-c0*v0^(2p-1)，论文未给该式，我补出于 proof_reconstruction §7",
+      "status": "verified_plus_completed"
+    },
+    "which_error_has_finite_time": {
+      "answer": "v_i、xi_i（进而 z_i）；不是 x1-x_d；参数/扰动误差只 UUB",
+      "status": "verified"
+    },
+    "virtual_control_derivative_condition": {
+      "answer": "不需要 x_d 的导数（成立，全文无 x_ddot）；但 alpha_i 含 v^(2p-1), 2p-1=0.96 in (0,1)，v=0 处导数无界，二阶滤波器一致 phi 界的证明未闭合",
+      "status": "open"
+    },
+    "dead_zone_knowledge": {
+      "answer": "断点 b_l,b_r 未知但上下界已知；左右斜率相等 m_l=m_r=k_i 且为常数；只用 pi0=max{-bl_min,br_max} 与 f_max；无死区逆，仅 (41) 鲁棒阻尼",
+      "status": "verified"
+    },
+    "computable_time_bound": {
+      "answer": "未建立。T1 (49) 含未量化 T_c 与 phi_i；sigma1、参数区间、Dhat(0) 未给；按论文数值 beta<=0 使 (49) 无定义；T1 依赖 V3(0) 与自由参数 eta",
+      "status": "not_established"
+    },
+    "preset_time": {
+      "answer": "否。论文无预设时间机制，T1 依赖初值 V3(0)，非用户可指定",
+      "status": "not_established"
+    },
+    "sensing_condition_difference": {
+      "answer": "位置与两腔压力可测（Remark 1 明确）与项目合同一致；但 x2 直接进入 alpha2 与四条自适应律，论文未给测速手段或观测器，与本项目“速度估计”存在差异。仅识别，不改合同",
+      "status": "identified"
+    }
+  },
+  "formula_locators": [
+    {"id": "(1)-(3)", "page": 2, "journal_page": 191, "content": "负载/压力/流量方程", "check_level": "text_verified"},
+    {"id": "(5)-(8)", "page": 3, "journal_page": 192, "content": "死区 DZ、x_v=k_i[u-pi(u)]、Q_L", "check_level": "text_verified"},
+    {"id": "(9)", "page": 3, "journal_page": 192, "content": "三阶状态方程与 theta/g1 定义", "check_level": "independently_recomputed"},
+    {"id": "Assumption 1-3", "page": 3, "journal_page": 193, "content": "死区界、压力界、扰动与参数界", "check_level": "text_verified"},
+    {"id": "(13)-(15)", "page": 4, "journal_page": 193, "content": "PFTS 引理及时间界", "check_level": "text_verified_form_checked"},
+    {"id": "(21)-(28)", "page": 5, "journal_page": 194, "content": "z0、二阶命令滤波器、alpha0、xi0、V0", "check_level": "independently_recomputed"},
+    {"id": "(29)-(32)", "page": 6, "journal_page": 195, "content": "alpha1、V1", "check_level": "independently_recomputed"},
+    {"id": "(33)-(36)", "page": 6, "journal_page": 195, "content": "alpha2、V2", "check_level": "independently_recomputed_sign_typo_suspected"},
+    {"id": "(37)-(42)", "page": 6, "journal_page": 195, "content": "u、V3、死区阻尼 (41)、自适应律 (42)", "check_level": "independently_recomputed"},
+    {"id": "(43)-(47)", "page": 7, "journal_page": 196, "content": "滤波误差、聚合不等式、alpha/beta/b", "check_level": "recomputed_discrepancy_found"},
+    {"id": "(48)-(50)", "page": 8, "journal_page": 197, "content": "残差集、T1、|z1| 界", "check_level": "recomputed_partial"},
+    {"id": "Table 1", "page": 9, "journal_page": 198, "content": "系统参数", "check_level": "recomputed"},
+    {"id": "Sec 4.2 gains", "page": 9, "journal_page": 198, "content": "控制器增益与初值", "check_level": "text_verified_incomplete"}
+  ],
+  "findings": [
+    {"id": "D1", "severity": "typo", "claim": "式 (36) 首项符号应为负", "evidence": "与 (32)(40)(44) 矛盾；正号将破坏负定性", "verification": "text_layer_only_image_pending"},
+    {"id": "D2", "severity": "algebraic_overcount", "claim": "Delta_tilde/theta_tilde/g_tilde 负定系数多算 3/2 至 3 倍", "evidence": "独立 Young 展开仅得 -(sigma1/(4mu))*Delta_tilde^2", "verification": "independently_recomputed"},
+    {"id": "D3", "severity": "self_inconsistent", "claim": "按论文 c_i=0.5,l_i=1,p=99/101 得 c_i-l_i/(2p)=-0.0101<0，beta 非正，(49) 无定义", "evidence": "阈值 l_i<2*p*c_i=0.9802；论文取 l_i=1 越界", "verification": "independently_recomputed"},
+    {"id": "D4", "severity": "gap", "claim": "T_c 与 phi_i 无量化式，时间界不可计算", "evidence": "Lemma 4 只给存在性 (27)", "verification": "text_verified"},
+    {"id": "D5", "severity": "scope_gap", "claim": "定理界定 z1=x1-x1^c，非 x1-x_d", "evidence": "需补 e1 表达式，被 k0 放大 20 倍", "verification": "independently_completed"},
+    {"id": "D6", "severity": "regularity", "claim": "u 隐含于 f(PL,u) 内，分支与过零未讨论；f 下界未量化", "evidence": "(38) 与 (8)；Assumption 2 仅定性", "verification": "text_verified"},
+    {"id": "D7", "severity": "open_proof", "claim": "分数幂使 alphadot 在 v=0 无界，滤波器一致 phi 界未证；滤波器状态不在 V3", "evidence": "(22)(25)(30)(34)(38) 与 Lemma 4", "verification": "analysis"},
+    {"id": "D8", "severity": "reproducibility", "claim": "sigma1, eps, l0, D1hat(0), D2hat(0), 参数区间, 死区界, 扰动界, x(0), 采样时间与求解器均未给", "evidence": "Sec 4.2 参数清单", "verification": "text_verified"},
+    {"id": "D9", "severity": "claim_mismatch", "claim": "引言称最终控制律含死区补偿项，实际只有鲁棒阻尼 (41)", "evidence": "(38) 无 pi 项", "verification": "text_verified"}
+  ],
+  "state_ledger": {
+    "plant_continuous": 3,
+    "filter_continuous": 6,
+    "compensation_continuous": 4,
+    "parameter_estimates": 4,
+    "disturbance_estimates": 2,
+    "integral_state": 1,
+    "controller_continuous_total": 17,
+    "closed_loop_total": 20,
+    "discrete_states": 0,
+    "algebraic_quantities": ["z1..z3", "v0..v3", "alpha0..alpha2", "u", "pi(u)", "f(PL,u)", "5x Proj"],
+    "note": "仅结构计数，未运行，不给毫秒数或性能倍数"
+  },
+  "not_done": [
+    "未核页面位图（PDF 对 Read 工具加密），D1 等排版疑点待原图确认",
+    "未运行任何仿真，未复现论文数值指标（8.1e-5 等为作者结果，工况见 Sec 4）",
+    "未检索其他文献、未设计控制器、未修改项目量测合同"
+  ]
+}

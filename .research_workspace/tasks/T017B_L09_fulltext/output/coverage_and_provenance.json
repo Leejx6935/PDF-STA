@@ -1,0 +1,218 @@
+{
+  "paper_id": "L09",
+  "title": "A reinforcement learning-based optimized backstepping control approach for uncertain electro-hydraulic systems",
+  "authors": ["Chen Wang", "Jianhui Wang", "Jinping Ye", "Qing Guo", "Tieshan Li"],
+  "venue": "Mechanical Systems and Signal Processing 237 (2025) 112928",
+  "doi": "10.1016/j.ymssp.2025.112928",
+  "dates": {
+    "received": "2025-02-28",
+    "revised": "2025-04-27",
+    "accepted": "2025-05-27",
+    "available_online": "2025-06-17"
+  },
+  "source": {
+    "pdf_path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\inputs\\four_papers\\L09_Zotero.pdf",
+    "version": "Elsevier version of record (publisher PDF, 16 pages)",
+    "sha256_expected": "5a17f6ae66e87812fff9fab326fa29e65c7564eb0bc5342a3a6bc89df5ca8f19",
+    "sha256_observed": "5a17f6ae66e87812fff9fab326fa29e65c7564eb0bc5342a3a6bc89df5ca8f19",
+    "sha256_match": true,
+    "pdf_direct_read": "Read tool reports password-protected (owner password); MinerU parsed successfully",
+    "identity_checks": {
+      "title_match": true,
+      "authors_match": true,
+      "doi_match": true,
+      "volume_issue_match": true,
+      "journal_match": true,
+      "verdict": "identity confirmed; conclusions apply to this version only"
+    }
+  },
+  "mineru": {
+    "doc_id": "doc:5a17f6a",
+    "short_id": "5a17f6a",
+    "tier": "standard",
+    "cache_hit": true,
+    "page_range": "1-16",
+    "parsed_filename": "L09_fulltext.md",
+    "parsed_path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\sources\\parsed\\L09_fulltext.md",
+    "parse_status": "done"
+  },
+  "coverage": {
+    "total_pages": 16,
+    "pages_read": "1-16 (text layer, all pages)",
+    "unread_pages": "none in text layer",
+    "unverifiable_content": [
+      "p.11 Fig.2 (schematic, image only)",
+      "p.13 Fig.3 (simulation curves a-f, image only; values not readable)",
+      "p.14 Fig.5 (experiment curves a-f, image only; values not readable)"
+    ],
+    "readable_tables": ["Table 1 (p.4)", "Table 2 (p.12)", "Table 3 (p.14)"],
+    "full_text_claimed": true,
+    "full_text_basis": "all 16 pages of the text layer were read; figures remain image-only and no curve values are asserted"
+  },
+  "reading_chain": [
+    {"step": 1, "locator": "doc:5a17f6a/tier:standard/page:1", "range": "1"},
+    {"step": 2, "locator": "doc:5a17f6a/tier:standard/page:2", "range": "2-4"},
+    {"step": 3, "locator": "doc:5a17f6a/tier:standard/page:5", "range": "5-8"},
+    {"step": 4, "locator": "doc:5a17f6a/tier:standard/page:9", "range": "9-11"},
+    {"step": 5, "locator": "doc:5a17f6a/tier:standard/page:12", "range": "12-15"},
+    {"step": 6, "locator": "doc:5a17f6a/tier:standard/page:16", "range": "16-references end"}
+  ],
+  "key_formula_locations": [
+    {"id": "eq1-5", "page": "2", "content": "servo valve static gain, load flow, flow continuity, force balance"},
+    {"id": "eq6a-6d", "page": "3", "content": "third-order EHS model, x=[y, dy, A*P_L]"},
+    {"id": "eq7-9", "page": "3-4", "content": "nominal/uncertain decomposition; Theta_2, Theta_3; phi_bar_2, phi_bar_3"},
+    {"id": "eq10-16", "page": "4", "content": "HJB, optimal policy, cost index"},
+    {"id": "eq17-18", "page": "5", "content": "NN approximation and ideal weights"},
+    {"id": "eq19-24", "page": "5", "content": "position loop error, HJB_1, stationarity, gradient reconstruction"},
+    {"id": "eq25-31", "page": "5-6", "content": "NN approximation of Gamma_1; critic/actor; update laws (30)(31)"},
+    {"id": "eq32", "page": "6-7", "content": "P-dot <= 0; verified independently"},
+    {"id": "eq33-38", "page": "7", "content": "L1, Young inequalities, weight identity, bound with ell_1 and Y_min"},
+    {"id": "eq39-51", "page": "7-8", "content": "velocity loop, identifier NN, updates (49)-(51)"},
+    {"id": "eq52-56", "page": "8-9", "content": "L2, identifier cross-term cancellation, bound"},
+    {"id": "eq57-69", "page": "9-10", "content": "force loop, identifier-critic-actor, updates (67)-(69)"},
+    {"id": "eq70-73", "page": "10-11", "content": "L3 and final bound"},
+    {"id": "theorem1", "page": "11", "content": "SGUUB + e1 to adjustable compact set"},
+    {"id": "table2", "page": "12", "content": "physical parameters and simulation parameters"},
+    {"id": "table3", "page": "14", "content": "control cost and error cost comparison (experiment)"},
+    {"id": "conclusion", "page": "15", "content": "admits voltage overshoot/saturation risk and computational load"}
+  ],
+  "verification_levels": {
+    "A_independently_verified": [
+      "eq6c coefficients re-derived from eq2 and eq4",
+      "stationarity conditions (22)(42)(60)",
+      "identity (23)/(24) is a tautology (variable substitution, not a derivation)",
+      "eq32: P-dot = -2*lambda_a*||S^T(Wa-Wc)||^2 <= 0; cross terms cancel exactly",
+      "eq33-37: L1 derivative term-by-term; all seven coefficient groups match",
+      "weight identity W~^T S S^T W_hat = 0.5 W~^T S S^T W~ + 0.5 (W_hat^T S)^2 - 0.5 (W*^T S)^2",
+      "cascade cancellation of +0.5 e2^2 and +0.5 e3^2 phi2 across (38)(56)(73)",
+      "identifier cross-term cancellation in L2 (e2*W~_theta^T S_theta) and resulting -sigma2 W~^T W_hat",
+      "force-loop condition c3 > (2+phi_hat3+2phi2)/4 violated by the paper's own parameters",
+      "phi_bar_3 ~ 6.52e8 for Table 2 nominal values; phi_bar_3^2 ~ 4.25e17"
+    ],
+    "B_structurally_valid_but_conditional": [
+      "(38)(56)(73) require Y_min > 0 for the -ell*L form",
+      "Young steps in (54)/(72) use phi2 (linear) or omit phi3^4; internally consistent but dimensionally inconsistent",
+      "conversion of -0.5*sigma*||W~||^2 to the K^{-1}-weighted form needs Y_K^min >= 1/Y_K^max (true for K=I only)"
+    ],
+    "C_not_established_or_false": [
+      "cost functionals J1,J2,J3 diverge for a moving reference; admissible set empty (independent computation)",
+      "HJB for loop 1 has no stabilizing solution when y_d-dot != 0",
+      "P -> 0 does not imply H -> 0; numerical counterexample H=-9.5999 at P=0",
+      "no bound relating achieved cost to J*; near-optimality not a theorem",
+      "Y_min = 0 because S S^T is rank one (p=5), hence ell=0 and the comparison lemma / bound sqrt(2*varpi/ell) fail",
+      "force-loop sufficient conditions violated by >= 4 (up to 14) orders of magnitude by the authors' own gains",
+      "experiment uses lambda_a1 = 0.1 < 1/2, violating its own design condition",
+      "identifier targets depend on u (via Theta_3) and on F_L / controller weights, which are not in the declared NN inputs; ideal weights are not well-defined functions of the inputs",
+      "no measurement noise model, no velocity observer, no input saturation in theory or simulation",
+      "no finite/fixed/prescribed-time guarantee of any kind"
+    ],
+    "D_pending_image_check": [
+      "p.9 eq(53) tail truncation",
+      "p.10 eq(71) subscripts (lambda_a2-lambda_c2 vs a3-c3)",
+      "p.12 experiment initial weights W_g3(0)=2e-3",
+      "p.12 Table 2 exponent of beta_bar_e",
+      "p.11 Theorem 1 sentence about increasing varpi / decreasing ell",
+      "p.12 Gaussian widths (2, 0.01, 10000)"
+    ]
+  },
+  "claims_audit": [
+    {"claim": "near-optimal control performance", "status": "not established", "reason": "ill-posed cost; no cost information in update laws; P->0 does not imply H->0"},
+    {"claim": "removes the excitation condition", "status": "literally true, but convergence target is lost", "reason": "update laws have no residual; unique equilibrium is S^T W_hat = 0, not W*"},
+    {"claim": "all signals semi-globally UUB", "status": "skeleton valid, statement not as written", "reason": "Y_min=0; force-loop margins violated; repair yields weaker UUB"},
+    {"claim": "e1 converges to an adjustable compact set", "status": "mis-stated", "reason": "UUB not asymptotic; bound sqrt(2 varpi/ell) undefined at ell=0"},
+    {"claim": "five neural networks", "status": "incorrect", "reason": "eight networks (2+3+3), five neurons each"},
+    {"claim": "RL learning improves steady-state control cost", "status": "not supported by authors' own Table 3", "reason": "steady-state Jc 4.70 vs BC 4.70; transient Jc is 3.9x worse"}
+  ],
+  "time_guarantee": {
+    "finite_time": "not established",
+    "fixed_time": "not established",
+    "prescribed_time": "not established",
+    "T_given_in_advance": "no",
+    "T_depends_on_initial_condition": "no T defined",
+    "singularity_near_T": "not applicable (no terminal time)",
+    "post_T_behavior": "not defined",
+    "object_time": "no time bound; only UUB",
+    "filter_time": "no filter used",
+    "observer_time": "no observer used",
+    "true_position_time": "no time bound; only an (invalid) ultimate bound"
+  },
+  "measurement": {
+    "required_signals": ["x1 = y (position)", "x2 = dy (velocity)", "x3 = A*P_L (load pressure difference)"],
+    "velocity_acquisition": "not specified; no observer, no differentiator, no filter",
+    "pressure_channels": "only P_L = P1 - P2; P1 and P2 are not modeled separately",
+    "noise_model": "none",
+    "noise_bound": "none",
+    "filter_settings": "none",
+    "saturation": "not in theory, not in simulation; admitted as a risk in the conclusion",
+    "experiment_sampling": "1000 Hz host computer",
+    "simulation_solver": "ODE4, step 0.1 ms (MATLAB R2022b/Simulink)",
+    "contract_difference": "project contract measures position and two chamber pressures and estimates velocity; L09 requires x2 and gives no estimator, so the theorem does not cover the contract configuration"
+  },
+  "state_ledger": {
+    "plant_states": {"count": 3, "items": ["x1", "x2", "x3"]},
+    "controller_states": {
+      "count": 40,
+      "items": [
+        "W_c1 (5), W_a1 (5)",
+        "W_c2 (5), W_a2 (5), W_theta2 (5)",
+        "W_c3 (5), W_a3 (5), W_theta3 (5)"
+      ],
+      "equations": ["(30)(31)", "(49)(50)(51)", "(67)(68)(69)"]
+    },
+    "total_odes": 43,
+    "algebraic_only": ["e1", "e2", "e3", "alpha1_hat", "alpha2_hat", "gradJ_hat_1..3", "u", "S_Gamma1(2)", "S_Gamma2(4)", "S_theta2(4)", "S_Gamma3(6)", "S_theta3(6)", "P", "H_i"],
+    "observers_filters_differentiators": 0,
+    "target_networks": 0,
+    "replay_buffers": 0,
+    "matrix_inverse": "scalar 1/phi_bar_3 only; K=I so no matrix inverse",
+    "network_count": 8,
+    "neurons_per_network": 5,
+    "per_step_cost_note": "structural only; no runtime measured, no ms or speedup asserted"
+  },
+  "author_reported_results": {
+    "disclaimer": "authors' data under their own conditions; not reproduced here",
+    "simulation": {"yd": "0.05 sin(pi t) + 0.02 sin(2 pi t) m", "FL": "150 sin(pi t) N", "c1": 300, "c2": 300, "c3": 2000},
+    "experiment": {"yd": "0.03 sin(pi t) m", "c1": 650, "c2": 650, "c3": 650},
+    "table3_excerpt": {
+      "x1_0_30mm": {"OBC_Jc_0_5": 51.45, "BC_Jc_0_5": 13.25, "OBC_Jc_5_10": 4.70, "BC_Jc_5_10": 4.70, "OBC_Je_5_10": 3.58e-6, "BC_Je_5_10": 7.97e-6}
+    },
+    "interpretation": "steady-state control cost equal to BC; transient control cost larger; steady-state error cost smaller"
+  },
+  "numeric_checks": [
+    {"item": "phi_bar_3 (Table 2 nominal)", "value": 6.52e8, "unit": "N/s per V"},
+    {"item": "phi_bar_3^2", "value": 4.25e17, "unit": "1"},
+    {"item": "required c3 (paper's own condition)", "value": ">1.06e17", "actual": "2000 (sim), 650 (exp)"},
+    {"item": "required lambda_a3 (paper's own condition)", "value": ">2.1e17", "actual": 0.6},
+    {"item": "required lambda_a3 (consistent Young with phi3^4)", "value": ">9e34", "actual": 0.6},
+    {"item": "c2 threshold", "value": 2.0003, "actual": 300, "status": "satisfied"},
+    {"item": "lambda_a1 threshold", "value": 0.5, "actual": "0.6 (sim), 0.1 (exp)", "status": "violated in experiment"},
+    {"item": "H1 counterexample (P=0, e1=0.01, yd_dot=0.1, c1=300)", "value": -9.5999, "status": "not zero"}
+  ],
+  "gaps_summary": {
+    "C1_optimization": 3,
+    "C2_theorem_coverage": 3,
+    "C3_repairable": 3,
+    "C4_structural": 4,
+    "C5_unaddressed": 3
+  },
+  "pending_image_checks": [
+    {"id": "D1", "page": "9", "item": "eq(53) tail", "impact": "none on (55)"},
+    {"id": "D2", "page": "10", "item": "eq(71) subscripts", "impact": "typography"},
+    {"id": "D3", "page": "12", "item": "experiment W_g3(0)=2e-3 and its exponent", "impact": "reproducibility and compatibility with phi_bar_3 magnitude"},
+    {"id": "D4", "page": "12", "item": "Table 2 beta_bar_e exponent/unit", "impact": "absolute scale of phi_bar_3; qualitative conclusion robust to 100x change"},
+    {"id": "D5", "page": "11", "item": "Theorem 1 wording on varpi and ell", "impact": "possible logical/wording error"},
+    {"id": "D6", "page": "6-7", "item": "eq(32) typesetting", "impact": "none (independently re-derived)"}
+  ],
+  "review_constraints_applied": [
+    "no impossibility claim about finite-time tracking under nonzero disturbance",
+    "no change to the project measurement contract",
+    "parameter/weight error convergence kept distinct from true position error",
+    "no time guarantee inferred from title or abstract; all time items marked not established",
+    "author claims not adopted as audit conclusions"
+  ],
+  "outputs": [
+    "paper_card.md",
+    "proof_reconstruction.md",
+    "coverage_and_provenance.json"
+  ]
+}

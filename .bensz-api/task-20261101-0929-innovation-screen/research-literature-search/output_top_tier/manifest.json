@@ -1,0 +1,196 @@
+{
+  "abstract_enrichment": {
+    "attempted": 0,
+    "filled": 0,
+    "missing": 6,
+    "mode": "disabled"
+  },
+  "artifacts": {
+    "candidates_deduped": {
+      "bytes": 14963,
+      "path": "candidates_deduped.jsonl",
+      "sha256": "c9585816fe4170c5cd60256c03bd33b8a4332a287085697f2544bd3e9e396e46"
+    },
+    "candidates_normalized": {
+      "bytes": 14963,
+      "path": "candidates_normalized.jsonl",
+      "sha256": "c9585816fe4170c5cd60256c03bd33b8a4332a287085697f2544bd3e9e396e46"
+    },
+    "candidates_raw": {
+      "bytes": 9574,
+      "path": "candidates_raw.jsonl",
+      "sha256": "dde401e60f3c8aa61a11c3fe282c227afd5fa96511a529996637115dff64f1c0"
+    },
+    "dedupe_map": {
+      "bytes": 126,
+      "path": "dedupe_map.json",
+      "sha256": "2b77d27c23639519be99a2175b260a7af2e53e836ab139ef119d1e3b2be39d05"
+    },
+    "provenance": {
+      "bytes": 2025,
+      "path": "provenance.jsonl",
+      "sha256": "0c4b8d5834b3aa325931536449a911b4f6349c7a1868f22a0295586902f268bb"
+    },
+    "search_log": {
+      "bytes": 4256,
+      "path": "search_log.json",
+      "sha256": "0e3d5f452f683575d27657119e49ada1f49122cd72279a59bdc0eedfc2f67dfb"
+    }
+  },
+  "attempts": [
+    {
+      "empty_records": 0,
+      "invalid_records": 0,
+      "provider": "crossref",
+      "query_id": "q01",
+      "results": 3,
+      "status": "success"
+    },
+    {
+      "empty_records": 0,
+      "invalid_records": 0,
+      "provider": "crossref",
+      "query_id": "q02",
+      "results": 3,
+      "status": "success"
+    },
+    {
+      "empty_records": 0,
+      "invalid_records": 0,
+      "provider": "crossref",
+      "query_id": "q03",
+      "results": 3,
+      "status": "success"
+    },
+    {
+      "error": "429 Client Error: Too Many Requests for url: <url>",
+      "provider": "crossref",
+      "query_id": "q04",
+      "results": 0,
+      "status": "error"
+    },
+    {
+      "empty_records": 0,
+      "invalid_records": 0,
+      "provider": "crossref",
+      "query_id": "q05",
+      "results": 3,
+      "status": "success"
+    },
+    {
+      "empty_records": 0,
+      "invalid_records": 0,
+      "provider": "crossref",
+      "query_id": "q06",
+      "results": 3,
+      "status": "success"
+    }
+  ],
+  "cache": {
+    "mode": "disabled"
+  },
+  "candidate_schema_version": "rls.paper.v1",
+  "contract_version": "rls.v1",
+  "counts": {
+    "deduped": 10,
+    "dropped": 0,
+    "empty_records": 0,
+    "failed": 1,
+    "invalid_records": 0,
+    "normalization_failed": 0,
+    "normalized": 10,
+    "raw": 15
+  },
+  "created_at": "2026-11-01T01:30:00+00:00",
+  "dedupe": {
+    "canonical_merges": 0,
+    "map_path": "dedupe_map.json",
+    "parameters": {
+      "title_similarity_threshold": 0.92,
+      "token_jaccard_threshold": 0.8,
+      "year_window": 1
+    }
+  },
+  "domain": null,
+  "failure_code": null,
+  "filters": {
+    "exclude_preprints": false,
+    "max_year": 2026,
+    "min_year": 2021
+  },
+  "provider_policy": {
+    "config_fingerprint": "5f126dd91eee29970e8e1341938acbe596aaef1ec313bc8268b5fb771cf0e6e8",
+    "effective_order": [
+      "crossref"
+    ],
+    "fallback_enabled": true,
+    "preprint_policy": {
+      "include_preprints": true,
+      "preprint_priority": "medium",
+      "published_version_preferred": true
+    },
+    "preprint_profile": "general",
+    "requested_order": [
+      "crossref"
+    ],
+    "retrieval_strategy": "priority-fallback-topup",
+    "topup_threshold": 0.7
+  },
+  "query_plan": {
+    "accepted_count": 6,
+    "items": [
+      {
+        "ordinal": "1",
+        "query": "On inherent limitations in robustness and performance for a class of prescribed-time algorithms",
+        "query_id": "q01",
+        "rationale": ""
+      },
+      {
+        "ordinal": "2",
+        "query": "Prescribed-Time Control via Periodic Delayed Feedback-Based Super-Twisting Sliding Mode Algorithm",
+        "query_id": "q02",
+        "rationale": ""
+      },
+      {
+        "ordinal": "3",
+        "query": "Global prescribed-time output feedback control of a class of uncertain nonlinear systems by linear time-varying feedback",
+        "query_id": "q03",
+        "rationale": ""
+      },
+      {
+        "ordinal": "4",
+        "query": "Prescribed-Time Control of Nonlinear Systems With Linearly Vanishing Multiplicative Measurement Noise",
+        "query_id": "q04",
+        "rationale": ""
+      },
+      {
+        "ordinal": "5",
+        "query": "Robust exact differentiators with predefined convergence time",
+        "query_id": "q05",
+        "rationale": ""
+      },
+      {
+        "ordinal": "6",
+        "query": "Unifying Fixed Time and Prescribed Time Control for Strict-Feedback Nonlinear Systems",
+        "query_id": "q06",
+        "rationale": ""
+      }
+    ],
+    "requested_count": 6,
+    "sha256": "05befc47b3cdd4803f79121a4f7bba5cb6962f92ec4336792bb721e837448c35",
+    "source": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.bensz-api\\task-20261101-0929-innovation-screen\\research-literature-search\\input\\top_tier_queries.json"
+  },
+  "search_run_id": "96fdd443baa146fe9b1f5da1d9104316",
+  "search_skill_version": "1.0.4",
+  "status": "partial_success",
+  "topic": "Theory references from leading control journals for prescribed-time hydraulic tracking innovation screening",
+  "topic_hash": "5a314463ff4a47a6b061550472f053e0c9bc8d28d4935ef305ec1044cf486f02",
+  "truncation": {
+    "applied": false,
+    "dropped_count": 0,
+    "limit": 18
+  },
+  "warnings": [
+    "q04/crossref: 429 Client Error: Too Many Requests for url: https://api.crossref.org/works?query=Prescribed-Time+Control+of+Nonlinear+Systems+With+Linearly+Vanishing+Multiplicative+Measurement+Noise&rows=3"
+  ]
+}

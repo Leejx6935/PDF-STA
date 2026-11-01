@@ -1,0 +1,157 @@
+{
+  "accepted_query_count": 6,
+  "attempts": [
+    {
+      "empty_records": 0,
+      "invalid_records": 0,
+      "provider": "crossref",
+      "query_id": "q01",
+      "results": 3,
+      "status": "success"
+    },
+    {
+      "empty_records": 0,
+      "invalid_records": 0,
+      "provider": "crossref",
+      "query_id": "q02",
+      "results": 3,
+      "status": "success"
+    },
+    {
+      "empty_records": 0,
+      "invalid_records": 0,
+      "provider": "crossref",
+      "query_id": "q03",
+      "results": 3,
+      "status": "success"
+    },
+    {
+      "error": "429 Client Error: Too Many Requests for url: <url>",
+      "provider": "crossref",
+      "query_id": "q04",
+      "results": 0,
+      "status": "error"
+    },
+    {
+      "empty_records": 0,
+      "invalid_records": 0,
+      "provider": "crossref",
+      "query_id": "q05",
+      "results": 3,
+      "status": "success"
+    },
+    {
+      "empty_records": 0,
+      "invalid_records": 0,
+      "provider": "crossref",
+      "query_id": "q06",
+      "results": 3,
+      "status": "success"
+    }
+  ],
+  "empty_records": 0,
+  "fallback_reason": "",
+  "invalid_records": 0,
+  "normalization_failed": 0,
+  "queries": [
+    {
+      "attempts": [
+        {
+          "empty_records": 0,
+          "invalid_records": 0,
+          "provider": "crossref",
+          "results": 3,
+          "status": "success"
+        }
+      ],
+      "query": "On inherent limitations in robustness and performance for a class of prescribed-time algorithms",
+      "query_id": "q01",
+      "rationale": "",
+      "returned": 3
+    },
+    {
+      "attempts": [
+        {
+          "empty_records": 0,
+          "invalid_records": 0,
+          "provider": "crossref",
+          "results": 3,
+          "status": "success"
+        }
+      ],
+      "query": "Prescribed-Time Control via Periodic Delayed Feedback-Based Super-Twisting Sliding Mode Algorithm",
+      "query_id": "q02",
+      "rationale": "",
+      "returned": 3
+    },
+    {
+      "attempts": [
+        {
+          "empty_records": 0,
+          "invalid_records": 0,
+          "provider": "crossref",
+          "results": 3,
+          "status": "success"
+        }
+      ],
+      "query": "Global prescribed-time output feedback control of a class of uncertain nonlinear systems by linear time-varying feedback",
+      "query_id": "q03",
+      "rationale": "",
+      "returned": 3
+    },
+    {
+      "attempts": [
+        {
+          "error": "429 Client Error: Too Many Requests for url: <url>",
+          "provider": "crossref",
+          "results": 0,
+          "status": "error"
+        }
+      ],
+      "query": "Prescribed-Time Control of Nonlinear Systems With Linearly Vanishing Multiplicative Measurement Noise",
+      "query_id": "q04",
+      "rationale": "",
+      "returned": 0
+    },
+    {
+      "attempts": [
+        {
+          "empty_records": 0,
+          "invalid_records": 0,
+          "provider": "crossref",
+          "results": 3,
+          "status": "success"
+        }
+      ],
+      "query": "Robust exact differentiators with predefined convergence time",
+      "query_id": "q05",
+      "rationale": "",
+      "returned": 3
+    },
+    {
+      "attempts": [
+        {
+          "empty_records": 0,
+          "invalid_records": 0,
+          "provider": "crossref",
+          "results": 3,
+          "status": "success"
+        }
+      ],
+      "query": "Unifying Fixed Time and Prescribed Time Control for Strict-Feedback Nonlinear Systems",
+      "query_id": "q06",
+      "rationale": "",
+      "returned": 3
+    }
+  ],
+  "query_source": ".bensz-api\\task-20261101-0929-innovation-screen\\research-literature-search\\input\\top_tier_queries.json",
+  "requested_query_count": 6,
+  "retrieval_strategy": "priority-fallback-topup",
+  "search_mode": "multi_query",
+  "topup_threshold": 0.7,
+  "total_returned": 15,
+  "total_unique": 10,
+  "warnings": [
+    "q04/crossref: 429 Client Error: Too Many Requests for url: https://api.crossref.org/works?query=Prescribed-Time+Control+of+Nonlinear+Systems+With+Linearly+Vanishing+Multiplicative+Measurement+Noise&rows=3"
+  ]
+}

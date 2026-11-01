@@ -1,0 +1,470 @@
+{
+  "paper_id": "L03",
+  "revision_id": "T017B_L03R1",
+  "revision_date": "2026-10-28",
+  "revision_scope": "Targeted correction of review items C1-C9 in paper_card.md, proof_reconstruction.md, coverage_and_provenance.json. No expansion to other papers, no change to the measurement contract, no controller design.",
+  "supersedes": "tasks/T017B_L03_fulltext/output/coverage_and_provenance.json",
+  "original_files_preserved": true,
+  "title": "Disturbance observer-based nonlinear feedback control for position tracking of electro-hydraulic systems in a finite time",
+  "authors": ["Hamid Razmjooei", "Gianluca Palli", "Morad Nazari"],
+  "journal": "European Journal of Control",
+  "volume": "67",
+  "article_number": "100659",
+  "year": 2022,
+  "doi": "10.1016/j.ejcon.2022.100659",
+  "publisher": "Elsevier",
+  "dates": {"received": "2021-09-20", "revised": "2022-03-11", "accepted": "2022-05-08", "online": "2022-05-20"},
+  "pdf": {
+    "path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\inputs\\four_papers\\L03_Zotero.pdf",
+    "sha256": "87208032df294dddc897ed22f12f0d375667d2618cdea2a6c41a70d239e71520",
+    "total_pages": 11,
+    "version": "Elsevier published version, journal pagination 1-11",
+    "identity_check": "Title, authors, DOI, journal/volume/article number confirmed on page 1 of the MinerU parse (doc:8720803/tier:standard/page:1)",
+    "identity_verdict": "identity_confirmed"
+  },
+  "reading_path": {
+    "primary_text": "Local MinerU standard parse, read page-by-page via read_document",
+    "mineru_doc_id": "doc:8720803/tier:standard",
+    "mineru_short_id": "8720803",
+    "mineru_parse_id": 166,
+    "mineru_page_range": "1-11",
+    "mineru_status": "done",
+    "formula_verification": "Page images read with the built-in Read tool: sources/parsed/L03_flash_page3.png, page4.png, page5.png, page6.png, page7.png",
+    "pages_verified_by_page_image": [3, 4, 5, 6, 7],
+    "built_in_read_of_pdf": "NOT AVAILABLE - tested in this revision: Read(L03_Zotero.pdf, pages=4) returns 'PDF is password-protected'. The original task's claim of reading the PDF page-by-page with the built-in Read tool therefore cannot be reproduced in this environment; the present revision does not rely on that claim.",
+    "web_fetch_used": false,
+    "online_version_used": false,
+    "bypass_or_alternative_version_used": false
+  },
+  "coverage": {
+    "pages_total": 11,
+    "pages_read": "1-11",
+    "coverage_method": "full text of pages 1-11 read from the MinerU standard parse; pages 3-7 additionally verified formula-by-formula against page images",
+    "unread_pages": [],
+    "sections": [
+      {"section": "1. Introduction", "pages": "1-2"},
+      {"section": "2. Preliminaries and system descriptions (Eq.1-4, Def.1-2, Remark 1)", "pages": "2-3"},
+      {"section": "3. Finite-time tracking control design (Eq.5-22, Lemma 1, Theorem 1, Theorem 2)", "pages": "3-7"},
+      {"section": "3.1 Implementation issues (Eq.34-36, Table 1)", "pages": "7"},
+      {"section": "4. Numerical simulations and discussion (Figs.2-7, Tables 1-2, Remark 2)", "pages": "7-10"},
+      {"section": "5. Conclusions", "pages": "10-11"},
+      {"section": "References", "pages": "11"}
+    ],
+    "partial_read_qualification": "No page was skipped. Figures (Figs.2-7) are chart blocks in the parse; numerical values quoted from them are marked visual_only and are not treated as evidence."
+  },
+  "key_equations": [
+    {
+      "eq": "(1)",
+      "page": 2,
+      "locator": "doc:8720803/tier:standard/page:2",
+      "content": "Fifth-order EHA: ddot y = -(b/m) dot y - F_f(y_dot)/m + (A_p/m) P_L ; dot P_L = -(2 rho A_p/V0) dot y + (2 rho Psi(v_e)/V0) sqrt(P_s-|P_L|) ; ddot v_e = -omega_nv^2 v_e - 2 epsilon_v omega_nv dot v_e + omega_nv^2 (k_e u + v_e0)",
+      "grade": "A",
+      "verification": "mineru_text; symbols cross-checked on page 4 image",
+      "correction": "Symbols are omega_nv and epsilon_v (not omega_e, epsilon_e). rho is the effective bulk modulus in Pa, not density."
+    },
+    {
+      "eq": "(2)",
+      "page": 3,
+      "locator": "doc:8720803/tier:standard/page:3",
+      "content": "Error-coordinate state space, x=[y, y_dot, P_L, v_e, v_e_dot], Delta = Delta_bar + eta, Delta=[0, Delta_2, Delta_3, 0, Delta_5]^T",
+      "grade": "A"
+    },
+    {
+      "eq": "(4)",
+      "page": 3,
+      "locator": "doc:8720803/tier:standard/page:3",
+      "content": "mu(t,tau) = (1 + exp(-t/tau)) / (2 exp(-t/tau)) = (exp(t/tau)+1)/2",
+      "grade": "A",
+      "verification": "page 3 image: tau visible in both exponents",
+      "correction": "C1: the original report omitted tau. Consequence: mu_dot/mu in (1/(2 tau), 1/tau), not (1/2,1)."
+    },
+    {
+      "eq": "(5)",
+      "page": 4,
+      "locator": "doc:8720803/tier:standard/page:4",
+      "content": "dot E1 = (mu_dot/mu) E1 + E2 ; dot E2 = (mu_dot/mu - b/m) E2 + (A_p/m) mu x3 - mu[y_dd + (b/m) y_d] + mu Delta_2",
+      "grade": "A",
+      "note": "The (A_p/m) mu x3 coefficient follows from E2 = mu e2 and is the anchor for the mu bookkeeping discussed in O15."
+    },
+    {
+      "eq": "(7)",
+      "page": 4,
+      "content": "bar E2 dynamics with Phi_1 = -a1 E1",
+      "grade": "A",
+      "verification": "independently re-derived; matches the printed form term by term"
+    },
+    {
+      "eq": "(8)",
+      "page": 4,
+      "locator": "doc:8720803/tier:standard/page:4",
+      "content": "x_3d = (A_p/m * mu)^(-1) * ( -E1 - a2 barE2 + mu[y_dd + (b/m) y_d] - (mu_dot/mu - b/m) Phi_1 + Phi_1_dot - mu k2 sgn(barE2) )",
+      "grade": "A",
+      "verification": "page 4 image + independent backstepping derivation (both agree)",
+      "correction": "C7: the prefactor printed in the paper does contain mu, i.e. m/(A_p mu). The original report's 'missing 1/mu' suspicion is RETRACTED."
+    },
+    {
+      "eq": "(9)",
+      "page": 4,
+      "locator": "doc:8720803/tier:standard/page:4",
+      "content": "Transformed first four equations; the x3_tilde coefficient is printed as (A_p/m) x3_tilde, without mu",
+      "grade": "B",
+      "note": "O15: eq.(5) requires (A_p/m) mu x3_tilde here."
+    },
+    {
+      "eq": "(10)",
+      "page": 4,
+      "content": "x_4d = (2 rho k_q sqrt(P_s-|x3_tilde+Phi_2|)/V0)^(-1) * ( -(A_p/m) barE2 + (2 rho A_p/V0)(barE2+Phi_1) + (2 rho A_p/V0) y_d + Phi_2_dot - a3 x3_tilde - k3 sgn(x3_tilde) )",
+      "grade": "B",
+      "note": "O15: the compensating mu factors are absent as printed."
+    },
+    {
+      "eq": "(11)",
+      "page": 4,
+      "content": "Transformed dynamics after substituting x4d",
+      "grade": "B",
+      "note": "Self-consistent with (9)(10) as printed, but not with (5)(8)."
+    },
+    {
+      "eq": "(14)",
+      "page": 5,
+      "locator": "doc:8720803/tier:standard/page:5",
+      "content": "u = (k_e omega_nv^2)^(-1) ( -x4_tilde + omega_nv^2 (x4_tilde+Phi_3) + 2 epsilon_v omega_nv (x5_tilde+Phi_4) + Phi_4_dot - a5 x5_tilde - k5 sgn(x5_tilde) )",
+      "grade": "A",
+      "verification": "page 5 image + independent substitution of x4 = x4_tilde+Phi_3, x5 = x5_tilde+Phi_4",
+      "correction": "The original report's transcription of (14) was wrong; corrected here. Saturation is absent."
+    },
+    {
+      "eq": "(15)",
+      "page": 5,
+      "content": "Closed-loop form used in the Lemma 1 proof; row 2 prints (A_p/m)x3 without mu while row 3 prints 2 rho A_p/(mu V0)",
+      "grade": "B",
+      "note": "Same mu family as O15."
+    },
+    {
+      "eq": "(16)",
+      "page": 5,
+      "content": "Delta_hat_i = - integral_0^t alpha_i sgn(e_i_dot + beta e_i^(q/p)) dsigma - beta e_i^(q/p), i=2,3,5",
+      "grade": "A"
+    },
+    {
+      "eq": "(17)",
+      "page": 5,
+      "content": "x2_hat_dot = -(b/m) x2_hat + (A_p/m) x3 + Delta2_hat ; x3_hat_dot = -(2 rho A_p/V0) x2_hat + (2 rho k_q sqrt(P_s-|x3|)/V0) x4 + Delta3_hat ; x5_hat_dot = -omega_nv^2 x4 - 2 epsilon_v omega_nv x5_hat + k_e omega_nv^2 u + Delta5_hat",
+      "grade": "A"
+    },
+    {
+      "eq": "(18)",
+      "page": 5,
+      "content": "V_i = s_i^2/2, with s_i(t) = e_i_dot + beta e_i^(q/p)",
+      "grade": "A",
+      "correction": "C2: the sliding variable differentiates the observation error once. The original report wrote s_i = e_i + beta e_i^(q/p)."
+    },
+    {
+      "eq": "(19)",
+      "page": 5,
+      "content": "dot V_i = s_i dot s_i = s_i( e_i_dd + (beta q/p) e_i^(q/p-1) e_i_dot ) = s_i( x_i_hat_dd - x_i_dd + (beta q/p) e_i^(q/p-1) e_i_dot )",
+      "grade": "A",
+      "correction": "C3: the left-hand side is dot V_i, not dot s_i. The printed equation is correct; the original report's 'extra s_i factor / typographical error' judgement is RETRACTED."
+    },
+    {
+      "eq": "(20)",
+      "page": 5,
+      "content": "dot V_i = s_i( -alpha_i sgn(s_i(t)) - Delta_i_dot )",
+      "grade": "A",
+      "correction": "C3 (same retraction). Note: the substitution line above yields -Delta_hat_i_dot; replacing it by -Delta_i_dot is not justified in the text."
+    },
+    {
+      "eq": "(21)",
+      "page": 5,
+      "content": "dot V_i <= -alpha_i |s_i| + |Delta_i_dot| |s_i| <= -(alpha_i - sigma_i) |s_i|, under |Delta_i_dot| < sigma_i",
+      "grade": "A",
+      "correction": "C4: the bound is on the DISTURBANCE DERIVATIVE, not on Delta_i."
+    },
+    {
+      "eq": "(22)",
+      "page": 5,
+      "content": "FT-DOTC: u = (k_e omega_nv^2)^(-1)( -x4_tilde + omega_nv^2(x4_tilde+bar Phi_3) + 2 epsilon_v omega_nv (x5_tilde+bar Phi_4) + bar Phi_4_dot - a5 x5_tilde - (Delta5_hat + bar Theta_5) sgn(x5_tilde) )",
+      "grade": "B"
+    },
+    {
+      "eq": "(23)-(24)",
+      "page": 6,
+      "locator": "doc:8720803/tier:standard/page:6",
+      "content": "DOB versions of x_3d and x_4d; prefactor of (23) printed as (A_p/m)^(-1), without mu",
+      "grade": "B",
+      "note": "O15: mutually exclusive with eq.(8)'s (A_p/m * mu)^(-1) and with eq.(25)'s -E1 term."
+    },
+    {
+      "eq": "(25)-(33)",
+      "page": 6,
+      "content": "Step-by-step V_2 to V_5 inequalities, two sign cases per step",
+      "grade": "B",
+      "note": "Case 1 uses |Delta_hat_i| - |Delta_i| <= alpha_i^(-1)(sigma_i), a bound on the estimation error itself, which Theorem 1 does not establish."
+    },
+    {
+      "eq": "(31)",
+      "page": 6,
+      "locator": "doc:8720803/tier:standard/page:6",
+      "content": "dot V_5 = (mu_dot/mu - a1)E1^2 + (mu_dot/mu - b/m - a2)barE2^2 - a3 x3_tilde^2 - a4 x4_tilde^2 - a5 x5_tilde^2 - |x5_tilde| bar Theta_5 - ( |x5_tilde| Delta5_hat - x5_tilde Delta_5 )",
+      "grade": "A",
+      "verification": "page 6 image: every subscript in the last two terms is 5",
+      "correction": "C8: O3 (subscript 3 vs 5) is CLOSED; the subscript is 5."
+    },
+    {
+      "eq": "(34)",
+      "page": 7,
+      "locator": "doc:8720803/tier:standard/page:7",
+      "content": "mu(t,tau) = (1+exp(-t/tau))/(2 exp(-t/tau)) for t <= delta_t ; mu_max for t > delta_t",
+      "grade": "A",
+      "correction": "C1: tau restored; mu is continuous at delta_t but mu_dot jumps from exp(delta_t/tau)/(2 tau) to 0."
+    },
+    {
+      "eq": "(35)",
+      "page": 7,
+      "locator": "doc:8720803/tier:standard/page:7",
+      "content": "|e_i_dot| = |Delta_i_hat - Delta_i| <= |s_i(t)| <= alpha_i^(-1)(sigma_i)",
+      "grade": "A",
+      "correction": "C5: the paper bounds the DERIVATIVE of the observation error, not the observation error itself."
+    },
+    {
+      "eq": "(36)",
+      "page": 7,
+      "locator": "doc:8720803/tier:standard/page:7",
+      "content": "a1 > 1/tau, a2 > 1/tau - b/m, a_i > 0 (i=3,4,5)",
+      "grade": "A",
+      "verification": "page 7 image",
+      "correction": "C1: tau is present; the gains are a_i (backstepping), not alpha_i (observer class-K gains) as the original report wrote."
+    },
+    {
+      "eq": "Table 1",
+      "page": 7,
+      "locator": "doc:8720803/tier:standard/page:7",
+      "content": "m=440 kg; Piston area row printed with symbol b, unit m^2, value 0.01; V0=0.004 m^3; rho=1e9 Pa; k_e=0.49; omega_nv=152 s^-1; epsilon_v=0.92; P_s=1e7 Pa",
+      "grade": "A",
+      "verification": "page 7 image, cell by cell",
+      "correction": "C6: omega_nv=152 and k_e=0.49 are given (the original report's omega_e=49 and 'no k_e' are wrong). The 'b' printed in the piston-area row is a symbol misprint for A_p; the viscous friction coefficient b is still NOT given numerically."
+    }
+  ],
+  "theorems": [
+    {
+      "id": "Lemma 1",
+      "page": 5,
+      "assumptions": [
+        "|Delta_2| < k_2, |Delta_3| < k_3, |Delta_5| < k_5 (known bounds)",
+        "control (14) with k_i sufficiently large",
+        "a1 > 1/tau, a2 > 1/tau - b/m, a_i > 0 (i=3,4,5)"
+      ],
+      "conclusion": "All closed-loop states bounded; y and y_dot track y_d and y_d_dot 'in a finite time'.",
+      "time_property": "The displayed Lyapunov derivatives are negative quadratic; the resulting estimate is exponential.",
+      "audit": "Exponential, not finite time. No fractional-power inequality anywhere in the tracking part."
+    },
+    {
+      "id": "Theorem 1",
+      "page": 5,
+      "assumptions": [
+        "observers (16) and (17)",
+        "|Delta_i_dot| < sigma_i (Lipschitz-like condition on the DERIVATIVE)",
+        "alpha_i(.) class-K"
+      ],
+      "conclusion": "Observation errors e_i (i=2,3,5) globally FTUB; |s_i| <= alpha_i^(-1)(sigma_i) after T_i = |s_i(0)| / (alpha_i(|s_i(0)|) - sigma_i).",
+      "error_variables": ["s_i = e_i_dot + beta e_i^(q/p)", "e_2 = x2_hat - x2", "e_3 = x3_hat - x3", "e_5 = x5_hat - x5"],
+      "audit": "Proof gap is the explicit assumption x_i_hat_dd = x_i_dd stated after (20); it is not guaranteed by (17) and, if true, would annihilate the very error the theorem estimates. Additionally (20) replaces Delta_hat_i_dot by Delta_i_dot without justification. (19)-(20) themselves are correctly printed."
+    },
+    {
+      "id": "Theorem 2",
+      "page": "5-7",
+      "assumptions": [
+        "|Delta_i_dot| < sigma_i",
+        "bar Theta_i >> alpha_i^(-1)(sigma_i), with '>>' explained by the authors as 'much greater than'",
+        "a1 > 1/tau, a2 > 1/tau - b/m"
+      ],
+      "conclusion": "Closed loop (2),(16),(17),(22) bounded; y and y_dot track 'within a finite time'.",
+      "audit": "Exponential convergence after observer convergence. The Case-1 inequalities use alpha_i^(-1)(sigma_i) as a bound on the estimation error itself, which Theorem 1 does not provide (only |e_i_dot| is bounded, eq.(35)). '>>' is not a strict inequality and sigma_i is unknown. The interval t < T_i is not separately proven. Input boundedness is not a conclusion."
+    }
+  ],
+  "priority_question_answers": {
+    "prescribed_time": false,
+    "fixed_time": false,
+    "time_transformation_clock": "absolute time t since t=0, with time constant tau; mu(t,tau) = (exp(t/tau)+1)/2; no terminal time T anywhere in the paper",
+    "exact_finite_time_position_tracking": false,
+    "tracking_error_actual_property": "exponential decay of the transformed error; |e1_bar| <= sqrt(2 V5(0)) exp(-c5 t)/mu(t), effective rate about c5 + 1/tau",
+    "observer_finite_time_claim": "stated as FTUB with explicit T_i; proof has an explicit unproven assumption",
+    "noise_in_theorem": false,
+    "noise_only_in_simulation": true,
+    "input_saturation_in_proof": false,
+    "input_boundedness_proven": false,
+    "closed_loop_state_boundedness_proven": "conditional on Theta_i conditions that depend on the unknown bound of |Delta_i_dot|"
+  },
+  "measurement_conditions": {
+    "paper_measured": ["position y", "two chamber pressures (P_A, P_B) giving P_L", "valve displacement v_e"],
+    "paper_estimated": ["velocity y_dot", "valve velocity v_e_dot", "Delta_2, Delta_3, Delta_5"],
+    "project_contract": "position and two chamber pressures measurable; velocity estimated",
+    "difference": "L03 additionally requires the valve displacement v_e as a measured state; if v_e is unavailable, an extra observer is needed and is not provided. L03 is fifth order (second-order valve), not a three-state plant.",
+    "contract_changed_by_this_report": false
+  },
+  "state_ledger": {
+    "plant_states": ["y", "y_dot", "P_L", "v_e", "v_e_dot"],
+    "observer_state_estimates": ["x2_hat", "x3_hat", "x5_hat"],
+    "disturbance_integrator_states": 3,
+    "controller_dynamic_states": 0,
+    "filters": 0,
+    "parameter_adaptation": 0,
+    "neural_networks": 0,
+    "note": "x3_hat is structurally redundant because P_L is measured; it is used only to build Delta3_hat."
+  },
+  "revision_records": [
+    {
+      "id": "C1",
+      "original_report_claim": "mu(t) = (1+e^-t)/(2e^-t); mu_dot/mu in (1/2,1); gains alpha_1>1, alpha_2>1-b/m",
+      "paper_location": "p.3 eq.(4); p.7 eq.(34); p.7 eq.(36); p.5 Lemma 1; p.6 Theorem 2",
+      "paper_actual": "mu(t,tau) = (1+exp(-t/tau))/(2 exp(-t/tau)); mu_dot/mu in (1/(2 tau), 1/tau); a1 > 1/tau, a2 > 1/tau - b/m",
+      "retracted": true,
+      "impact": "Numeric checks and gain conditions in the original report hold only for tau=1. Corrected throughout. The exponential (non-finite-time) character is unchanged; feasible gains now scale with 1/tau and the extra decay rate is 1/tau."
+    },
+    {
+      "id": "C2",
+      "original_report_claim": "s_i = e_i + beta e_i^(q/p)",
+      "paper_location": "p.5 Theorem 1",
+      "paper_actual": "s_i(t) = e_i_dot + beta e_i^(q/p)",
+      "retracted": true,
+      "impact": "The reading of (19)-(21), (35) and of what Theorem 1 bounds changes: s_i is a sliding variable on the derivative of the observation error. A band on e_i itself would be |e_i| <= (alpha_i^(-1)(sigma_i)/beta)^(p/q) (our reconstruction, not the authors')."
+    },
+    {
+      "id": "C3",
+      "original_report_claim": "eq.(19)-(20) have an extra s_i factor on the left; typographical error",
+      "paper_location": "p.5 eq.(19),(20)",
+      "paper_actual": "dot V_i = s_i dot s_i = s_i(e_i_dd + (beta q/p) e_i^(q/p-1) e_i_dot); left side is dot V_i, not dot s_i",
+      "retracted": true,
+      "impact": "Judgement withdrawn. The paper is correct here; the 'typographical error' note must not be cited again. The real gap in the same paragraph is the explicit assumption x_hat_dd = x_dd (see C9)."
+    },
+    {
+      "id": "C4",
+      "original_report_claim": "|Delta_i| < sigma_i",
+      "paper_location": "p.5 text before eq.(21); Theorem 2 on p.5",
+      "paper_actual": "|Delta_i_dot| < sigma_i",
+      "retracted": true,
+      "impact": "sigma_i bounds the disturbance DERIVATIVE. All Theta_i >> alpha_i^(-1)(sigma_i) statements concern that derivative bound. Lemma 1's known bounds |Delta_i|<k_i are a different assumption and must not be conflated."
+    },
+    {
+      "id": "C5",
+      "original_report_claim": "eq.(35) gives |e_i| <= |s_i| <= alpha_i^(-1)(sigma_i), a neighbourhood bound on the observation error",
+      "paper_location": "p.7 eq.(35)",
+      "paper_actual": "|e_i_dot| = |Delta_i_hat - Delta_i| <= |s_i(t)| <= alpha_i^(-1)(sigma_i)",
+      "retracted": true,
+      "impact": "No neighbourhood bound on e_i follows from (35). Moreover Theorem 2's Case 1 uses alpha_i^(-1)(sigma_i) as if it were an estimation-error bound, so the robust-margin condition rests on something Theorem 1 does not establish."
+    },
+    {
+      "id": "C6",
+      "original_report_claim": "Table 1: omega_e = 49 s^-1; k_e not listed; b not given",
+      "paper_location": "p.7 Table 1",
+      "paper_actual": "m=440 kg; piston area 0.01 m^2 (symbol column misprinted as b); V0=0.004 m^3; rho=1e9 Pa; k_e=0.49; omega_nv=152 s^-1; epsilon_v=0.92; P_s=1e7 Pa",
+      "retracted": true,
+      "impact": "Numbers corrected; k_e is in fact given. Derived check: k_e*omega_nv^2 = 1.132e4 s^-2. The viscous coefficient b is still absent, and tau is absent too, so eq.(36) cannot be checked numerically against Table 1."
+    },
+    {
+      "id": "C7",
+      "original_report_claim": "eq.(8) prefactor may be missing 1/mu (open item O1)",
+      "paper_location": "p.4 eq.(8)",
+      "paper_actual": "(A_p/m * mu)^(-1) = m/(A_p mu)",
+      "retracted": true,
+      "impact": "O1 CLOSED. The prefactor does contain mu, and our independent backstepping derivation requires exactly that. This closes the item about (8) only; the separate mu-bookkeeping inconsistency between (8)/(25) and (9)/(10)/(23)/(24) is recorded as new item O15 and is not a reversal of C7."
+    },
+    {
+      "id": "C8",
+      "original_report_claim": "eq.(31) last term subscript 3 or 5 unclear (open item O3)",
+      "paper_location": "p.6 eq.(31)",
+      "paper_actual": "-|x5_tilde| bar Theta_5 - (|x5_tilde| Delta5_hat - x5_tilde Delta_5), all subscripts 5",
+      "retracted": true,
+      "impact": "O3 CLOSED. The final-stage analysis is indeed about the last backstepping channel."
+    },
+    {
+      "id": "C9",
+      "original_report_claim": "Theorem 1 proof is not closed because linear terms are silently dropped",
+      "paper_location": "p.5, sentence after eq.(20)",
+      "paper_actual": "The authors explicitly write that it is assumed x_i_hat_dd = x_i_dd",
+      "retracted": true,
+      "impact": "The gap remains but must be described as an explicit extra assumption on the second derivative of the estimate, which observer (17) does not guarantee. The 'silently dropped linear terms' phrasing is withdrawn. Our own reading (not the authors'): with (17)-(2), e_i_dd = -(b/m)e_2 + Delta_hat - Delta is generally non-zero, so the assumption assumes away the object of the theorem."
+    }
+  ],
+  "additional_corrections_not_in_review": [
+    {
+      "id": "A1",
+      "item": "eq.(14) transcription in the original report",
+      "paper_actual": "u = (k_e omega_nv^2)^(-1)( -x4_tilde + omega_nv^2(x4_tilde+Phi_3) + 2 epsilon_v omega_nv(x5_tilde+Phi_4) + Phi_4_dot - a5 x5_tilde - k5 sgn(x5_tilde) )",
+      "verified_by": "page 5 image + independent substitution",
+      "impact": "The original report had -x4_hat_dot + omega^2 x4_hat + Phi_4, which is not what the paper prints. Corrected in both markdown products."
+    },
+    {
+      "id": "A2",
+      "item": "gain symbols",
+      "paper_actual": "backstepping gains a_i (i=1..5); observer class-K gains alpha_i(.)",
+      "impact": "The original report wrote alpha_1, alpha_2, alpha_3 for the backstepping gains. Corrected; otherwise eq.(36) is misattributed to the observer."
+    },
+    {
+      "id": "A3",
+      "item": "Table 1 piston-area symbol",
+      "paper_actual": "the symbol cell prints b for the piston area (unit m^2, value 0.01)",
+      "impact": "Explains the spurious appearance of b; b (viscous friction) is still not given."
+    },
+    {
+      "id": "A4",
+      "item": "missing parameters for numerical instantiation",
+      "paper_actual": "Table 1 and section 3.1 give no value for b or tau, and no values for alpha_i, beta, q/p, bar Theta_i, delta_t",
+      "impact": "eq.(36) cannot be checked numerically against the paper's own parameters; author simulations are not reproducible from the printed data. Supersedes the original report's hypothetical 'if b=0' discussion."
+    },
+    {
+      "id": "O15",
+      "item": "mu bookkeeping is mutually exclusive between two families of equations",
+      "status": "new observation, confidence medium-high",
+      "detail": "E2 = mu e2 forces the (A_p/m) mu x3 coefficient in eq.(5); hence eq.(8) must carry mu^(-1) (it does, per the page image) and eq.(9) must print (A_p/m) mu x3_tilde, eq.(10) must carry -(A_p/m) mu barE2 and (2 rho A_p/(mu V0))(barE2+Phi_1), eq.(23) must carry (A_p/m mu)^(-1) and eq.(24) the corresponding terms. As printed, none of these carry mu, yet (9)(10)(11) and (23)(24) are each internally consistent. Equivalently, eq.(25)'s printed -E1 term shows that (23) must contain mu^(-1), so (8)/(25) and (23)/(24) cannot both hold.",
+      "impact": "Two readings are stated separately in section 4.4 of proof_reconstruction.md. Reading A (eq.(8) as the controller): inserting mu in the three places closes the chain exactly, with no residual term - a pure typesetting omission. Reading B (eq.(23) as printed, used as the controller): the -E1 term of (25) becomes -mu E1 and a (1-mu) E1 barE2 cross term appears; once mu is capped by eq.(34) this term is bounded and can be dominated by larger a1, a2. Neither reading changes the exponential-convergence conclusion. Not a reversal of C7."
+    }
+  ],
+  "open_items": [
+    {"id": "O1", "status": "closed", "reason": "eq.(8) prefactor confirmed to contain mu, by page image and by independent derivation (C7)"},
+    {"id": "O2", "status": "open", "item": "form of T_i and whether alpha_i is constant or class-K", "page": "p.5 after eq.(21)"},
+    {"id": "O3", "status": "closed", "reason": "eq.(31) subscripts are 5 (C8)"},
+    {"id": "O4", "status": "open", "item": "Delta_hat_dot contains e^(q/p-1), singular at e=0", "page": "p.5 eq.(16)"},
+    {"id": "O5", "status": "open", "item": "residual bound needs a sign condition on Delta_i or a larger bar Theta_i", "page": "p.6 eq.(31)-(33)"},
+    {"id": "O6", "status": "open", "item": "required reference derivative order (at least y_d^(4)) not stated", "page": "p.3-5"},
+    {"id": "O7", "status": "open", "item": "bar Theta_i >> alpha_i^(-1)(sigma_i) depends on the unknown bound of |Delta_i_dot|; '>>' is not a strict inequality", "page": "p.5-6"},
+    {"id": "O8", "status": "open", "item": "boundedness on the pre-convergence interval t < T_i is not proven separately", "page": "p.5-7"},
+    {"id": "O9", "status": "open", "item": "input boundedness and saturation are outside the theorem", "page": "p.5 eq.(22); p.10 conclusion"},
+    {"id": "O10", "status": "open", "item": "mu_dot jumps at delta_t, so u may jump through the Phi_dot terms", "page": "p.7 eq.(34)"},
+    {"id": "O11", "status": "open", "item": "x3 is measured yet x3_hat is estimated", "page": "p.5 eq.(17)"},
+    {"id": "O12", "status": "open", "item": "Definitions 1-2 are typeset ambiguously", "page": "p.3"},
+    {"id": "O13", "status": "open", "item": "Table 1 omits b and tau; the piston-area symbol is misprinted as b", "page": "p.7"},
+    {"id": "O14", "status": "open", "item": "J_e is described as infinity-norm based but defined as an integral", "page": "p.9 Table 2"},
+    {"id": "O15", "status": "new", "item": "mu bookkeeping is mutually exclusive between eq.(8)/eq.(25) and eq.(9)/eq.(10)/eq.(23)/eq.(24)", "page": "p.4 eq.(8)-(11), eq.(15); p.6 eq.(23)-(24)", "confidence": "medium-high", "impact": "repairable; qualitative conclusion unchanged; not a reversal of C7"}
+  ],
+  "preserved_judgements": [
+    "L03 is not a prescribed-time method: no terminal time T, mu depends only on absolute time.",
+    "Tracking inequalities are exponential / negative quadratic; there is no finite-time (fractional-power) inequality for the real position error.",
+    "Input boundedness and saturation are outside the theorems; saturation is left as future work.",
+    "Noise appears only in simulation (Fig. 7), not as a theorem condition.",
+    "The plant is fifth order and requires valve displacement v_e as a measurement; the project contract covers only position and the two chamber pressures, so the extra measurement requirement holds.",
+    "bar Theta_i >> alpha_i^(-1)(sigma_i) depends on the unknown disturbance-derivative bound and '>>' is not a strict inequality; the pre-convergence interval is not proven separately."
+  ],
+  "numerical_claims_checked": [
+    {"claim": "J_e = 454.3921 vs OFCDR 643.2316, almost 30% less", "check": "1 - 454.3921/643.2316 = 0.2936", "status": "arithmetic_correct", "role": "author simulation value, not a theorem consequence"},
+    {"claim": "k_e * omega_nv^2 from Table 1", "check": "0.49 * 152^2 = 11320.96 s^-2", "status": "computed_by_this_task"},
+    {"claim": "2 rho A_p / V0", "check": "2 * 1e9 * 0.01 / 0.004 = 5.0e9", "status": "computed_by_this_task"},
+    {"claim": "observer convergence <0.168 s, 0.1 s, 0.0005 s", "check": "alpha_i, sigma_i, beta, q/p not given; cannot reproduce", "status": "author_simulation_only"},
+    {"claim": "position tracking convergence 0.2 s vs 1 +/- 0.1 s", "check": "no convergence threshold defined", "status": "author_simulation_only"},
+    {"claim": "valve input peak about 20 V", "check": "read from Fig. 5; no saturation, no table", "status": "visual_only"}
+  ],
+  "provenance_notes": [
+    "Every formula claim is traced to a page and equation number; C1-C9 were all additionally checked on the page images for pages 3-7.",
+    "The MinerU standard parse is cached locally (doc:8720803/tier:standard, parse id 166, pages 1-11, done); no re-parse was requested and no remote service was used.",
+    "The built-in Read tool cannot open the source PDF in this environment (returns 'PDF is password-protected'). This resolves the provenance anomaly flagged by the reviewer; the original task's claim of reading the PDF page-by-page with the Read tool is treated as unverified and is not relied upon.",
+    "Items marked 'computed_by_this_task', 'our reconstruction' or 'new observation' are the reviser's derivations, not author statements, and are labelled as such in the markdown products.",
+    "No controller design, no simulation run, and no novelty claim was produced.",
+    "The original task output files under tasks/T017B_L03_fulltext/output/ were not modified."
+  ],
+  "report_files": [
+    "paper_card.md",
+    "proof_reconstruction.md",
+    "coverage_and_provenance.json",
+    "revision_notes.md"
+  ]
+}

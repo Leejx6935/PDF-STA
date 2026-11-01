@@ -1,0 +1,183 @@
+{
+  "interpretation_contract": "research-literature-interpretation-evidence-v1",
+  "source_id": "L09_Wang2025_MSSP_112928",
+  "doi": "10.1016/j.ymssp.2025.112928",
+  "doi_url": "https://doi.org/10.1016/j.ymssp.2025.112928",
+  "title": "A reinforcement learning-based optimized backstepping control approach for uncertain electro-hydraulic systems",
+  "authors": ["Chen Wang", "Jianhui Wang", "Jinping Ye", "Qing Guo", "Tieshan Li"],
+  "venue": "Mechanical Systems and Signal Processing",
+  "volume": 237,
+  "article_number": "112928",
+  "publication_version": "Elsevier publisher version, full length article, 16 pages (pp. 1-16)",
+  "dates": {
+    "received": "2025-02-28",
+    "revised": "2025-04-27",
+    "accepted": "2025-05-27",
+    "available_online": "2025-06-17"
+  },
+  "mineru": {
+    "id": "doc:5a17f6a/tier:standard",
+    "short_id": "5a17f6a",
+    "tier": "standard",
+    "total_pages": 16,
+    "sha256": "5a17f6ae66e87812fff9fab326fa29e65c7564eb0bc5342a3a6bc89df5ca8f19",
+    "cache_only": true,
+    "parse_pdf_called": false
+  },
+  "local_files": {
+    "pdf": "C:/Users/leejx/Desktop/三阶系统PDF-STA/.research_workspace/inputs/four_papers/L09_Zotero.pdf",
+    "parsed_markdown": "C:/Users/leejx/Desktop/三阶系统PDF-STA/.research_workspace/sources/parsed/L09_fulltext.md",
+    "page_png_checked": "C:/Users/leejx/Desktop/三阶系统PDF-STA/.research_workspace/sources/parsed/L09_page12.png",
+    "prior_report_dir": "C:/Users/leejx/Desktop/三阶系统PDF-STA/.research_workspace/tasks/T017B_L09_fulltext/output",
+    "prior_review": "C:/Users/leejx/Desktop/三阶系统PDF-STA/.research_workspace/reviews/T017B_L09_补核审核_2026-10-28.md",
+    "cross_review": "C:/Users/leejx/Desktop/三阶系统PDF-STA/.research_workspace/reviews/T021_复核更正与独立推导_2026-11-01.md"
+  },
+  "read_scope": {
+    "pages_read": "1-16",
+    "text_layer": "MinerU standard markdown, 992 lines, page markers for all 16 pages present, no page gap",
+    "rendered_pages_checked": [5, 6, 7, 11, 12, 14],
+    "rendered_by": "direct PDF page rendering in this session, plus one existing page PNG for p.12",
+    "not_digitized": "Fig.3 (p.13), Fig.4 (p.13), Fig.5 (p.14) curves; only page renders seen, numeric series not extracted"
+  },
+  "cache_read_evidence": [
+    {
+      "call": "read_document(locator=doc:5a17f6a/tier:standard, limit=6000)",
+      "returned": "page 1 content, title, authors, abstract, DOI, journal line, sha256 5a17f6ae66e87812fff9fab326fa29e65c7564eb0bc5342a3a6bc89df5ca8f19",
+      "identity_match": "title, authors, DOI, journal, volume 237, article 112928, available online 2025-06-17 all match the assigned source"
+    },
+    {
+      "call": "Read(parsed/L09_fulltext.md)",
+      "returned": "lines 1-452, then 453-752, then 752-992; page markers 1..16 all observed",
+      "truncation_note": "the first read was a partial view by size cap, not a document truncation; all pages subsequently covered"
+    },
+    {
+      "call": "Read(L09_Zotero.pdf, pages=6-7)",
+      "returned": "rendered pages with Eq.(22)-(39), Remark 3-5, Eq.(32), Eq.(38), Ymin and ell_1"
+    },
+    {
+      "call": "Read(L09_Zotero.pdf, pages=11)",
+      "returned": "Fig.2, Eq.(72)-(73), Theorem 1 and its proof, including the reversed monotonicity sentence"
+    },
+    {
+      "call": "Read(L09_Zotero.pdf, pages=12) and Read(L09_page12.png)",
+      "returned": "Table 2, simulation parameters, experiment parameters, Table 2 units"
+    },
+    {
+      "call": "Read(L09_Zotero.pdf, pages=5)",
+      "returned": "Eq.(16)-(21), Assumption 1-2, cost functional J1 with alpha_1 = x2"
+    },
+    {
+      "call": "Read(L09_Zotero.pdf, pages=14)",
+      "returned": "Fig.5, Table 3 cost index values, comparison text"
+    }
+  ],
+  "key_locations": [
+    {"claim": "model is third order, static servo valve, no spool dynamics", "page": 2, "equation": "(1)-(2)", "checked": "text layer"},
+    {"claim": "state x3 = A*P_L, model (6a)-(6d)", "page": 3, "equation": "(6)-(9)", "checked": "text layer"},
+    {"claim": "Definition 1 requires finite J and u(0)=0", "page": 4, "equation": "Definition 1", "checked": "text layer"},
+    {"claim": "cost J1 penalizes absolute virtual control alpha_1 = x2", "page": 5, "equation": "(19)-(21)", "checked": "rendered page"},
+    {"claim": "gradient reconstruction is an identity; alpha_1* = -c1 e1 - 0.5 Gamma_1", "page": 6, "equation": "(23)-(24)", "checked": "rendered page"},
+    {"claim": "critic/actor update laws (30)(31); P defined; Remark 4 asserts P=0 gives dH/dWhat_a=0", "page": 6, "equation": "(28)-(31), Remark 4", "checked": "rendered page"},
+    {"claim": "P dynamics and the step P>0, Pdot<=0 implies P->0", "page": 7, "equation": "(32)", "checked": "rendered page"},
+    {"claim": "Ymin is the minimum eigenvalue of S S^T; ell_1 = min{2(c1-5/4), lambda_c1 Ymin}", "page": 7, "equation": "(38)", "checked": "rendered page"},
+    {"claim": "identifier law driven by e2; speed loop conditions", "page": 8, "equation": "(45)-(51)", "checked": "text layer"},
+    {"claim": "force loop identifier and update laws", "page": 10, "equation": "(63)-(69)", "checked": "text layer"},
+    {"claim": "eight networks: 2 position + 3 velocity + 3 force", "page": 11, "equation": "Fig.2", "checked": "rendered page"},
+    {"claim": "force loop conditions c3 > (2+phi3^2+2phi2)/4 and lambda_a3 > 0.5 phi3^2", "page": 11, "equation": "(72)-(73)", "checked": "rendered page"},
+    {"claim": "Theorem 1 gives SGUUB and lim|e1| <= sqrt(2 varpi / ell); last sentence reverses the monotonicity", "page": 11, "equation": "Theorem 1", "checked": "rendered page"},
+    {"claim": "Table 2 nominal values and the experimental weight initial conditions", "page": 12, "equation": "Table 2, Section 5.1", "checked": "rendered page + PNG"},
+    {"claim": "Table 3 cost indices for OBC, BC, NN-BC, PI", "page": 14, "equation": "Table 3", "checked": "rendered page"},
+    {"claim": "conclusion says five neural networks and admits possible saturation", "page": 15, "equation": "Section 6", "checked": "text layer"}
+  ],
+  "original_figures_checked": {
+    "checked_pages": [5, 6, 7, 11, 12, 14],
+    "method": "PDF page rendering (digital publisher PDF, not a scanned image)",
+    "fig2": "layout only; identifier-critic-actor per loop confirmed",
+    "fig5": "seen on p.14 render; control voltage axis about +/-2 V read from axis labels, curve values not digitized",
+    "fig3_fig4": "not rendered; p.13 read from text layer only",
+    "statement": "no scanned-original inspection was performed; all checks are page renders from the publisher PDF"
+  },
+  "adopted_prior_review_corrections": [
+    {
+      "item": "experiment initial actor weight of force loop",
+      "prior_value": "What_a3(0) = 2e-3",
+      "corrected_value": "What_a3(0) = 2e-7",
+      "adopted": true,
+      "independent_check": "p.12 render shows 2 x 10^-7",
+      "consequence": "initial actor term is order 65-326 V depending on the effective norm of S, not 1e5 V"
+    },
+    {
+      "item": "order of magnitude of the initial actor control term",
+      "prior_value": "about 1e5 V",
+      "corrected_value": "about 65 V (upper bound 326 V with ||S|| <= sqrt(5))",
+      "adopted": true,
+      "note": "still above the roughly +/-2 V shown in Fig.5(c), but not usable as divergence evidence"
+    },
+    {
+      "item": "power of phi3 in Eq.(72)",
+      "prior_value": "definite inconsistency",
+      "corrected_value": "downgraded to unverified",
+      "adopted": true,
+      "my_result": "reproducible via 2ab <= a^2 + b^2 with a = 0.5 phi3 e3, b = 0.5 phi3 (What^T S); the old inconsistency claim is withdrawn entirely"
+    }
+  ],
+  "corrections_to_prior_reviews": [
+    {
+      "item": "experiment What_a2(0) and What_c2(0)",
+      "prior_review_claim": "2e-7 and 1e-7",
+      "my_reading": "2e-1 and 1e-1",
+      "evidence": "p.12 rendered page and L09_page12.png; the line reads What_a1=1e-2, What_c1=1e-2, What_a2=2e-1, What_c2=1e-1, What_a3=2e-7, What_c3=1e-7",
+      "status": "correction to the 2026-10-28 supplementary review"
+    },
+    {
+      "item": "Eq.(72)/(54) power inconsistency",
+      "prior_report_claim": "phi^4 should appear; printed phi^2 is wrong",
+      "my_reading": "printed coefficients are reproducible with a stronger valid Young pairing; do not use a weaker bound to refute a valid stronger one",
+      "status": "retraction of T017B proof_reconstruction section 9.1"
+    },
+    {
+      "item": "Theorem 1 wording about asymptotic convergence",
+      "prior_report_claim": "asymptotic wording is improper",
+      "my_reading": "UUB does imply convergence to a ball; the genuinely wrong sentence is the reversed monotonicity of varpi and ell",
+      "status": "partial correction"
+    },
+    {
+      "item": "reason the identifier ideal weight may not exist",
+      "prior_report_claim": "Theta3 depends on u while X_theta3 does not contain u",
+      "my_reading": "agreed in substance; add that alpha_dot depends on What_a and u depends on What_a3, What_theta3, so the target is not a function of the declared input at all; augmenting the input with the weights could repair it in principle",
+      "status": "refinement, labelled as my interpretation"
+    }
+  ],
+  "still_unverified": [
+    "initial states x(0) of simulation and experiment: not given",
+    "how velocity x2 is obtained in the experiment (measurement, differentiation, observer): not stated",
+    "simulation duration, solver tolerances: not given",
+    "whether the authors' code actually realizes P -> 0 or S^T D -> 0: figures show only weight norms",
+    "source of the extra 2 phi2 / 4 term in Eq.(73): not reproduced",
+    "whether Table 3 baselines use comparable gains or any ablation: not stated",
+    "numerical values of Fig.3 and Fig.5 curves: not digitized",
+    "proof that the trajectory stays in the neural-network compact set: absent",
+    "existence and uniqueness of the implicit equation u = Phi(u) containing sign(u): not discussed"
+  ],
+  "claims_supported": [
+    "the three-loop Lyapunov bookkeeping is internally consistent and the cross terms cancel exactly",
+    "the actor-critic update laws can be implemented at 1 kHz with O(p) cost per step and no matrix inversion",
+    "the identifier is the only learning channel driven by the tracking error",
+    "the derivative of the virtual controls is absorbed into the identifier target, so no differentiator is needed"
+  ],
+  "claims_not_supported": [
+    "near-optimal control performance",
+    "removal of the excitation condition without losing the convergence target",
+    "P -> 0 implies H -> 0",
+    "Theorem 1 covers the authors' own simulation and experiment parameters",
+    "any finite-time, fixed-time, or prescribed-time guarantee"
+  ],
+  "project_relation": {
+    "target_venue": "ISA Transactions",
+    "project_measurement_contract": "position and two chamber pressures measurable; velocity estimated",
+    "l09_requirement": "full state including x2 directly in the control and adaptation laws; no observer or differentiator",
+    "coverage": "L09 does not cover the case where x2 is replaced by an estimate; the theorem would need a new proof",
+    "model_note": "L09 is a third-order model with a static valve; the current four-state simulation in this project is not a verified third-order model",
+    "time_note": "L09 has no time guarantee; nonzero disturbance and bounded input do not by themselves exclude finite time, but this paper provides no such structure; a positive constant remainder cannot yield exact zeroing, which does not deny other robust structures"
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "interpretation_contract": "research-literature-interpretation-evidence-v1",
+  "source": {
+    "source_id": "L03_Razmjooei_2022_EJC_100659",
+    "title": "Disturbance observer-based nonlinear feedback control for position tracking of electro-hydraulic systems in a finite time",
+    "authors": ["Hamid Razmjooei", "Gianluca Palli", "Morad Nazari"],
+    "journal": "European Journal of Control",
+    "volume": 67,
+    "article_number": "100659",
+    "year": 2022,
+    "pages": "1-11",
+    "doi": "10.1016/j.ejcon.2022.100659",
+    "doi_url": "https://doi.org/10.1016/j.ejcon.2022.100659",
+    "source_version": "Elsevier published version (ScienceDirect), European Journal of Control 67 (2022) 100659, pp. 1-11",
+    "local_pdf": "C:/Users/leejx/Desktop/三阶系统PDF-STA/.research_workspace/inputs/four_papers/L03_Zotero.pdf",
+    "local_pdf_sha256": "87208032df294dddc897ed22f12f0d375667d2618cdea2a6c41a70d239e71520"
+  },
+  "mineru": {
+    "mineru_id": "doc:8720803/tier:standard",
+    "short_id": "8720803",
+    "tier": "standard",
+    "format": "markdown",
+    "total_pages": 11,
+    "parse_id": 166,
+    "parse_status": "done",
+    "parse_pdf_called": false,
+    "remote_or_flash_used": false,
+    "note": "Only the existing cache was used; no reparse, no remote tier, no flash tier."
+  },
+  "page_coverage": {
+    "pages_read": "1-11",
+    "pages_read_count": 11,
+    "page_markers_verified": true,
+    "truncation_flags": "Each read_document page call returned truncated=false; page markers '<!-- page N of 11 -->' were present for N=1..11.",
+    "read_method": "read_document with locators doc:8720803/tier:standard/page:1 through page:11, plus an initial doc-level read for identity",
+    "full_text_sections_covered": [
+      "p.1 abstract and introduction",
+      "p.2 model equation (1) and introduction end",
+      "p.3 equations (2)-(4), Definitions 1-2, Remark 1",
+      "p.4 equations (5)-(13), first four backstepping steps",
+      "p.5 equations (14)-(22), Lemma 1, observer (16)(17), Theorem 1, Theorem 2 statement",
+      "p.6 equations (23)-(33), Theorem 2 proof cases",
+      "p.7 equations (34)-(36), Table 1, implementation issues, simulation start",
+      "p.8 Figure 2-4 discussion, Table 2 definition",
+      "p.9 Table 2, Figures 4-6 discussion",
+      "p.10 Figures 6-7, noise simulation, conclusions",
+      "p.11 conclusions end and references"
+    ]
+  },
+  "cache_read_evidence": {
+    "doc_sha256": "87208032df294dddc897ed22f12f0d375667d2618cdea2a6c41a70d239e71520",
+    "first_page_identity_check": "Page 1 header shows European Journal of Control 67 (2022) 100659, DOI 10.1016/j.ejcon.2022.100659, title and authors matching the assigned paper.",
+    "page_5_check": "Equation (14), Lemma 1, (16), (17), (18), (19), (20), (21), (22) visible; the text 'it is assumed that x-double-dot-hat = x-double-dot' was visually confirmed.",
+    "page_3_check": "Equation (2), (4), Definitions 1-2, Remark 1 visible.",
+    "page_4_check": "Equations (5)-(13) visible; (8) prefactor contains (A_p/m * mu)^-1; (9) third row contains 1/(mu V_0); (10) pressure term contains no 1/mu.",
+    "page_6_check": "Equations (23)-(33) visible; (23) prefactor is (A_p/m)^-1 without mu; (25) and (31) visible; Case 1/2 text visible.",
+    "page_7_check": "Equations (34)-(36), Table 1, (35) and parameter-tuning text visible.",
+    "read_document_truncated": false
+  },
+  "original_images_checked": {
+    "method": "Read tool on the local PDF with pages parameter; page images rendered and visually inspected.",
+    "pages_checked_visually": [3, 4, 5, 6, 7],
+    "pages_not_checked_visually": [1, 2, 8, 9, 10, 11],
+    "note": "Pages 1-2 and 8-11 were read as MinerU text only. I did not personally inspect their page images. The old reviewer's statement that pages 3-7 images were checked is not reused as my own action; I separately opened pages 3-7 in this task."
+  },
+  "key_locators": [
+    {
+      "page": 2,
+      "equation": "(1)",
+      "content": "Five-order EHA model: piston, load pressure, valve dynamics.",
+      "verified_by": "MinerU text; page image not opened"
+    },
+    {
+      "page": 3,
+      "equation": "(2)",
+      "content": "Error-coordinate state space with Delta = [0, Delta_2, Delta_3, 0, Delta_5]^T; Delta_2, Delta_3 mismatched, Delta_5 matched.",
+      "verified_by": "MinerU text and page image"
+    },
+    {
+      "page": 3,
+      "equation": "(3)-(4)",
+      "content": "FT-ISS definition and mu(t,tau) = (1+exp(-t/tau))/(2 exp(-t/tau)).",
+      "verified_by": "MinerU text and page image"
+    },
+    {
+      "page": 3,
+      "remark": "Remark 1",
+      "content": "Coordinate change with C diverging at t -> t0+T; premise requires finite T.",
+      "verified_by": "MinerU text and page image"
+    },
+    {
+      "page": 4,
+      "equation": "(5)",
+      "content": "E_2 dynamics contains (A_p/m) mu x_3 and mu Delta_2; this fixes the mu scaling.",
+      "verified_by": "MinerU text and page image"
+    },
+    {
+      "page": 4,
+      "equation": "(8)",
+      "content": "x_3d prefactor is (A_p/m * mu)^-1, containing mu.",
+      "verified_by": "MinerU text and page image"
+    },
+    {
+      "page": 4,
+      "equation": "(9)-(10)",
+      "content": "(9) second row has (A_p/m) x-tilde_3 without mu; (9) third row has 1/(mu V_0); (10) pressure term has no 1/mu. Pair leaves a residual.",
+      "verified_by": "MinerU text and page image"
+    },
+    {
+      "page": 5,
+      "equation": "(14)",
+      "content": "Nominal control law with -x-tilde_4 + omega_nv^2(x-tilde_4+Phi_3), etc.",
+      "verified_by": "MinerU text and page image"
+    },
+    {
+      "page": 5,
+      "equation": "(16)",
+      "content": "Delta-hat_i = -integral alpha_i sgn(e-dot_i + beta e_i^(q/p)) dt - beta e_i^(q/p).",
+      "verified_by": "MinerU text and page image"
+    },
+    {
+      "page": 5,
+      "equation": "(17)",
+      "content": "Observer for x-hat_2, x-hat_3, x-hat_5; x_3 and x_4 are treated as measured.",
+      "verified_by": "MinerU text and page image"
+    },
+    {
+      "page": 5,
+      "equation": "(19)-(21)",
+      "content": "V_i = s_i^2/2; s_i = e-dot_i + beta e_i^(q/p); (20) has -alpha_i sgn(s_i) - Delta-dot_i; (21) assumes |Delta-dot_i| < sigma_i.",
+      "verified_by": "MinerU text and page image"
+    },
+    {
+      "page": 5,
+      "text_after_equation_20",
+      "content": "The paper explicitly assumes x-double-dot-hat_i = x-double-dot_i.",
+      "verified_by": "MinerU text and page image"
+    },
+    {
+      "page": 5,
+      "equation": "(22)",
+      "content": "FT-DOTC law uses -(Delta-hat_5 + Theta-bar_5) sgn(x-tilde_5).",
+      "verified_by": "MinerU text and page image"
+    },
+    {
+      "page": 6,
+      "equation": "(23)-(24)",
+      "content": "(23) prefactor (A_p/m)^-1 without mu; (24) same pressure term as (10); (25)-(33) case analysis.",
+      "verified_by": "MinerU text and page image"
+    },
+    {
+      "page": 6,
+      "equation": "(31)",
+      "content": "V-dot_5末项 indices all 5.",
+      "verified_by": "MinerU text and page image"
+    },
+    {
+      "page": 7,
+      "equation": "(34)-(36)",
+      "content": "mu truncation at delta_t; |e-dot_i| <= |s_i| <= alpha_i^-1(sigma_i) as printed; gain conditions a1 > 1/tau, a2 > 1/tau - b/m.",
+      "verified_by": "MinerU text and page image"
+    },
+    {
+      "page": 7,
+      "table": "Table 1",
+      "content": "m=440, piston area row symbol printed b (value 0.01 m^2), V0=0.004, rho=1e9, ke=0.49, omega_nv=152, epsilon_v=0.92, Ps=1e7.",
+      "verified_by": "MinerU text and page image"
+    },
+    {
+      "page": 8,
+      "table": "Table 2 / Figure 4",
+      "content": "Author reports position convergence 0.2 s and velocity 0.5 s; J_e = 454.3921 vs OFCDR 643.2316. These are author simulation values, not reproduced here.",
+      "verified_by": "MinerU text; page image not opened"
+    },
+    {
+      "page": 10,
+      "figure": "Fig. 7",
+      "content": "Band-limited white noise simulation; no analytic noise bound in the theorem.",
+      "verified_by": "MinerU text; page image not opened"
+    },
+    {
+      "page": 11,
+      "section": "Conclusions",
+      "content": "Input saturation is left for future work; no sup|u| bound is claimed.",
+      "verified_by": "MinerU text; page image not opened"
+    }
+  ],
+  "old_review_corrections_adopted": [
+    {
+      "id": "C1",
+      "correction": "mu contains the design constant tau; mu-dot/mu in (1/(2 tau), 1/tau]; gain conditions a1 > 1/tau and a2 > 1/tau - b/m.",
+      "adopted": true,
+      "note": "The printed symbol looks like a lowercase t/iota; I use tau for readability and note the notation difference."
+    },
+    {
+      "id": "C2",
+      "correction": "Sliding variable is s_i = e-dot_i + beta e_i^(q/p), not e_i + beta e_i^(q/p).",
+      "adopted": true
+    },
+    {
+      "id": "C3",
+      "correction": "Equation (19) left side is V-dot_i, not an extra s_i factor; the original report's 'extra s_i' claim is withdrawn.",
+      "adopted": true
+    },
+    {
+      "id": "C4",
+      "correction": "The theorem condition bounds |Delta-dot_i| < sigma_i, not |Delta_i| < sigma_i; Lemma 1 uses |Delta_i| < k_i separately.",
+      "adopted": true
+    },
+    {
+      "id": "C5",
+      "correction": "Equation (35) bounds |e-dot_i|, not |e_i|; Theorem 2 Case 1 uses the estimate-error bound as if it were established.",
+      "adopted": true,
+      "extension": "I additionally show that |e-dot_i| <= |s_i| is not universally true and give an algebraic counterexample."
+    },
+    {
+      "id": "C6",
+      "correction": "Table 1: omega_nv=152, ke=0.49, epsilon_v=0.92; the 'Piston area' row symbol is misprinted as b and should be A_p; viscous friction b value is not given.",
+      "adopted": true
+    },
+    {
+      "id": "C7",
+      "correction": "Equation (8) prefactor contains mu; the earlier suspicion that 1/mu was missing is withdrawn.",
+      "adopted": true
+    },
+    {
+      "id": "C8",
+      "correction": "Equation (31) indices are all 5; the 3/5 ambiguity is closed.",
+      "adopted": true
+    },
+    {
+      "id": "C9",
+      "correction": "Theorem 1 gap is the author's explicit assumption x-double-dot-hat_i = x-double-dot_i, not a silently dropped linear term.",
+      "adopted": true,
+      "extension": "I make precise that this is e-double-dot_i = 0 and that, combined with the Delta-hat-dot -> Delta-dot replacement, it forces e-dot_i = 0 on a non-generic manifold."
+    },
+    {
+      "id": "O15",
+      "correction": "mu bookkeeping is mutually inconsistent between (8)(25) and (9)(10)(23)(24).",
+      "adopted": "partially",
+      "note": "I agree that mu is missing in the (A_p/m) terms. I do not agree that (9)(10)(11) are mutually self-consistent: on page 4, (9) third row has 1/(mu V_0), while (10) pressure term has 1/V_0, leaving the residual (2 rho A_p/V_0)(1 - 1/mu)(E-tilde_2 + Phi_1). This is a correction to the old report's O15 wording, not a reversal of its direction."
+    }
+  ],
+  "divergences_from_old_report": [
+    {
+      "item": "Equation (9)-(10) mutual consistency",
+      "old_report": "Said (9)(10)(11) are mutually self-consistent and (23)(24) are another self-consistent pair.",
+      "my_check": "Visually, (9) third row contains 1/(mu V_0) but (10) pressure term does not; substituting (10) into (9) leaves a nonzero residual. The (A_p/m) channel is consistent as printed, but the pressure channel is not.",
+      "status": "new correction to the old report"
+    },
+    {
+      "item": "Time ledger rate",
+      "old_report": "Wrote the effective decay rate as approximately c5 + 1/tau.",
+      "my_check": "That rate only applies before the truncation at delta_t. After delta_t, mu is frozen at mu_max, so the long-term rate is c5; the 1/tau term is a transient effect.",
+      "status": "nuance added"
+    },
+    {
+      "item": "Equation (35)",
+      "old_report": "Correctly said it bounds |e-dot_i|, not |e_i|.",
+      "my_check": "Also, the chain |e-dot_i| = |Delta-hat_i - Delta_i| <= |s_i| uses zero drift and is not universally valid; explicit counterexample e=216, e-dot=-5, beta=1, q/p=1/3 gives |e-dot|=5 > |s|=1.",
+      "status": "extension"
+    },
+    {
+      "item": "Theorem 2 Theta-bar condition",
+      "old_report": "Said the condition depends on an unproven estimate-error bound.",
+      "my_check": "In the worst sign branch (x-tilde_i < 0, Delta-hat_i = Delta_i = -D < 0), the residual is 2D - Theta-bar_i, so Theta-bar_i must exceed 2|Delta_i|, i.e. the disturbance magnitude, not just alpha_i^-1(sigma_i). This conflicts with the 'unknown upper bound' claim.",
+      "status": "new finding"
+    }
+  ],
+  "still_unverified": [
+    "Author intent for the mu bookkeeping: which of (8)/(23) is the controller actually implemented, and whether the missing mu terms are typesetting errors. The page images show the inconsistency but cannot establish intent.",
+    "Numerical values of b, tau, alpha_i, beta, q/p, Theta-bar_i, delta_t, and observer/controller sampling time. Without them, neither (36) nor the author's simulation can be reproduced from Table 1.",
+    "Whether the Theorem 1 FTUB conclusion holds for the actual observer trajectories with the drift terms retained. No additional proof is supplied here.",
+    "Whether the Theorem 2 worst-sign branch can be closed with a constant Theta-bar_i that does not depend on the unknown disturbance bound.",
+    "Whether Delta_i is differentiable in the author's setting; (21) needs Delta-dot_i but the paper only states a Lipschitz-like condition.",
+    "Whether the closed-loop input u remains bounded; no sup|u| bound is proven, and saturation is explicitly future work.",
+    "Whether the noise simulation in Fig. 7 has any theorem-level guarantee; the theorem has no measurement-noise term.",
+    "The sign and magnitude of the spool bias v_e0, which affects whether Delta_5 can be negative and thus whether the worst-sign branch is physically reachable.",
+    "Pages 1-2 and 8-11 were not visually inspected as images; their content is from MinerU text only.",
+    "No simulation, code execution, or numerical reproduction was performed in this task."
+  ],
+  "evidence_depth": "fulltext_11_pages_text_all_key_pages_3_7_image_checked",
+  "read_scope": "Full text and proofs pp.2-7; simulation pp.8-10; conclusions and references pp.10-11; PDF page images 3-7 visually checked.",
+  "author_results_not_reproduced": [
+    "Position convergence 0.2 s and velocity 0.5 s",
+    "J_e = 454.3921 vs OFCDR 643.2316",
+    "Observer convergence times <0.168 s, 0.1 s, 0.0005 s",
+    "Input peak about 20 V and steady-state about +/-15 V",
+    "Noise simulation position error about +/-0.05 m"
+  ],
+  "tools_used": {
+    "read_document": true,
+    "read_pdf_pages": true,
+    "parse_pdf": false,
+    "web_fetch": false,
+    "browser": false,
+    "simulation": false
+  },
+  "access_date": "2026-11-01"
+}

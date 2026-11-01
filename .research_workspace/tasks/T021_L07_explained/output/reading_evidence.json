@@ -1,0 +1,228 @@
+{
+  "source_id": "L07",
+  "doi": "10.1016/j.apm.2024.03.026",
+  "doi_url": "https://doi.org/10.1016/j.apm.2024.03.026",
+  "title": "Finite-time command filtered electro-hydraulic system position control with dead zone",
+  "authors": ["Shuai Jiang", "Haikuo Shen", "Chao Cheng"],
+  "venue": "Applied Mathematical Modelling",
+  "volume_pages": "131 (2024) 190-204",
+  "publisher_version": "Elsevier 出版版（ScienceDirect）；Received 2023-08-08, Revised 2024-03-20, Accepted 2024-03-27, Available online 2024-04-03",
+  "access_date": "2026-11-01",
+
+  "mineru": {
+    "doc_id": "doc:36d2694",
+    "tier": "standard",
+    "short_id": "36d2694",
+    "sha256": "36d2694f937bea0dd32fc559ac73b0bea34d72d88872f686d97fd4848f05b758",
+    "total_pages": 15,
+    "pages_read": 15,
+    "page_coverage": "1-15 全覆盖；未发现截断标记；p.15 结束于参考文献 [28]",
+    "reparse_performed": false,
+    "parser_switched": false,
+    "local_markdown": ".research_workspace/sources/parsed/L07_fulltext.md"
+  },
+
+  "cache_read_evidence": [
+    {
+      "tool": "research.read_document",
+      "locator": "doc:36d2694/tier:standard/page:1",
+      "observed": "首页标题、作者、卷页 131 (2024) 190-204、DOI 与本地 PDF 元数据一致；返回 sha256 36d2694f…b758",
+      "identity_confirmed": true
+    },
+    {
+      "tool": "research.read_document",
+      "locator": "doc:36d2694/tier:standard/page:5",
+      "params": "context=2, limit=60000",
+      "observed": "返回 page_range 3-7，含式 (2)-(46)；truncated=false"
+    },
+    {
+      "tool": "research.read_document",
+      "locator": "doc:36d2694/tier:standard/page:8",
+      "params": "context=1, limit=60000",
+      "observed": "返回 page_range 7-9，含式 (47)-(52)、Table 1、4.2 节增益；truncated=false"
+    },
+    {
+      "tool": "Read",
+      "path": ".research_workspace/sources/parsed/L07_fulltext.md",
+      "observed": "读取 lines 1-120 / 380-459 / 525-569 / 560-700 / 700-759 / 757-786；page 标记 1..15 全部出现，无截断占位"
+    }
+  ],
+
+  "images_checked_personally": [
+    {
+      "file": "L07_page6.png",
+      "printed_page": 195,
+      "verified": "式 (29)(30)(32)(34)(36)(38) 字形；确认 (36) 首项为 +Σ k_i v_i²，与 (32)(40) 的负号冲突",
+      "corroborates": ["D1"]
+    },
+    {
+      "file": "L07_page7.png",
+      "printed_page": 196,
+      "verified": "式 (40)-(46) 字形；确认 (44) 同时印出 -σ1/(2γ),(2δ1),(2μ) 与 -σ1/(4γ),(4δ1),(4μ)，合计 3/4；确认 (46) 分数幂项为 (σ1/2^p)Σ(θ̃²/2γ)^p，常数为 6σ1(1-p)p^{p/(1-p)}",
+      "corroborates": ["E2", "C4", "C5"]
+    },
+    {
+      "file": "L07_page8.png",
+      "printed_page": 197,
+      "verified": "式 (47)(48)(49)(50)(51)(52) 字形；确认 β、α 定义；(51) 前引导句为 the latter is described as follows；(52) 含 ẋ_d",
+      "corroborates": ["C2", "C7", "C8"]
+    },
+    {
+      "file": "L07_page9.png",
+      "printed_page": 198,
+      "verified": "Fig.3 框图（标注 ẋ0^c = x_d；x=[x1,x2,x3]^T 送入自适应律）；Table 1；4.2 节增益 c_i=0.5, l_i=1, p=99/101, c_0=0.1",
+      "corroborates": ["C6", "C7"]
+    }
+  ],
+
+  "images_not_checked_personally": [
+    {
+      "pages": "p.1-p.4（印刷 190-193）",
+      "reason": "仅有 MinerU 文本；模型方程 (1)-(12) 未做原图核对"
+    },
+    {
+      "pages": "p.5（印刷 194）",
+      "reason": "L07_page5.png 不存在（Read 返回文件不存在），故式 (19)(20)(21)(25)(26)(28) 仅依据 MinerU 文本；这是 (19) 符号疑点未能定论的直接原因"
+    },
+    {
+      "pages": "p.10-p.15（印刷 199-204）",
+      "reason": "仿真图 Fig.4-Fig.9 未查看；Table 2 数值与曲线仅取 MinerU 文本，未核对图形"
+    }
+  ],
+
+  "key_locations": [
+    {"label": "三阶状态方程与参数定义", "eq": "(9)", "page": 193, "locator": "doc:36d2694/tier:standard/page:4"},
+    {"label": "死区映射与 π(u)、|π|≤π0", "eq": "(5)-(7)", "page": 192, "locator": "doc:36d2694/tier:standard/page:3"},
+    {"label": "坐标定义 z0=∫x1-∫x_d，z_i=x_i-x_i^c", "eq": "(21)", "page": 194, "locator": "doc:36d2694/tier:standard/page:5"},
+    {"label": "二阶指令滤波器", "eq": "(22)", "page": 194, "locator": "doc:36d2694/tier:standard/page:5"},
+    {"label": "α0 与 ξ0", "eq": "(25)", "page": 194, "locator": "doc:36d2694/tier:standard/page:5"},
+    {"label": "ż1 = x2 - ẋ1^c（z1 定义的决定性一行）", "eq": "(29)", "page": 195, "locator": "doc:36d2694/tier:standard/page:6"},
+    {"label": "最终控制律 u", "eq": "(38)", "page": 195, "locator": "doc:36d2694/tier:standard/page:6"},
+    {"label": "死区鲁棒阻尼 -g1 f π v3 ≤ D/2 v3² + D/2", "eq": "(41)", "page": 196, "locator": "doc:36d2694/tier:standard/page:7"},
+    {"label": "参数与扰动自适应律", "eq": "(42)", "page": 196, "locator": "doc:36d2694/tier:standard/page:7"},
+    {"label": "Lemma 4（滤波误差界，区间 [0,T_c)）", "page": 196, "locator": "doc:36d2694/tier:standard/page:7"},
+    {"label": "V̇3 的 -3/4 泄漏项", "eq": "(44)", "page": 196, "locator": "doc:36d2694/tier:standard/page:7"},
+    {"label": "分数幂转换及常数", "eq": "(45)-(46)", "page": 196, "locator": "doc:36d2694/tier:standard/page:7"},
+    {"label": "α、β、b 的系数条件", "eq": "(47)", "page": 197, "locator": "doc:36d2694/tier:standard/page:8"},
+    {"label": "残差集与时间界", "eq": "(48)-(50)", "page": 197, "locator": "doc:36d2694/tier:standard/page:8"},
+    {"label": "对比控制器 CFB 的坐标与律（the latter 指 [24]）", "eq": "(51)-(52)", "page": 197, "locator": "doc:36d2694/tier:standard/page:8"},
+    {"label": "Table 1 系统参数", "page": 198, "locator": "doc:36d2694/tier:standard/page:9"},
+    {"label": "4.2 节控制器增益 c_i=0.5, l_i=1, p=99/101", "page": 198, "locator": "doc:36d2694/tier:standard/page:9"},
+    {"label": "Table 2 性能指标 M_e", "page": 200, "locator": "doc:36d2694/tier:standard/page:11"}
+  ],
+
+  "prior_artifacts_read": [
+    ".research_workspace/reviews/T017B_L07_补核审核_2026-10-28.md",
+    ".research_workspace/reviews/T021_复核更正与独立推导_2026-11-01.md"
+  ],
+
+  "corrections_adopted_from_prior_review": [
+    {
+      "id": "E2",
+      "content": "撤回旧审核关于式 (44) 的 -3/4 多计 3 倍的确定性判断；-3/4 可由单链 Young 配平得到且为最优",
+      "how_used": "我按 (42) 从自适应律重推该步，独立得到同一结论，未直接引用其判定作为依据",
+      "status": "independently_verified"
+    },
+    {
+      "id": "D3",
+      "content": "β<0 使 (49) 无定义",
+      "how_used": "重算并加强为：c_i=0.5, l_i=1 时需 p>1 才可救，故任何 0<p<1 都不行",
+      "status": "independently_verified_and_strengthened"
+    },
+    {
+      "id": "D1",
+      "content": "(36) 首项符号与 (40) 冲突",
+      "how_used": "查看 L07_page6.png 原图复核确认",
+      "status": "independently_verified"
+    }
+  ],
+
+  "corrections_i_make_to_prior_artifacts": [
+    {
+      "target": "T017B_L07_补核审核_2026-10-28.md 的 D5",
+      "prior_claim": "式 (29) 与式 (51) 对 z1 的定义不一致，属原文内部矛盾",
+      "my_finding": "式 (51) 属于对比控制器 [24]：其前一句为 the latter is described as follows，且 p.198 第 (3) 条明写 CFB: This controller is described as (52)，而 (52) 含 ẋ_d。故不存在定义冲突",
+      "consequence": "D5 应撤回；实质问题改为：定理界定的 z1=x1-x1^c 与跟踪目标 x1-x_d 之间缺桥。桥接式见 explained_reading_zh.md 第三节与 proof_check.md 的 C3",
+      "confidence": "high",
+      "evidence": "p.197-p.198 原文文字与原图"
+    },
+    {
+      "target": "T017B_L07_补核审核_2026-10-28.md 第四节第 2 条",
+      "prior_claim": "x1-x_d 还要加上 (x1^c-α0)-k0 z0-c0 v0^{2p-1}，k0=20 会放大 z0 项",
+      "my_finding": "方向正确；我给出定量形式 |e| ≤ (2k0+2)ρ+φ0+c0ρ^{2p-1}，k0 通道放大 21 倍，合计约 26 倍（ρ=1e-4, φ0=1e-3 的假设算例）",
+      "consequence": "定性判断升格为可核算的定量界",
+      "confidence": "high"
+    },
+    {
+      "target": "旧报告（经审核文件转述）",
+      "prior_claim": "隐含把 (44)-(47) 整体视为不可靠",
+      "my_finding": "(45)-(46) 的常数 6σ1(1-p)p^{p/(1-p)} 恰为所需最小值，是紧的；α 的写法也正确。缺陷集中在 β 的数值与 α 的正性前提",
+      "consequence": "应区分哪一步对、哪一步错，避免笼统否定",
+      "confidence": "high"
+    }
+  ],
+
+  "new_findings_of_this_pass": [
+    "式 (48) 与 (50) 同样因 β<0 而无定义，不只是 (49)；三式一起失效",
+    "β>0 的条件可写为 p>l_i/(2c_i)；代入 c_i=0.5, l_i=1 得 p>1，故对任何容许 p 都不可能",
+    "α>0 依赖 k3>D/2，即 π0<2k3/(g1max f_max)≈0.041 V（取 g1max≈5.52, f_max=√(2P_s)=4.472e3）；论文未给 π0，无法判定",
+    "由 V^p≤V+1 可把 β<0 的情形改证为指数实用稳定（α'=α-|β|, b'=b+|β|）；这是可挽救的部分，但不是原文结论",
+    "式 (19) 的 MinerU 文本作 θ̂=-Proj(τ)，与 (44) 的符号前提不相容，需 p.5 原图定论"
+  ],
+
+  "open_items": [
+    {
+      "item": "式 (19) 是否带负号、是否漏印时间导数",
+      "why": "p.5 原图不存在，仅 MinerU 文本；若真带负号则 (44) 从第一步就不成立，问题早于 β<0",
+      "status": "unverified"
+    },
+    {
+      "item": "σ1 的数值",
+      "why": "4.2 节未给；α、残差集、可挽救界均依赖它",
+      "status": "not_reported_in_paper"
+    },
+    {
+      "item": "π0 与 g1max",
+      "why": "决定 D 与 k3-D/2 的符号，即 α 是否为正",
+      "status": "not_reported_in_paper"
+    },
+    {
+      "item": "θ_i、g1 的上下界",
+      "why": "投影 (18) 需要数值界，未给则投影实际未定义",
+      "status": "not_reported_in_paper"
+    },
+    {
+      "item": "ε、l0、Δ̂_i(0)、x(0)、求解器与步长",
+      "why": "复现所需，均未给",
+      "status": "not_reported_in_paper"
+    },
+    {
+      "item": "Lemma 4 的一致 φ_i",
+      "why": "区间 [0,T_c) 与 t>T1 的使用不匹配；|α̇| 在 v=0 处退化",
+      "status": "gap_in_paper"
+    },
+    {
+      "item": "f_min",
+      "why": "(38) 除以 f(P_L,u)，仅有 far away from zero 的定性说法",
+      "status": "gap_in_paper"
+    },
+    {
+      "item": "仿真图 Fig.4-Fig.9",
+      "why": "未查看原图，Table 2 与曲线仅取文本",
+      "status": "not_checked_by_me"
+    }
+  ],
+
+  "what_i_did_not_do": [
+    "未调用 parse_pdf，未切换解析质量或远程服务",
+    "未打开浏览器，未登录账户，未上传全文，未推送 Git",
+    "未运行任何仿真或数值积分；文中所有数字均为对公式与界的算术求值，已逐处标注",
+    "未把作者仿真结果当作本项目复现结果",
+    "未执行机械校验脚本（validate_notes.py），不声称已运行"
+  ],
+
+  "evidence_depth": "fulltext",
+  "read_scope_summary": "MinerU 文本 pp.1-15 全读；原图核对 p.6-p.9（印刷 195-198）；p.5 图像缺失，式 (19)(20)(21)(25)(26)(28) 仅文本",
+  "supports": "积分状态扩张（z0=∫(x1-x_d)）可去除对 ẋ_d 的依赖；该机制经式 (24)(25) 与 Fig.3 框图双重确认",
+  "does_not_support": "本文控制器实现了可计算时间的有限时间跟踪；该结论因 β<0 与 T_c、φ_i 无量化式而不能成立"
+}

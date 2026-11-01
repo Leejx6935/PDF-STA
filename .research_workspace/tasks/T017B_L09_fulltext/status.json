@@ -1,1 +1,24 @@
-{"task_id": "T017B_L09_fulltext", "status": "prepared_not_started", "approved": false}
+{
+  "task_id": "T017B_L09_fulltext",
+  "status": "reviewed_conditionally",
+  "run_directory": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\runs\\T017B_L09_fulltext_20261028_112343",
+  "engine": "C:\\Users\\leejx\\.vscode\\extensions\\anthropic.claude-code-2.1.311-win32-x64\\resources\\native-binary\\claude.exe",
+  "prompt_sha256": "e0b97b9015f6ed591c69f0c00ca286fe706b614f540baf36385d9751ac2b9520",
+  "started_at_host_time": "20261028_112343",
+  "date_context": "2026-10-28 Asia/Shanghai",
+  "approved": false,
+  "exit_code": 0,
+  "subtype": "success",
+  "is_error": false,
+  "total_cost_usd": 3.0435659999999993,
+  "num_turns": 21,
+  "permission_denials": [],
+  "reported_model_identifiers": [
+    "deepseek-v4-flash",
+    "DeepSeek-V4-Flash[1m]"
+  ],
+  "execution_status": "success",
+  "review_record": "reviews/T017B_L09_补核审核_2026-10-28.md",
+  "reviewed_at": "2026-10-28",
+  "review_verdict": "conditionally_accepted_with_one_factual_correction"
+}

@@ -1,0 +1,352 @@
+{
+  "task_id": "T017B_L13_fulltext",
+  "date": "2026-10-28",
+  "paper": {
+    "title": "Command filter and neural network-based fixed-time backstepping control of electro-hydraulic system with uncertainties",
+    "authors": [
+      "Shanshuai Niu",
+      "Junzheng Wang",
+      "Zhengyue Li",
+      "Zhihui Liu",
+      "Jiangbo Zhao",
+      "Zizheng Sun"
+    ],
+    "journal": "Applied Mathematical Modelling",
+    "volume": "157",
+    "year": "2026",
+    "article_number": "116848",
+    "doi": "10.1016/j.apm.2026.116848",
+    "publisher": "Elsevier",
+    "received": "2025-07-06",
+    "accepted": "2026-02-16",
+    "available_online": "2026-02-18"
+  },
+  "identity_check": {
+    "doi_in_pdf": "10.1016/j.apm.2026.116848",
+    "doi_match": true,
+    "title_match": true,
+    "journal_volume_match": true,
+    "sha256_provided": "8f7be38f27e7b39497a864a4db919d9f48e0abd5bf8143f0b21ca0da6f4d7f30",
+    "sha256_mineru_metadata": "8f7be38f27e7b39497a864a4db919d9f48e0abd5bf8143f0b21ca0da6f4d7f30",
+    "sha256_match": true,
+    "method": "MinerU parse metadata sha256 compared character-by-character with the task-provided hash; first page text checked for DOI, title, journal and volume. Independent recomputation of the hash by shell was not possible in this environment because no shell tool was available.",
+    "conclusion": "identity_confirmed"
+  },
+  "pdf": {
+    "path": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\inputs\\four_papers\\L13_Zotero.pdf",
+    "pages": 20,
+    "sha256": "8f7be38f27e7b39497a864a4db919d9f48e0abd5bf8143f0b21ca0da6f4d7f30",
+    "version": "Applied Mathematical Modelling 157 (2026) 116848; received 6 July 2025, revised 10 February 2026, accepted 16 February 2026, available online 18 February 2026"
+  },
+  "mineru": {
+    "version": "4.0.2",
+    "doc_id": "doc:8f7be38/tier:standard",
+    "short_id": "8f7be38",
+    "tier": "standard",
+    "page_range": "1-20",
+    "status": "done",
+    "cache_hit": true,
+    "parsed_md": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.research_workspace\\sources\\parsed\\L13_fulltext.md",
+    "parse_warning": "A saved file is not automatically the full paper; page coverage was checked manually and all 20 pages were read.",
+    "image_asset_available": false,
+    "image_asset_note": "read_document returned asset=null for pages 6 and 12; the built-in Read tool reported 'PDF is password-protected'. Therefore page-image verification of OCR-suspect formulas could not be completed in this run."
+  },
+  "reading": {
+    "pages_total": 20,
+    "pages_read": "1-20",
+    "unread_pages": [],
+    "read_scope": "Full body text and proof; pages 19-20 are references and acknowledgements, read only for bibliographic identification.",
+    "reading_mode": "MinerU standard markdown text; page images not obtainable (asset=null; built-in PDF reader password-protected).",
+    "full_text_read": true,
+    "full_text_read_caveat": "Full text was read, but several formulas remain text-only verified; page-image confirmation is pending for the items listed in ocr_pending."
+  },
+  "key_locations": [
+    {
+      "id": "K1",
+      "topic": "plant model, load dynamics",
+      "page": 5,
+      "equation": "Eq.(1)",
+      "text": "P1*A1 - P2*A2 = m*x2_dot + b*x2 + k*x1 + F_L + Delta_F",
+      "verification": "text_verified",
+      "note": "Newton equation; consistent with Eq.(6)."
+    },
+    {
+      "id": "K2",
+      "topic": "state-space model and lumped functions",
+      "page": 6,
+      "equation": "Eq.(7)-(8)",
+      "text": "x2_dot = p2*bar_x3 + f2 + d2; bar_x3_dot/beta_e = p3*u + f3 + d3",
+      "verification": "ocr_suspect_pending_image",
+      "note": "Eq.(8) prints p2=-A1/m, but Eq.(1)/(6) require p2=+A1/m. Internal inconsistency; image check required."
+    },
+    {
+      "id": "K3",
+      "topic": "piecewise feedback function psi",
+      "page": 8,
+      "equation": "Eq.(16)",
+      "text": "psi(z)=|z|^gamma*sgn(z) for |z|>=xi; polynomial for |z|<xi",
+      "verification": "ocr_suspect_resolved_by_internal_evidence",
+      "note": "Parsed text shows c1*z+c2*z^2, but Remark 4 and the Case-2 bound require c1*z+c2*z^3. Cubic is the only C1/odd reading; image check still pending."
+    },
+    {
+      "id": "K4",
+      "topic": "command filter / arbitrary-order fixed-time differentiator",
+      "page": 8,
+      "equation": "Eq.(17)",
+      "text": "v_i_dot=-kappa_i*phi_i(v1-Xi)+v_{i+1}; v_n_dot=-kappa_n*phi_n(v1-Xi)",
+      "verification": "ocr_suspect_pending_image",
+      "note": "For n=2 the parsed power recurrence gives r_0,3=0, a zero exponent; the filter cannot be implemented as printed. Needs original image or reference [49]."
+    },
+    {
+      "id": "K5",
+      "topic": "virtual control alpha_2 and unmatched reconstruction",
+      "page": 9,
+      "equation": "Eq.(23)-(26)",
+      "text": "d2-alpha_1_dot = z2_hat_dot - p2*bar_x3 - f2 + epsilon_2",
+      "verification": "text_verified",
+      "note": "Algebraic reconstruction is exact up to filter error; Eq.(24) is an equivalent rewriting, not a missing term."
+    },
+    {
+      "id": "K6",
+      "topic": "actual control law and RBFNN",
+      "page": 9,
+      "equation": "Eq.(31)-(33)",
+      "text": "u=-(1/p3)*(k3*z3+k_gamma3*psi(z3)+k_lambda3*|z3|^lambda*sgn(z3)+f3+w^T*s+p2*z2)",
+      "verification": "text_verified",
+      "note": "Structure consistent; NN input is 3 signals at Eq.(31) but 5 signals at Eq.(33)."
+    },
+    {
+      "id": "K7",
+      "topic": "Lemma 1 practical fixed-time criterion",
+      "page": 6,
+      "equation": "Eq.(9)-(11)",
+      "text": "V_dot <= -a1*V^b1 - a2*V^b2 - a3*V + c",
+      "verification": "text_verified_independent",
+      "note": "Eq.(11) reproduced exactly by a two-phase integral with c=0; the c>0 upper-bound property is not proved in this paper."
+    },
+    {
+      "id": "K8",
+      "topic": "Lyapunov combination",
+      "page": 11,
+      "equation": "Eq.(40)",
+      "text": "V_dot <= -r2*sum V_i - r1*(sum V_i)^Gamma - r3*(sum V_i)^Lambda - (delta/(2*tau))*||w_tilde||^2 + pi1",
+      "verification": "ocr_suspect_pending_image",
+      "note": "r3 is parsed as 2^3*k_lambda1 but Lambda=1.3 requires 2^Lambda; pi1 is a corrupted OCR string."
+    },
+    {
+      "id": "K9",
+      "topic": "final inequality and Lemma mapping",
+      "page": 11,
+      "equation": "Eq.(44)",
+      "text": "V_dot <= -r4*V - r5*V^Gamma - r6*V^Lambda + pi4",
+      "verification": "text_verified_structure_mapping_error",
+      "note": "Structure is correct. The paper maps a1=r4, a2=r5, a3=r6, but Lemma 1 requires a1=r5 (Gamma coefficient), a2=r6 (Lambda coefficient), a3=r4 (linear coefficient)."
+    },
+    {
+      "id": "K10",
+      "topic": "Theorem 1 statement",
+      "page": 10,
+      "equation": "Theorem 1",
+      "text": "practically fixed-time stability; |z1(t)|<=sqrt(2*min{...}) for all t>T_max",
+      "verification": "text_verified",
+      "note": "Conclusion is practical fixed-time with a residual set, not exact finite time and not prescribed time."
+    },
+    {
+      "id": "K11",
+      "topic": "simulation parameters",
+      "page": 12,
+      "equation": "Table 1",
+      "text": "Ps=21 MPa, A1=1.96e-3, A2=1.65e-3, b=30, m=20, beta_e=1700 MPa, V10=V20=5e-6 m^3, rho=850",
+      "verification": "text_verified_physical_inconsistency",
+      "note": "With V20=5e-6 m^3 and x1=0.32 m, V2=V20-A2*x1 is negative; the simulation cannot be reproduced literally."
+    },
+    {
+      "id": "K12",
+      "topic": "controller gains",
+      "page": 12,
+      "equation": "unnumbered gain line",
+      "text": "k1=1000, k2=0.1, k3=12000; k_gamma1/2/3=0.2/0.015/12; k_lambda1/2/3=1000/0.1/1000",
+      "verification": "ocr_suspect_pending_image",
+      "note": "Parsed line duplicates k_gamma2 and k_lambda2 labels. Using k2=0.1 gives r2<0, violating the theorem's sufficient condition."
+    }
+  ],
+  "claims": {
+    "fixed_time": true,
+    "practical_fixed_time": true,
+    "exact_finite_time": false,
+    "preset_time_or_predefined_time": false,
+    "user_can_choose_T": false,
+    "T_independent_of_initial_conditions": "formal_only_not_proven",
+    "T_depends_on_unknown_constants": true,
+    "terminal_singularity_near_T": false,
+    "input_gain_singularity": true,
+    "observer_used": false,
+    "velocity_measured_directly": true,
+    "input_saturation_in_theorem": false,
+    "noise_theorem": false,
+    "single_neural_network": true,
+    "unmatched_uncertainty_algebraic_reconstruction": true,
+    "true_position_exact_convergence": false,
+    "true_position_residual_bound": "formal_only_dimensionally_inconsistent"
+  },
+  "audit_findings": [
+    {
+      "id": "F1",
+      "severity": "high",
+      "topic": "p2 sign",
+      "finding": "Eq.(8) prints p2=-A1/m, while Eq.(1)/(6) require p2=+A1/m. The printed sign reverses the feedforward in alpha_2 and is not a mere convention.",
+      "status": "pending_image"
+    },
+    {
+      "id": "F2",
+      "severity": "high",
+      "topic": "psi polynomial degree",
+      "finding": "Eq.(16) text shows z^2, but C1/oddness and the Case-2 z^4 bound require z^3. Cubic is the only consistent reading; c1+c2>0 additionally requires xi^2>(1-gamma)/(3-gamma), not stated.",
+      "status": "resolved_by_internal_evidence_plus_pending_image"
+    },
+    {
+      "id": "F3",
+      "severity": "high",
+      "topic": "Lemma 1 mapping",
+      "finding": "Eq.(44) has coefficients r4 (linear), r5 (Gamma), r6 (Lambda). The paper maps a1=r4, a2=r5, a3=r6, which is wrong; correct is a1=r5, a2=r6, a3=r4. T_max and residual set are therefore mis-stated.",
+      "status": "confirmed_by_independent_recomputation"
+    },
+    {
+      "id": "F4",
+      "severity": "high",
+      "topic": "gain condition r2>0",
+      "finding": "The theorem never lists 2*k2>1+r1. Using the parsed k2=0.1, r2=0.2-1-0.0238=-0.8238<0, so r4<0 and Lemma 1 cannot be applied. The simulation therefore does not verify the theorem's sufficient conditions.",
+      "status": "pending_gain_line_image"
+    },
+    {
+      "id": "F5",
+      "severity": "high",
+      "topic": "weight bound circularity",
+      "finding": "||w_tilde||<=W is assumed, not proved; there is no projection. If W is taken from V(0), then pi3, c and T_max depend on the initial condition, destroying the claimed initial-condition-independent fixed time. If W is a universal constant, no proof is given.",
+      "status": "unclosed"
+    },
+    {
+      "id": "F6",
+      "severity": "high",
+      "topic": "differentiator powers",
+      "finding": "For n=2 the parsed r_0 recurrence gives r_0,3=0, a zero exponent in l_2. The filter, which is central to the paper, cannot be implemented as printed.",
+      "status": "pending_image_or_reference_49"
+    },
+    {
+      "id": "F7",
+      "severity": "medium-high",
+      "topic": "T_max with c>0",
+      "finding": "Eq.(11) is exactly the c=0 two-phase integral. With c>0 the descent is slower; the paper gives no proof that the same T_max remains an upper bound. This is separate from the mapping error.",
+      "status": "unclosed_in_this_paper"
+    },
+    {
+      "id": "F8",
+      "severity": "medium-high",
+      "topic": "dimensional inconsistency of V",
+      "finding": "V1 [m^2], V2 [(m/s)^2], V3 [Pa] are added directly; V^Gamma and |z1|<=sqrt(2V_res) are dimensionally formal. The residual bound is not a metric accuracy guarantee.",
+      "status": "confirmed"
+    },
+    {
+      "id": "F9",
+      "severity": "medium-high",
+      "topic": "hidden fourth state",
+      "finding": "The coordinate change x3,x4 -> bar_x3 is not invertible; p3 depends on x3 and x4 separately. Eq.(7) is not a self-contained third-order ODE; the x4 dynamics and the invariant pressure domain 0<x3,x4<Ps are not analyzed.",
+      "status": "confirmed"
+    },
+    {
+      "id": "F10",
+      "severity": "medium",
+      "topic": "u well-posedness",
+      "finding": "p3 depends on sign(u) through H(u) and tends to 0 at pressure boundaries; u may be unbounded. The branch can be selected by sign(B), but B=0 switching and a positive lower bound on p3 are not discussed. No saturation.",
+      "status": "confirmed"
+    },
+    {
+      "id": "F11",
+      "severity": "high",
+      "topic": "simulation physical consistency",
+      "finding": "With V20=5e-6 m^3, V2=V20-A2*x1 is negative for x1>3.03e-3 m; the simulation initial position is 0.32 m and the reference is 0.25 m. Table 1 values are incompatible with the simulation; k_u, k, F_L, xi, theta, varrho, W, epsilon* are missing.",
+      "status": "confirmed_from_table_text_pending_image"
+    },
+    {
+      "id": "F12",
+      "severity": "medium",
+      "topic": "NN input and units",
+      "finding": "Eq.(31) uses [x1,x2,bar_x3], Eq.(33) uses [x1,x2,bar_x3,x_d,x_d_hat_dot]. The centers in row 3 (+/-16) imply bar_x3 in MPa, while the model uses Pa.",
+      "status": "confirmed_internal_inconsistency"
+    }
+  ],
+  "ocr_pending": [
+    {
+      "id": "O1",
+      "page": 6,
+      "item": "p2 sign in Eq.(8)",
+      "reason": "conflicts with Eq.(1)/(6)",
+      "priority": "high"
+    },
+    {
+      "id": "O2",
+      "page": 8,
+      "item": "psi polynomial exponent in Eq.(16)",
+      "reason": "text says z^2; Remark 4 and Case 2 require z^3",
+      "priority": "high"
+    },
+    {
+      "id": "O3",
+      "page": 12,
+      "item": "controller gain line",
+      "reason": "duplicated k_gamma2 and k_lambda2 labels; k2=0.1 drives r2<0",
+      "priority": "high"
+    },
+    {
+      "id": "O4",
+      "page": 11,
+      "item": "r3 coefficient and pi1 expression in Eq.(40)",
+      "reason": "parsed 2^3 vs required 2^Lambda; pi1 contains a long repeated Gamma^2 string",
+      "priority": "high"
+    },
+    {
+      "id": "O5",
+      "page": 11,
+      "item": "a1/a2/a3 mapping after Eq.(44)",
+      "reason": "mapping is mathematically wrong as parsed",
+      "priority": "high"
+    },
+    {
+      "id": "O6",
+      "page": 8,
+      "item": "power recurrence r_0,i and r_inf,i in Eq.(17)",
+      "reason": "n=2 gives zero exponent",
+      "priority": "high"
+    },
+    {
+      "id": "O7",
+      "page": 12,
+      "item": "V10 and V20 in Table 1",
+      "reason": "5e-6 m^3 makes V2 negative at the simulation initial position",
+      "priority": "high"
+    },
+    {
+      "id": "O8",
+      "page": 9,
+      "item": "RBFNN input vector and pressure units",
+      "reason": "3 vs 5 signals; MPa vs Pa",
+      "priority": "medium"
+    },
+    {
+      "id": "O9",
+      "page": 12,
+      "item": "d3 unit label and missing initial x4",
+      "reason": "d3 is 1/s from Eq.(7); text says MPa/s",
+      "priority": "low"
+    }
+  ],
+  "scope": {
+    "single_paper_only": true,
+    "no_new_controller_design": true,
+    "no_simulation_run": true,
+    "no_zotero_write": true,
+    "no_browser_use": true,
+    "measurement_contract_unchanged": true,
+    "note": "This audit only covers L13. It does not extend to other papers and does not modify the project's measurement contract (position and two chamber pressures measurable, velocity estimated). L13 needs direct velocity x2, which is a sensing difference, not a contract change."
+  }
+}

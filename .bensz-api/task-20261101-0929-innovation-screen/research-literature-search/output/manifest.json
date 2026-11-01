@@ -1,0 +1,196 @@
+{
+  "abstract_enrichment": {
+    "attempted": 0,
+    "filled": 0,
+    "missing": 10,
+    "mode": "disabled"
+  },
+  "artifacts": {
+    "candidates_deduped": {
+      "bytes": 24448,
+      "path": "candidates_deduped.jsonl",
+      "sha256": "d357af3ea579a717f099b4da52e90443051ed9b45e403719bfe5d216a7acd3ba"
+    },
+    "candidates_normalized": {
+      "bytes": 24448,
+      "path": "candidates_normalized.jsonl",
+      "sha256": "d357af3ea579a717f099b4da52e90443051ed9b45e403719bfe5d216a7acd3ba"
+    },
+    "candidates_raw": {
+      "bytes": 14147,
+      "path": "candidates_raw.jsonl",
+      "sha256": "f8461b57c16bfa9d4c8e5f6be0e5666f53f65489155ca29021e0645edbe76f40"
+    },
+    "dedupe_map": {
+      "bytes": 126,
+      "path": "dedupe_map.json",
+      "sha256": "cf0e5a7f0f439a0b32d5516975c51c212f17da43ca7f88835d1bd8bbfafa6bf9"
+    },
+    "provenance": {
+      "bytes": 2988,
+      "path": "provenance.jsonl",
+      "sha256": "f439c6ee0061732433286afc580864687874642701239117d6246391a7149b11"
+    },
+    "search_log": {
+      "bytes": 4079,
+      "path": "search_log.json",
+      "sha256": "733dbcb19a4a73d04bb842095e561b35e9f8cc09b90d93e7bc0a76e8d87f5ec8"
+    }
+  },
+  "attempts": [
+    {
+      "empty_records": 0,
+      "invalid_records": 0,
+      "provider": "crossref",
+      "query_id": "q01",
+      "results": 5,
+      "status": "success"
+    },
+    {
+      "error": "429 Client Error: Too Many Requests for url: <url>",
+      "provider": "crossref",
+      "query_id": "q02",
+      "results": 0,
+      "status": "error"
+    },
+    {
+      "empty_records": 0,
+      "invalid_records": 0,
+      "provider": "crossref",
+      "query_id": "q03",
+      "results": 5,
+      "status": "success"
+    },
+    {
+      "empty_records": 0,
+      "invalid_records": 0,
+      "provider": "crossref",
+      "query_id": "q04",
+      "results": 5,
+      "status": "success"
+    },
+    {
+      "empty_records": 0,
+      "invalid_records": 0,
+      "provider": "crossref",
+      "query_id": "q05",
+      "results": 5,
+      "status": "success"
+    },
+    {
+      "empty_records": 0,
+      "invalid_records": 0,
+      "provider": "crossref",
+      "query_id": "q06",
+      "results": 5,
+      "status": "success"
+    }
+  ],
+  "cache": {
+    "mode": "disabled"
+  },
+  "candidate_schema_version": "rls.paper.v1",
+  "contract_version": "rls.v1",
+  "counts": {
+    "deduped": 15,
+    "dropped": 0,
+    "empty_records": 0,
+    "failed": 1,
+    "invalid_records": 0,
+    "normalization_failed": 0,
+    "normalized": 15,
+    "raw": 25
+  },
+  "created_at": "2026-11-01T01:29:17+00:00",
+  "dedupe": {
+    "canonical_merges": 0,
+    "map_path": "dedupe_map.json",
+    "parameters": {
+      "title_similarity_threshold": 0.92,
+      "token_jaccard_threshold": 0.8,
+      "year_window": 1
+    }
+  },
+  "domain": null,
+  "failure_code": null,
+  "filters": {
+    "exclude_preprints": false,
+    "max_year": 2026,
+    "min_year": 2021
+  },
+  "provider_policy": {
+    "config_fingerprint": "5f126dd91eee29970e8e1341938acbe596aaef1ec313bc8268b5fb771cf0e6e8",
+    "effective_order": [
+      "crossref"
+    ],
+    "fallback_enabled": true,
+    "preprint_policy": {
+      "include_preprints": true,
+      "preprint_priority": "medium",
+      "published_version_preferred": true
+    },
+    "preprint_profile": "general",
+    "requested_order": [
+      "crossref"
+    ],
+    "retrieval_strategy": "priority-fallback-topup",
+    "topup_threshold": 0.7
+  },
+  "query_plan": {
+    "accepted_count": 6,
+    "items": [
+      {
+        "ordinal": "1",
+        "query": "electro hydraulic prescribed time output feedback measurement noise control",
+        "query_id": "q01",
+        "rationale": ""
+      },
+      {
+        "ordinal": "2",
+        "query": "hydraulic predefined time command filtered adaptive tracking control",
+        "query_id": "q02",
+        "rationale": ""
+      },
+      {
+        "ordinal": "3",
+        "query": "electro hydraulic servo variable bandwidth observer measurement noise",
+        "query_id": "q03",
+        "rationale": ""
+      },
+      {
+        "ordinal": "4",
+        "query": "hydraulic prescribed time bounded gain error bound tracking",
+        "query_id": "q04",
+        "rationale": ""
+      },
+      {
+        "ordinal": "5",
+        "query": "strict feedback prescribed time command filter non vanishing uncertainty bounded gains",
+        "query_id": "q05",
+        "rationale": ""
+      },
+      {
+        "ordinal": "6",
+        "query": "hydraulic finite time observer filtering noise tracking error bound",
+        "query_id": "q06",
+        "rationale": ""
+      }
+    ],
+    "requested_count": 6,
+    "sha256": "e9601b35d4b99f496144ae496bd5cb8c35631036f0933f83ce284d99174360ec",
+    "source": "C:\\Users\\leejx\\Desktop\\三阶系统PDF-STA\\.bensz-api\\task-20261101-0929-innovation-screen\\research-literature-search\\input\\queries.json"
+  },
+  "search_run_id": "14607b5569ee4acfa6df84608cd2a0ac",
+  "search_skill_version": "1.0.4",
+  "status": "partial_success",
+  "topic": "Hydraulic servo prescribed-time practical output-feedback tracking with explicit noise and filtering error bounds",
+  "topic_hash": "9c57088b7630a15bf250e8cb64305f45cd5825b14d58149fc0d08c5efe0038ed",
+  "truncation": {
+    "applied": false,
+    "dropped_count": 0,
+    "limit": 30
+  },
+  "warnings": [
+    "q02/crossref: 429 Client Error: Too Many Requests for url: https://api.crossref.org/works?query=hydraulic+predefined+time+command+filtered+adaptive+tracking+control&rows=5"
+  ]
+}

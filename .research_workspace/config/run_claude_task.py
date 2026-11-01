@@ -23,7 +23,7 @@ def main():
     task = WORK / 'tasks' / args.task_id
     prompt_path = task / 'prompt.md'
     prompt = prompt_path.read_text(encoding='utf-8')
-    cli = Path.home() / '.vscode/extensions/anthropic.claude-code-2.1.301-win32-x64/resources/native-binary/claude.exe'
+    cli = Path.home() / '.vscode/extensions/anthropic.claude-code-2.1.314-win32-x64/resources/native-binary/claude.exe'
     if not cli.is_file():
         raise FileNotFoundError('The recorded VS Code Claude engine is missing; update the project launcher after inspecting the installed version.')
     stamp = datetime.now().strftime('%Y%m%d_%H%M%S')
@@ -41,7 +41,7 @@ def main():
     (run_dir / 'prompt.md').write_text(prompt, encoding='utf-8')
     state = {'task_id': args.task_id, 'status': 'running', 'run_directory': str(run_dir),
              'engine': str(cli), 'prompt_sha256': hashlib.sha256(prompt.encode()).hexdigest(),
-             'started_at_host_time': stamp, 'date_context': '2026-10-27 Asia/Shanghai',
+             'started_at_host_time': stamp, 'date_context': datetime.now().strftime('%Y-%m-%d') + ' Asia/Shanghai',
              'approved': False}
     state_path = task / 'status.json'
     def save():
